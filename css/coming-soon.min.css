@@ -3,13 +3,13 @@ html{height:100%}h1,h2,h3,h4,h5,h6{font-family:Merriweather;font-weight:700}body
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .sp-webpush-label {
-    &.sp-macos {
-      &.sp-chrome {
-        .sp-inner-content {
+  .sp-webpush-label.sp-macos.sp-chrome .sp-inner-content {
           right: calc(16% - 30px);
-        }
-      }
-    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5) and (min-width: 1280px) {
+  .sp-webpush-label.sp-windows.sp-chrome .sp-inner-content {
+          right: calc(16% - 30px);
   }
 }
