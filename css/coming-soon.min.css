@@ -2,10 +2,14 @@ html{height:100%}h1,h2,h3,h4,h5,h6{font-family:Merriweather;font-weight:700}body
 
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) 
-    and (-webkit-max-device-pixel-ratio: 1.9) and (max-resolution: 190dpi) {
-      
-      body {
-        background-color: red !important;
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .sp-webpush-label {
+    &.sp-macos {
+      &.sp-chrome {
+        .sp-inner-content {
+          right: calc(16% - 30px);
+        }
       }
+    }
+  }
 }
