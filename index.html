@@ -1,83 +1,642 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+<head>
+    <title>ПАРУС Авто</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  <head>
+    <link rel="icon" href="_images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="_images/favicon.ico" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i" rel="stylesheet">-->
 
-    <title>Coming Soon - Start Theme</title>
+    <script src="_js/jquery-1.8.3.min.js"></script>
+    <script src="_js/slick.min.js"></script>
+    <script src="_js/jquery.selectbox-0.2.min.js"></script>
+    <script src="_js/jquery.placeholder.min.js"></script>
+    <script src="_js/jquery.uniform.min.js"></script>
+    <script src="_js/main.js?2"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="_css/main.css?7" />
+    <link rel="stylesheet" type="text/css" href="_css/bootstrap-grid.css" />
+</head>
+<body>
+<div class="pr-account-menu-overlay"></div>
+    <div class="pr-content-overflow">
+        <div class="pr-block-preheader">
+            <div class="pr-mainer full-width">
+                <ul class="block-textpages">
+                    <li><a href="index.html#">О компании</a></li>
+                    <li class="has-sub">
+                        <a href="index.html#">Сотрудничество</a>
+                        <ul class="sub">
+                            <li><a href="index.html#">Как стать клиентом</a></li>
+                            <li><a href="index.html#">меню2</a></li>
+                            <li><a href="index.html#">Доставка и оплата</a></li>
+                            <li><a href="index.html#">Меню...</a></li>
+                            <li><a href="index.html#">меню5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#">Бренды</a></li>
+                    <li><a href="index.html#">Новости</a></li>
+                    <li><a href="index.html#">Контакты</a></li>
+                </ul>
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+                <ul class="block-cabinet">
+                    <li>
+                        <a class="js-cabinet-toggle" href="javascript:void(0);"><span>Иван Иванов</span></a>
+                        <ul class="sub">
+                            <li><a href="index.html#">Личный кабинет</a></li>
+                            <li>
+                                <a href="index.html#">
+                                    Баланс <span class="success">1500 $</span> <br />
+                                    К оплате <span class="neutrally">0 $</span>
+                                </a>
+                            </li>
+                            <li><a href="index.html#">Мои заказы</a></li>
+                            <li class="separated"><a href="index.html#">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <!-- Custom styles for this template -->
-    <link href="css/coming-soon.min.css" rel="stylesheet">
-    <script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/10719a867f19e4c5f13d377f33362372_1.js" async></script>
-  </head>
+                <ul class="block-lang">
+                    <li><a class="selected" href="index.html#">RU</a></li>
+                    <li><a href="index.html#">UA</a></li>
+                </ul>
 
-  <body>
-
-    <div class="overlay"></div>
-
-    <div class="masthead">
-      <div class="masthead-bg"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">Coming Soon!</h1>
-              <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
-                <strong>January 2019</strong>! Sign up for updates using the form below!</p>
-              <div class="input-group input-group-newsletter">
-                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Notify Me!</button>
-                </div>
-              </div>
+                <div class="clear"></div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <header class="pr-block-header">
+            <div class="pr-mainer full-width">
+                <div class="block-logo">
+                    <a href="./index.html">
+                        <img src="_images/logo.svg" alt="">
+                        <span class="slogan">автозапчасти оптом</span>
+                    </a>
+                </div>
+                <div class="block-contacts">
+                    <div class="part-wrapper-toggler js-header-contacts-toggle">Контакты</div>
+                    <div class="part-wrapper js-header-contacts">
+                        <div class="part">
+                            <div class="manager">Ваш менеджер: Владислав</div>
+                            <div class="kievstar">+38 (057) 751 30 20</div>
+                            <div class="kievstar tablet-phone"><a href="tel:+380577513020">+38 (057) 751 30 20</a></div>
+                            <div class="mts">+38 (057) 751 30 20</div>
+                            <div class="mts tablet-phone"><a href="tel:+380577513020">+38 (057) 751 30 20</a></div>
+                        </div>
+                        <div class="part">
+                            <div class="empty">&nbsp;</div>
+                            <div class="skype"><a href="skype:parus.auto?call">parus.auto</a></div>
+                            <div class="email"><a href="mailto:info@parus-auto.com.ua">info@parus-auto.com.ua</a></div>
+                        </div>
+                        <div class="part">
+                            <div class="worktime">Пн-Пт: 09:00 - 18:00</div>
+
+                            <a href="index.html#" class="pr-button secondary">Перезвоните мне</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <a href="index.html#" class="pr-button secondary">Перезвоните мне</a>
+                </div>
+
+                <a href="index.html#" class="block-basket">
+                    <span class="count">01</span>
+                    <span class="hint"><span>Товар добавлен в корзину</span></span>
+                </a>
+
+                <div class="block-currency js-block-currency">
+                    <div class="currency-element">1$ = 27.7</div>
+                </div>
+
+                <div class="block-mobile-call"><a class="js-header-contacts-toggle" href="javascript:void(0);"></a></div>
+                <div class="block-mobile-currency"><a class="js-block-currency-toggle" href="javascript:void(0);"></a></div>
+                <div class="clear"></div>
+            </div>
+        </header>
+
+        <nav class="pr-block-main-nav js-block-main-nav">
+            <div class="pr-mainer full-width">
+                <div class="nav-wrapper">
+                    <div class="nav-cell">
+                        <ul class="block-menu">
+                            <li class="category-link-wrap js-category-link-wrap">
+                                <a href="javascript:void(0);" class="catalog js-catalog-toggle"></a>
+                                <a href="http://goo.gl" class="category-link" onclick="
+                                $('.js-catalog-toggle').toggleClass('active');
+                                $('.js-catalog-toggle').closest('.js-category-link-wrap').find('.category-list').slideToggle();
+                                this.removeAttribute('onclick');
+                                return false;
+                                ">Каталог</a>
+                                <div class="category-list">
+                                    <ul class="level-1">
+                                        <li>
+                                            <a class="group-name" href="index.html#">Фильтры</a>
+                                            <ul class="level-2">
+                                                <li><a href="index.html#">Фильтр воздушный</a></li>
+                                                <li><a href="index.html#">Фильтр масляный</a></li>
+                                                <li><a href="index.html#">Фильтр топливный</a></li>
+                                                <li><a href="index.html#">Фильтр салона</a></li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">Тормозная система</a>
+                                            <ul class="level-2">
+                                                <li><a href="index.html#">Колодки тормозные дисковые</a></li>
+                                                <li><a href="index.html#">Колодки тормозные барабанные</a></li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">Подвеска</a>
+                                            <ul class="level-2">
+                                                <li>
+                                                    <a href="index.html#">Амортизатор</a>
+                                                    <ul class="level-3">
+                                                        <li><a href="index.html#">Пыльник</a></li>
+                                                        <li><a href="index.html#">Отбойник</a></li>
+                                                        <li><a href="index.html#">Опора</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="index.html#">Пружина</a></li>
+                                                <li><a href="index.html#">ШРУС</a></li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">Трансмиссия</a>
+                                            <ul class="level-2">
+                                                <li>
+                                                    <a href="index.html#">ШРУСы</a>
+                                                    <ul class="level-3">
+                                                        <li><a href="index.html#">Пыльники ШРУСа</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">РТИ</a>
+                                            <ul class="level-2">
+                                                <li><a href="index.html#">Подушка двигателя</a></li>
+                                                <li><a href="index.html#">Сайлентблок</a></li>
+                                                <li><a href="index.html#">Втулка стабилизатора</a></li>
+                                                <li><a href="index.html#">Сальники</a></li>
+                                                <li><a href="index.html#">Пыльник ШРУСа</a></li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">Топливная система</a>
+                                            <ul class="level-2">
+                                                <li>
+                                                    <a href="index.html#">Бензонасос </a>
+                                                    <ul class="level-3">
+                                                        <li><a href="index.html#">Фильтр бензонасоса</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        <li>
+                                            <a class="group-name" href="index.html#">Cистема очистки окон </a>
+                                            <ul class="level-2">
+                                                <li><a href="index.html#">Водяной насос омывателя</a></li>
+                                            </ul>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="index.html#">поиск по авто</a></li>
+                            <li><a href="index.html#">акции</a></li>
+                            <li><a href="index.html#">Новинки</a></li>
+                        </ul>
+
+                        <ul class="block-menu tablet">
+                            <li>
+                                <a href="javascript:void(0);" class="menu js-tablet-menu-toggle">Меню</a>
+
+                                <div class="tablet-category-list js-tablet-menu">
+                                    <ul class="level-0">
+                                        <li>
+                                            <span class="expand"></span>
+                                            <a href="index.html#" onclick="$(this).prev().focus().click();"><strong>Каталог</strong></a>
+                                            <ul class="level-1">
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">Фильтры</a>
+
+                                                    <ul class="level-2">
+                                                        <li><a href="index.html#">Фильтр воздушный</a></li>
+                                                        <li><a href="index.html#">Фильтр масляный</a></li>
+                                                        <li><a href="index.html#">Фильтр топливный</a></li>
+                                                        <li><a href="index.html#">Фильтр салона</a></li>
+                                                        <li class="back"><span>назад</span></li>
+                                                    </ul>
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">Тормозная система</a>
+                                                    <ul class="level-2" style="display: none">
+                                                        <li><a href="index.html#">Колодки тормозные дисковые</a></li>
+                                                        <li><a href="index.html#">Колодки тормозные барабанные</a></li>
+                                                        <li class="back"><span>назад</span></li>
+                                                    </ul>
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">Подвеска</a>
+                                                    <ul class="level-2" style="display: none">
+                                                        <li><a href="index.html#">Амортизатор</a></li>
+                                                        <li><a href="index.html#">Пружина</a></li>
+                                                        <li><a href="index.html#">ШРУС</a></li>
+                                                        <li class="back"><span>назад</span></li>
+                                                    </ul>
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">РТИ</a>
+                                                    <ul class="level-2" style="display: none">
+                                                        <li><a href="index.html#">Подушка двигателя</a></li>
+                                                        <li><a href="index.html#">Сайлентблок</a></li>
+                                                        <li><a href="index.html#">Втулка стабилизатора</a></li>
+                                                        <li><a href="index.html#">Сальники</a></li>
+                                                        <li><a href="index.html#">Пыльник ШРУСа</a></li>
+                                                        <li class="back"><span>назад</span></li>
+                                                    </ul>
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">Топливная система</a>
+                                                    <ul class="level-2" style="display: none">
+                                                        <li>
+                                                            <a href="index.html#">Бензонасос </a>
+                                                        </li>
+                                                        <li class="back"><span>назад</span></li>
+                                                    </ul>
+                                                <li>
+                                                    <span class="expand"></span>
+                                                    <a href="index.html#" onclick="$(this).prev().focus().click();">Cистема очистки окон</a>                                                                    <ul class="level-2" style="display: none">
+                                                    <li><a href="index.html#">Водяной насос омывателя</a></li>
+                                                    <li class="back"><span>назад</span></li>
+                                                </ul>
+                                                <li class="back"><span>назад</span></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index.html#"><strong>поиск по авто</strong></a></li>
+                                        <li><a href="index.html#"><strong>акции</strong></a></li>
+                                        <li><a href="index.html#"><strong>Новинки</strong></a></li>
+
+                                        <li style="margin-top: 40px; border: 0"><a href="index.html#">О компании</a></li>
+                                        <li>
+                                            <span class="expand"></span>
+                                            <a href="index.html#" onclick="$(this).prev().focus().click();">Сотрудничество</a>
+                                            <ul class="level-1" style="display: none">                                                                           <li><a href="index.html#">Как стать клиентом</a></li>
+                                                <li><a href="index.html#">меню2</a></li>
+                                                <li><a href="index.html#">Доставка и оплата</a></li>
+                                                <li><a href="index.html#">Меню...</a></li>
+                                                <li><a href="index.html#">меню5</a></li>
+                                                <li class="back"><span>назад</span></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index.html#">Бренды</a></li>
+                                        <li><a href="index.html#">Новости</a></li>
+                                        <li><a href="index.html#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-cell">
+                        <div class="block-search">
+                            <input class="js-search-input" type="text" placeholder="поиск по артикулу, номеру детали">
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+
+                    <div class="nav-cell">
+                        <div class="block-links">
+                            <div class="link-element">
+                                <a href="index.html#" class="link-edit"></a>
+                                <span class="hint">Оставить заявку на запчасть</span>
+                            </div>
+
+                            <div class="link-element">
+                                <a href="javascript:void(0);" class="link-time"></a>
+                                <span class="hint">История вашего поиска</span>
+                                <ul class="sub">
+                                    <li><a href="index.html#">Фильтр маслянный 123456</a></li>
+                                    <li><a href="index.html#">Konner</a></li>
+                                    <li><a href="index.html#">Поисковый запрос 3</a></li>
+                                    <li><a href="index.html#">Поисковый запрос 4</a></li>
+                                    <li><a href="index.html#">Поисковый запрос 5</a></li>
+                                    <li><a class="all" href="index.html#">смотреть всё</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="pr-block-main-nav-place js-block-main-nav-place"></div>
+
+        <div class="pr-block-content pr-account-menu-wrapper">
+            <div class="pr-mainer full-width">
+                <div class="pr-block-account-page no-left-menu">
+                    <div class="left-account-layer">
+                        <div class="pr-aside-account-menu">
+                            <div class="close-button js-account-menu-close"></div>
+
+                            <div class="inner-menu-wrap">
+                                <div class="block-section">
+                                    <div class="menu-title">
+                                        <img src="_images/63-1.svg"
+                                             alt="">
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Мои данные</a></li>
+                                        <li><a href="#">Адресная книга</a></li>
+                                        <li><a href="#">Кредитные карты</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="block-section">
+                                    <div class="menu-title">
+                                        <img src="_images/64-1.svg"
+                                             alt="">
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Мои заказы</a></li>
+                                        <li><a href="#">Повторить заказ</a></li>
+                                        <li><a href="#">Оформить возврат</a></li>
+                                        <li><a href="#">Предзаказ</a></li>
+                                        <li><a href="#">Уведомить о наличии</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="block-section">
+                                    <div class="menu-title">
+                                        <img src="_images/65-1.svg"
+                                             alt="">
+                                    </div>
+                                    <ul>
+                                        <li><a class="active" href="#">Мои взаиморасчеты</a></li>
+                                        <li><a href="#">Оплатить</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="block-section">
+                                    <div class="menu-title">
+                                        <img src="_images/66-1.svg"
+                                             alt="">
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Материалы для скачивания</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="block-section">
+                                    <div class="menu-title">
+                                        <img src="_images/67-1.svg"
+                                             alt="">
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Условия акций и предзаказы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-account-layer">
+                        <div class="pr-block-account-inner">
+                            <div class="content-holder full-width">
+                                <div class="pr-account-menu-toggle js-account-menu-toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <h1 class="page-title">Мои взаиморасчеты</h1>
+                                <div class="pr-crumbs">
+                                    <a href="/">Главная</a>
+                                    <a href="#">Мой аккаунт</a>
+                                    <span>Мои взаиморасчеты</span>
+                                </div>
+                                <br>
+
+                                <div class="js-block-balance-mob-holder"></div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-7">
+                                        <div class="block-section-title">Период</div>
+
+                                        <div class="top-select-date no-icon">
+                                            <div class="select-wrap-element">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            С
+                                                        </td>
+
+                                                        <td>
+                                                            <select class="js-select">
+                                                                <option value="">Январь</option>
+                                                                <option value="">Февраль</option>
+                                                                <option value="">Март</option>
+                                                                <option value="">Апрель</option>
+                                                                <option value="">Май</option>
+                                                                <option value="">Апрель</option>
+                                                                <option value="">Июнь</option>
+                                                                <option value="">Июль</option>
+                                                                <option value="">Август</option>
+                                                                <option value="">Сентябрь</option>
+                                                                <option value="">Октябрь</option>
+                                                                <option value="">Ноябрь</option>
+                                                                <option value="">Декабрь</option>
+
+                                                            </select>
+                                                        </td>
+
+                                                        <td>
+                                                            <select class="js-select">
+                                                                <option value="">2014</option>
+                                                                <option value="">2015</option>
+                                                                <option value="">2016</option>
+                                                                <option value="">2017</option>
+                                                                <option value="">2018</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="select-wrap-element">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            По
+                                                        </td>
+
+                                                        <td>
+                                                            <select class="js-select">
+                                                                <option value="">Январь</option>
+                                                                <option value="">Февраль</option>
+                                                                <option value="">Март</option>
+                                                                <option value="">Апрель</option>
+                                                                <option value="">Май</option>
+                                                                <option value="">Апрель</option>
+                                                                <option value="">Июнь</option>
+                                                                <option value="">Июль</option>
+                                                                <option value="">Август</option>
+                                                                <option value="">Сентябрь</option>
+                                                                <option value="">Октябрь</option>
+                                                                <option value="">Ноябрь</option>
+                                                                <option value="">Декабрь</option>
+                                                            </select>
+                                                        </td>
+
+                                                        <td>
+                                                            <select class="js-select">
+                                                                <option value="">2014</option>
+                                                                <option value="">2015</option>
+                                                                <option value="">2016</option>
+                                                                <option value="">2017</option>
+                                                                <option value="">2018</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+
+                                        <div class="block-section-title">Архив платежей</div>
+
+                                        <div class="pr-table-responsive">
+                                            <table class="pr-table-style sub-styles">
+                                                <thead>
+                                                <tr>
+                                                    <td>Дата</td>
+                                                    <td>Плетёж, $</td>
+                                                    <td>Покупка, $</td>
+                                                    <td>Баланс, $</td>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        25.05.2017
+                                                    </td>
+                                                    <td></td>
+                                                    <td>1700</td>
+                                                    <td>-1700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        25.05.2017
+                                                    </td>
+                                                    <td>1700</td>
+                                                    <td></td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        11.05.2017
+                                                    </td>
+                                                    <td></td>
+                                                    <td>1700</td>
+                                                    <td>-1700</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-12 col-lg-5 js-block-balance-desktop-holder">
+                                        <div class="pr-block-balance-form js-block-balance-form">
+                                            <div class="block-head">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            Баланс: <span class="warning">-150 $</span>
+                                                        </td>
+
+                                                        <td>
+                                                            К оплате: <span class="warning">150 $</span> <br>
+                                                            <span class="warning small">Просрочено!</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div class="block-form">
+                                                <form action="">
+                                                    <div class="caption">Сумма оплаты</div>
+                                                    <input type="text" value="">
+                                                    <div class="button-wrap">
+                                                        <input type="submit" value="Оплатить" class="pr-button secondary">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
+    <div class="pr-foot-wrapper">
+        <footer class="pr-block-footer">
+            <div class="pr-mainer full-width">
+                <div class="left-column">
+                    <div class="block-logo"><a href="../index.html"><img src="_images/logo-w.svg" alt=""></a></div>
+                    <div class="block-address">
+                        061000, Украина, г. Харьков, <br />
+                        ул. Клочковская, 192, офис, 144
+                    </div>
+                </div>
+                <div class="center-column">
+                    <div class="block-pages">
+                        <div class="title">Персонализация</div>
+                        <ul>
+                            <li><a href="index.html#">Мои заказы</a></li>
+                            <li><a href="index.html#">Мои данные</a></li>
+                            <li><a href="index.html#">Взаиморасчеты</a></li>
+                            <li><a href="index.html#">Материалы для скачивания</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="center-column">
+                    <div class="block-pages">
+                        <div class="title">Информация</div>
+                        <ul>
+                            <li><a href="index.html#">Новинки</a></li>
+                            <li><a href="index.html#">Акции</a></li>
+                            <li><a href="index.html#">Доставка и оплата</a></li>
+                            <li><a href="index.html#">Возврат / гарантия</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="block-worktime">Пн-Пт: 09:00 - 18:00</div>
+                    <div class="block-button">
+                        <a href="index.html#" class="pr-button empty">Перезвоните мне</a>
+                    </div>
+                    <div class="block-social">
+                        <a href="index.html#" class="vk"></a>
+                        <a href="index.html#" class="fb"></a>
+                        <a href="index.html#" class="gp"></a>
+                        <a href="index.html#" class="ig"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+        <div class="pr-block-after-footer">
+            <div class="pr-mainer full-width">
+                &copy; 2017 <a href="index.html">parus-auto.com.ua</a>
+            </div>
+            <img height="0" style="float: right" src="_images/49-b.svg">
+            <img height="0" style="float: right" src="_images/50-b.svg">
+        </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/vide/jquery.vide.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/coming-soon.min.js"></script>
-
-  </body>
-
+    <a href="javascript: void(0);" class="pr-go-to-top js-go-to-top"></a>
+</body>
 </html>
