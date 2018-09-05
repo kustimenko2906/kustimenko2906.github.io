@@ -1,140 +1,362 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>Test prompt</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Striped by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/prompt.css" />
+	</head>
+	<body class="is-preload">
 
-    <link rel="icon" href="_images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="_images/favicon.ico" type="image/x-icon" />
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
-
-    <script src="scripts/jquery-1.8.3.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
-</head>
-<body>
-
-<div class="sendpulse-prompt sendpulse-popover show-prompt">
-    <div class="sendpulse-prompt-message">
-        <div class="sendpulse-prompt-message-text">http://proverka-kursov.ru запрашивает разрешение на:</div>
-        <div class="sendpulse-prompt-info sendpulse-prompt-message-text">
-            <img class="sendpulse-bell-icon" width="14"
-                 height="14" src="https://cdn.sendpulse.com/img/push/icon-ring.svg">
-            Показывать оповещения
-        </div>
-        <div class="sendpulse-prompt-buttons">
+	<div class="sendpulse-prompt sendpulse-popover show-prompt">
+		<div class="sendpulse-prompt-message">
+			<div class="sendpulse-prompt-message-text">http://proverka-kursov.ru запрашивает разрешение на:</div>
+			<div class="sendpulse-prompt-info sendpulse-prompt-message-text">
+				<img class="sendpulse-bell-icon" width="14"
+					 height="14" src="https://cdn.sendpulse.com/img/push/icon-ring.svg">
+				Показывать оповещения
+			</div>
+			<div class="sendpulse-prompt-buttons">
             <span class="sp-link-wrapper">
                 <a class="sp-link"
-                   href="https://sendpulse.com/ru/webpush-powered-by-sendpulse?sn=cHJvdmVya2Eta3Vyc292LnJ1"
-                   target="_blank"><span>Предоставлено SendPulse</span>
+				   href="https://sendpulse.com/ru/webpush-powered-by-sendpulse?sn=cHJvdmVya2Eta3Vyc292LnJ1"
+				   target="_blank"><span>Предоставлено SendPulse</span>
                 </a>
             </span>
-            <button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button"
-                    onclick="oSpP.denyMessage(); return false;">Блокировать
-            </button>
-            <button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button"
-                    onclick="oSpP.showPopUp(); return false;">Разрешить
-            </button>
-        </div>
-    </div>
-</div>
+				<button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button"
+						onclick="oSpP.denyMessage(); return false;">Блокировать
+				</button>
+				<button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button"
+						onclick="oSpP.showPopUp(); return false;">Разрешить
+				</button>
+			</div>
+		</div>
+	</div>
 
-<div class="sendpulse-prompt sendpulse-popover show-prompt" style="display:none !important;">
-    <div class="sendpulse-prompt-message">
-        <div class="sendpulse-prompt-message-text">http://proverka-kursov.ru wants to:</div>
-        <div class="sendpulse-prompt-info sendpulse-prompt-message-text">
-            <img class="sendpulse-bell-icon"
-                 src="https://cdn.sendpulse.com/img/push/icon-ring.svg"
-                 width="14" height="14">
-            Show notifications
-        </div>
-        <div class="sendpulse-prompt-buttons">
-            <span class="sp-link-wrapper">
-                <a class="sp-link"
-                   href="https://sendpulse.com/ru/webpush-powered-by-sendpulse?sn=cHJvdmVya2Eta3Vyc292LnJ1"
-                   target="_blank">
-                    <span>Powered by SendPulse</span>
-                </a>
-            </span>
-            <button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button"
-                    onclick="oSpP.denyMessage(); return false;">Block
-            </button>
-            <button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button"
-                    onclick="oSpP.showPopUp(); return false;">Allow
-            </button>
-        </div>
-    </div>
-</div>
+	<div class="sendpulse-prompt sendpulse-popover show-prompt" style="display:none !important;">
+	    <div class="sendpulse-prompt-message">
+	        <div class="sendpulse-prompt-message-text">http://proverka-kursov.ru wants to:</div>
+	        <div class="sendpulse-prompt-info sendpulse-prompt-message-text">
+	            <img class="sendpulse-bell-icon"
+	                 src="https://cdn.sendpulse.com/img/push/icon-ring.svg"
+	                 width="14" height="14">
+	            Show notifications
+	        </div>
+	        <div class="sendpulse-prompt-buttons">
+	            <span class="sp-link-wrapper">
+	                <a class="sp-link"
+	                   href="https://sendpulse.com/ru/webpush-powered-by-sendpulse?sn=cHJvdmVya2Eta3Vyc292LnJ1"
+	                   target="_blank">
+	                    <span>Powered by SendPulse</span>
+	                </a>
+	            </span>
+	            <button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button"
+	                    onclick="oSpP.denyMessage(); return false;">Block
+	            </button>
+	            <button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button"
+	                    onclick="oSpP.showPopUp(); return false;">Allow
+	            </button>
+	        </div>
+	    </div>
+	</div>
 
-<div class="sendpulse-prompt sendpulse-modal" style="display: none !important;">
-    <div class="sendpulse-prompt-message">
-        <svg style="display: none;">
-            <symbol id="sp_bell_icon">
-                <path d="M139.165 51.42L103.39 15.558C43.412 61.202 3.74 132.185 0 212.402h50.174c3.742-66.41 37.877-124.636 88.99-160.98zM474.98 212.403h50.173c-3.742-80.217-43.413-151.2-103.586-196.845L385.704 51.42c51.398 36.346 85.533 94.572 89.275 160.982zm-49.388 12.582c0-77-53.39-141.463-125.424-158.487v-17.09c0-20.786-16.76-37.613-37.592-37.613s-37.592 16.827-37.592 37.614v17.09C152.95 83.52 99.56 148.004 99.56 224.983v137.918L49.408 413.01v25.076h426.336V413.01l-50.152-50.108V224.984zM262.576 513.358c3.523 0 6.76-.22 10.065-1.007 16.237-3.237 29.825-14.528 36.06-29.626 2.517-5.952 4.05-12.494 4.05-19.54H212.4c0 27.593 22.582 50.174 50.174 50.174z"></path>
-            </symbol>
-        </svg>
-        <svg viewBox="0 0 525.153 525.153" width="40" height="40" xmlns:xlink="http://www.w3.org/1999/xlink" class="sendpulse-bell-icon">
-            <use class="sendpulse-bell-path" style="fill: #333" xlink:href="#sp_bell_icon" x="0" y="0"></use>
-        </svg>
+	<div class="sendpulse-prompt sendpulse-modal show-prompt" style="display:none !important;">
+	    <div class="sendpulse-prompt-message">
+	        <svg style="display: none;">
+	            <symbol id="sp_bell_icon">
+	                <path d="M139.165 51.42L103.39 15.558C43.412 61.202 3.74 132.185 0 212.402h50.174c3.742-66.41 37.877-124.636 88.99-160.98zM474.98 212.403h50.173c-3.742-80.217-43.413-151.2-103.586-196.845L385.704 51.42c51.398 36.346 85.533 94.572 89.275 160.982zm-49.388 12.582c0-77-53.39-141.463-125.424-158.487v-17.09c0-20.786-16.76-37.613-37.592-37.613s-37.592 16.827-37.592 37.614v17.09C152.95 83.52 99.56 148.004 99.56 224.983v137.918L49.408 413.01v25.076h426.336V413.01l-50.152-50.108V224.984zM262.576 513.358c3.523 0 6.76-.22 10.065-1.007 16.237-3.237 29.825-14.528 36.06-29.626 2.517-5.952 4.05-12.494 4.05-19.54H212.4c0 27.593 22.582 50.174 50.174 50.174z"></path>
+	            </symbol>
+	        </svg>
+	        <svg viewBox="0 0 525.153 525.153" width="40" height="40" xmlns:xlink="http://www.w3.org/1999/xlink" class="sendpulse-bell-icon">
+	            <use class="sendpulse-bell-path" style="fill: #333" xlink:href="#sp_bell_icon" x="0" y="0"></use>
+	        </svg>
 
-        <div class="sendpulse-prompt-message-title sendpulse-prompt-message sendpulse-prompt-message-text pmtitle_preview  pstitle_preview pmtcolor_preview fbtntitle_preview">Подписка на уведомления</div>
-        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pmtext_preview pstext_preview pmtcolor_preview pbtcolor_preview fbtntext_preview">
-            Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол                            </div>
-        <div class="sendpulse-prompt-buttons">
-                                                                    <span class="sp-link-wrapper">
-                                        <a class="sp-link">
-                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAk1BMVEUNkaAmtrIltLEMj58Mj58mtrIks7EfrK0MkKD///8Pk6EmtrIisK8cp6oTmaQRlqIZoqkVnKaz4OL7/v7t+PhjvsT4/P3l9vbY8PDM6uy74+Ww3uGc2dt3ysx1xMoyrLLx+fro9vat4+Kj2t2NztOB0dF/yc5myMhevsNMwL8/u7pMsLlDr7cyuLY9sbY7p7IkpazkILODAAAABnRSTlPn5ubmSkmZnvKZAAAAiElEQVQI10XHVRbCQBBE0SJGeoCxuONu+18dpDPn5P7UK4SL1WwRwovYnl7jeIgmBd14sWZ3ogsHlqwjOnG4b8uknf6G7dqi5oAevelalXo4ZBqaiIYu+Vr622oYY9K+qcwzy865NZBS2iY9ypGREkqpPqGHciCE+FAuhQPEsUjr2AECP575wQ+doQxkp1hUBQAAAABJRU5ErkJggg==">
-                                            <span>Предоставлено SendPulse</span>
-                                        </a>
-                                    </span>
-            <button class="sendpulse-prompt-btn sendpulse-disallow-btn pmbtncolor_preview_disallow pbbtncolor_preview_disallow" type="button">Запретить</button>
-            <button class="sendpulse-prompt-btn sendpulse-accept-btn pmbtncolor_preview_allow pbbtncolor_preview_allow" type="button">Разрешить</button>
-            <div>&nbsp;</div>
-        </div>
-    </div>
-    <button class="sendpulse-prompt-close">×</button>
-</div>
+	        <div class="sendpulse-prompt-message-title sendpulse-prompt-message sendpulse-prompt-message-text pmtitle_preview  pstitle_preview pmtcolor_preview fbtntitle_preview">Подписка на уведомления</div>
+	        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pmtext_preview pstext_preview pmtcolor_preview pbtcolor_preview fbtntext_preview">
+	            Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол                            </div>
+	        <div class="sendpulse-prompt-buttons">
+	                                                                    <span class="sp-link-wrapper">
+	                                        <a class="sp-link">
+	                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAk1BMVEUNkaAmtrIltLEMj58Mj58mtrIks7EfrK0MkKD///8Pk6EmtrIisK8cp6oTmaQRlqIZoqkVnKaz4OL7/v7t+PhjvsT4/P3l9vbY8PDM6uy74+Ww3uGc2dt3ysx1xMoyrLLx+fro9vat4+Kj2t2NztOB0dF/yc5myMhevsNMwL8/u7pMsLlDr7cyuLY9sbY7p7IkpazkILODAAAABnRSTlPn5ubmSkmZnvKZAAAAiElEQVQI10XHVRbCQBBE0SJGeoCxuONu+18dpDPn5P7UK4SL1WwRwovYnl7jeIgmBd14sWZ3ogsHlqwjOnG4b8uknf6G7dqi5oAevelalXo4ZBqaiIYu+Vr622oYY9K+qcwzy865NZBS2iY9ypGREkqpPqGHciCE+FAuhQPEsUjr2AECP575wQ+doQxkp1hUBQAAAABJRU5ErkJggg==">
+	                                            <span>Предоставлено SendPulse</span>
+	                                        </a>
+	                                    </span>
+	            <button class="sendpulse-prompt-btn sendpulse-disallow-btn pmbtncolor_preview_disallow pbbtncolor_preview_disallow" type="button">Запретить</button>
+	            <button class="sendpulse-prompt-btn sendpulse-accept-btn pmbtncolor_preview_allow pbbtncolor_preview_allow" type="button">Разрешить</button>
+	            <div>&nbsp;</div>
+	        </div>
+	    </div>
+	    <button class="sendpulse-prompt-close">×</button>
+	</div>
 
-<div class="sendpulse-prompt sendpulse-bar pmbcolor_preview pbbcolor_preview" style="display: none !important;">
-                                    <span class="sp-link-wrapper">
-                        <a class="sp-link">
-                            <span>Предоставлено SendPulse</span>
-                        </a>
-                    </span>
-    <div class="sendpulse-prompt-message">
-        <svg viewBox="0 0 525.153 525.153" width="40" height="40" xmlns:xlink="http://www.w3.org/1999/xlink" class="sendpulse-bell-icon"><use class="sendpulse-bell-path" style="fill: #222222 !important;" xlink:href="#sp_bell_icon" x="0" y="0"></use>  </svg>
-        <div class="sendpulse-prompt-message-title sendpulse-prompt-message-text"></div>
-        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pmtext_preview pmtcolor_preview pbtext_preview pbtcolor_preview pstext_preview fbtntext_preview">Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол</div>
-        <div class="sendpulse-prompt-buttons">
-            <button class="sendpulse-prompt-btn sendpulse-disallow-btn pmbtncolor_preview_disallow pbbtncolor_preview_disallow" type="button">Запретить</button>
-            <button class="sendpulse-prompt-btn sendpulse-accept-btn pmbtncolor_preview_allow pbbtncolor_preview_allow" type="button">Разрешить</button>
-        </div>
-    </div>
-    <button class="sendpulse-prompt-close">×</button>
-</div>
+	<div class="sendpulse-prompt sendpulse-bar show-prompt" style="display:none !important;">
+	                                    <span class="sp-link-wrapper">
+	                        <a class="sp-link">
+	                            <span>Предоставлено SendPulse</span>
+	                        </a>
+	                    </span>
+	    <div class="sendpulse-prompt-message">
+	        <svg viewBox="0 0 525.153 525.153" width="40" height="40" xmlns:xlink="http://www.w3.org/1999/xlink" class="sendpulse-bell-icon"><use class="sendpulse-bell-path" style="fill: #222222 !important;" xlink:href="#sp_bell_icon" x="0" y="0"></use>  </svg>
+	        <div class="sendpulse-prompt-message-title sendpulse-prompt-message-text"></div>
+	        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pmtext_preview pmtcolor_preview pbtext_preview pbtcolor_preview pstext_preview fbtntext_preview">Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол</div>
+	        <div class="sendpulse-prompt-buttons">
+	            <button class="sendpulse-prompt-btn sendpulse-disallow-btn pmbtncolor_preview_disallow pbbtncolor_preview_disallow" type="button">Запретить</button>
+	            <button class="sendpulse-prompt-btn sendpulse-accept-btn pmbtncolor_preview_allow pbbtncolor_preview_allow" type="button">Разрешить</button>
+	        </div>
+	    </div>
+	    <button class="sendpulse-prompt-close">×</button>
+	</div>
 
-<div class="sendpulse-prompt sendpulse-safari" style="display: none !important;">
-    <div class="sendpulse-prompt-message">
-        <img class="sendpulse-bell-icon" src="/img/my/push/push-default-icons/icon.png" width="64" height="64" alt="">
-        <div class="sendpulse-prompt-title sendpulse-prompt-message-text pmtitle_preview pstitle_preview fbtntitle_preview">Подписка на уведомления</div>
-        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pbtext_preview pmtext_preview pstext_preview fbtntext_preview">
-            Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол                            </div>
-        <div class="sendpulse-prompt-buttons">
-                                                                    <span class="sp-link-wrapper">
-                                        <a class="sp-link">
-                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAk1BMVEUNkaAmtrIltLEMj58Mj58mtrIks7EfrK0MkKD///8Pk6EmtrIisK8cp6oTmaQRlqIZoqkVnKaz4OL7/v7t+PhjvsT4/P3l9vbY8PDM6uy74+Ww3uGc2dt3ysx1xMoyrLLx+fro9vat4+Kj2t2NztOB0dF/yc5myMhevsNMwL8/u7pMsLlDr7cyuLY9sbY7p7IkpazkILODAAAABnRSTlPn5ubmSkmZnvKZAAAAiElEQVQI10XHVRbCQBBE0SJGeoCxuONu+18dpDPn5P7UK4SL1WwRwovYnl7jeIgmBd14sWZ3ogsHlqwjOnG4b8uknf6G7dqi5oAevelalXo4ZBqaiIYu+Vr622oYY9K+qcwzy865NZBS2iY9ypGREkqpPqGHciCE+FAuhQPEsUjr2AECP575wQ+doQxkp1hUBQAAAABJRU5ErkJggg==">
-                                            <span>Предоставлено SendPulse</span>
-                                        </a>
-                                    </span>
-            <button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button">Запретить</button>
-            <button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button">Разрешить</button>
-        </div>
-    </div>
-    <button class="sendpulse-prompt-close">×</button>
-</div>
-</body>
+	<div class="sendpulse-prompt sendpulse-safari show-prompt" style="display:none !important;">
+	    <div class="sendpulse-prompt-message">
+	        <img class="sendpulse-bell-icon" src="/img/my/push/push-default-icons/icon.png" width="64" height="64" alt="">
+	        <div class="sendpulse-prompt-title sendpulse-prompt-message-text pmtitle_preview pstitle_preview fbtntitle_preview">Подписка на уведомления</div>
+	        <div class="sendpulse-prompt-info sendpulse-prompt-message-text pbtext_preview pmtext_preview pstext_preview fbtntext_preview">
+	            Разрешите сайту strana.ua отправлять вам уведомления на рабочий стол                            </div>
+	        <div class="sendpulse-prompt-buttons">
+	                                                                    <span class="sp-link-wrapper">
+	                                        <a class="sp-link">
+	                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAk1BMVEUNkaAmtrIltLEMj58Mj58mtrIks7EfrK0MkKD///8Pk6EmtrIisK8cp6oTmaQRlqIZoqkVnKaz4OL7/v7t+PhjvsT4/P3l9vbY8PDM6uy74+Ww3uGc2dt3ysx1xMoyrLLx+fro9vat4+Kj2t2NztOB0dF/yc5myMhevsNMwL8/u7pMsLlDr7cyuLY9sbY7p7IkpazkILODAAAABnRSTlPn5ubmSkmZnvKZAAAAiElEQVQI10XHVRbCQBBE0SJGeoCxuONu+18dpDPn5P7UK4SL1WwRwovYnl7jeIgmBd14sWZ3ogsHlqwjOnG4b8uknf6G7dqi5oAevelalXo4ZBqaiIYu+Vr622oYY9K+qcwzy865NZBS2iY9ypGREkqpPqGHciCE+FAuhQPEsUjr2AECP575wQ+doQxkp1hUBQAAAABJRU5ErkJggg==">
+	                                            <span>Предоставлено SendPulse</span>
+	                                        </a>
+	                                    </span>
+	            <button class="sendpulse-prompt-btn sendpulse-disallow-btn" type="button">Запретить</button>
+	            <button class="sendpulse-prompt-btn sendpulse-accept-btn" type="button">Разрешить</button>
+	        </div>
+	    </div>
+	    <button class="sendpulse-prompt-close">×</button>
+	</div>
+
+
+		<!-- Content -->
+			<div id="content">
+				<div class="inner">
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<!--
+									Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can also remove the <p> entirely if you don't
+									need a subtitle.
+								-->
+								<h2><a href="#">Welcome to Striped</a></h2>
+								<p>A free, fully responsive HTML5 site template by HTML5 UP</p>
+							</header>
+							<div class="info">
+								<!--
+									Note: The date should be formatted exactly as it's shown below. In particular, the
+									"least significant" characters of the month should be encapsulated in a <span>
+									element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+									Oh, and if you don't need a date for a particular page or post you can simply delete
+									the entire "date" element.
+
+								-->
+								<span class="date"><span class="month">Jul<span>y</span></span> <span class="day">14</span><span class="year">, 2014</span></span>
+								<!--
+									Note: You can change the number of list items in "stats" to whatever you want.
+								-->
+								<ul class="stats">
+									<li><a href="#" class="icon fa-comment">16</a></li>
+									<li><a href="#" class="icon fa-heart">32</a></li>
+									<li><a href="#" class="icon fa-twitter">64</a></li>
+									<li><a href="#" class="icon fa-facebook">128</a></li>
+								</ul>
+							</div>
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<p>
+								<strong>Hello!</strong> You're looking at <strong>Striped</strong>, a fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a>
+								for <a href="http://html5up.net">HTML5 UP</a> It features a clean, minimalistic design, styling for all basic page elements (including blockquotes, tables and lists), a
+								repositionable sidebar (left or right), and HTML5/CSS3 code designed for quick and easy customization (see code comments for details).
+							</p>
+							<p>
+								Striped is released for free under the <a href="http://html5up.net/license">Creative Commons Attribution license</a> so feel free to use it for personal projects
+								or even commercial ones &ndash; just be sure to credit <a href="http://html5up.net">HTML5 UP</a> for the design. If you like what you see here, be sure to check out
+								<a href="http://html5up.net">HTML5 UP</a> for more cool designs or follow me on <a href="http://twitter.com/ajlkn">Twitter</a> for new releases and updates.
+							</p>
+						</article>
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+								<p>Feugiat interdum sed commodo ipsum consequat dolor nullam metus</p>
+							</header>
+							<div class="info">
+								<span class="date"><span class="month">Jul<span>y</span></span> <span class="day">8</span><span class="year">, 2014</span></span>
+								<ul class="stats">
+									<li><a href="#" class="icon fa-comment">16</a></li>
+									<li><a href="#" class="icon fa-heart">32</a></li>
+									<li><a href="#" class="icon fa-twitter">64</a></li>
+									<li><a href="#" class="icon fa-facebook">128</a></li>
+								</ul>
+							</div>
+							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+							<p>
+								Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus.
+								Nunc nulla velit, fermentum quis interdum quis, tate etiam commodo lorem ipsum dolor sit amet dolore.
+								Quisque vel sapien sit amet tellus elementum ultricies. Nunc vel orci turpis. Donec id malesuada metus.
+								Nunc nulla velit, fermentum quis interdum quis, convallis eu sapien. Integer sed ipsum ante.
+							</p>
+						</article>
+
+					<!-- Pagination -->
+						<div class="pagination">
+							<!--<a href="#" class="button previous">Previous Page</a>-->
+							<div class="pages">
+								<a href="#" class="active">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<span>&hellip;</span>
+								<a href="#">20</a>
+							</div>
+							<a href="#" class="button next">Next Page</a>
+						</div>
+
+				</div>
+			</div>
+
+		<!-- Sidebar -->
+			<div id="sidebar">
+
+				<!-- Logo -->
+					<h1 id="logo"><a href="#">STRIPED</a></h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="#">Latest Post</a></li>
+							<li><a href="#">Archives</a></li>
+							<li><a href="#">About Me</a></li>
+							<li><a href="#">Contact Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Search -->
+					<section class="box search">
+						<form method="post" action="#">
+							<input type="text" class="text" name="search" placeholder="Search" />
+						</form>
+					</section>
+
+				<!-- Text -->
+					<section class="box text-style1">
+						<div class="inner">
+							<p>
+								<strong>Striped:</strong> A free and fully responsive HTML5 site
+								template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>
+							</p>
+						</div>
+					</section>
+
+				<!-- Recent Posts -->
+					<section class="box recent-posts">
+						<header>
+							<h2>Recent Posts</h2>
+						</header>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor</a></li>
+							<li><a href="#">Feugiat nisl aliquam</a></li>
+							<li><a href="#">Sed dolore magna</a></li>
+							<li><a href="#">Malesuada commodo</a></li>
+							<li><a href="#">Ipsum metus nullam</a></li>
+						</ul>
+					</section>
+
+				<!-- Recent Comments -->
+					<section class="box recent-comments">
+						<header>
+							<h2>Recent Comments</h2>
+						</header>
+						<ul>
+							<li>case on <a href="#">Lorem ipsum dolor</a></li>
+							<li>molly on <a href="#">Sed dolore magna</a></li>
+							<li>case on <a href="#">Sed dolore magna</a></li>
+						</ul>
+					</section>
+
+				<!-- Calendar -->
+					<section class="box calendar">
+						<div class="inner">
+							<table>
+								<caption>July 2014</caption>
+								<thead>
+									<tr>
+										<th scope="col" title="Monday">M</th>
+										<th scope="col" title="Tuesday">T</th>
+										<th scope="col" title="Wednesday">W</th>
+										<th scope="col" title="Thursday">T</th>
+										<th scope="col" title="Friday">F</th>
+										<th scope="col" title="Saturday">S</th>
+										<th scope="col" title="Sunday">S</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="4" class="pad"><span>&nbsp;</span></td>
+										<td><span>1</span></td>
+										<td><span>2</span></td>
+										<td><span>3</span></td>
+									</tr>
+									<tr>
+										<td><span>4</span></td>
+										<td><span>5</span></td>
+										<td><a href="#">6</a></td>
+										<td><span>7</span></td>
+										<td><span>8</span></td>
+										<td><span>9</span></td>
+										<td><a href="#">10</a></td>
+									</tr>
+									<tr>
+										<td><span>11</span></td>
+										<td><span>12</span></td>
+										<td><span>13</span></td>
+										<td class="today"><a href="#">14</a></td>
+										<td><span>15</span></td>
+										<td><span>16</span></td>
+										<td><span>17</span></td>
+									</tr>
+									<tr>
+										<td><span>18</span></td>
+										<td><span>19</span></td>
+										<td><span>20</span></td>
+										<td><span>21</span></td>
+										<td><span>22</span></td>
+										<td><a href="#">23</a></td>
+										<td><span>24</span></td>
+									</tr>
+									<tr>
+										<td><a href="#">25</a></td>
+										<td><span>26</span></td>
+										<td><span>27</span></td>
+										<td><span>28</span></td>
+										<td class="pad" colspan="3"><span>&nbsp;</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+				<!-- Copyright -->
+					<ul id="copyright">
+						<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
