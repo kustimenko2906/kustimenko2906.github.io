@@ -446,6 +446,7 @@
     top: 10px;
     margin: 0 !important;
     min-height: 1px;
+    color: #333;
 }
 .sendpulse-bar .sendpulse-prompt-message-text,
 .sendpulse-bar .sendpulse-bell-icon,
