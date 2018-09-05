@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+.site-content-wrapper {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
 /* Basic */
 
 	html {
@@ -85,13 +92,6 @@ input, select, textarea {
 	body {
 		background-color: #e8e8e8;
 		background-image: url("images/bg02.png");
-	}
-
-	.site-content-wrapper {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
