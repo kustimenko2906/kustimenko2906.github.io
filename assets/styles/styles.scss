@@ -1,0 +1,399 @@
+$base-font-size: 15px;
+$base-font-family: 'Proxima Nova Rg';
+$bold-font-family: 'Proxima Nova Bold';
+$light-font-family: 'Proxima Nova Light';
+$medium-font-family: 'Proxima Nova Semibold';
+
+$success-color: #a9b533;
+$text-color: #2b2d38;
+$muted-color: #595959;
+$light-color: #f8f8fb;
+$link-color: #23527c;
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+    url('../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+    url('../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../../assets/fonts/ProximaNova-Light/ProximaNova-Light.eot');
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+    url('../../assets/fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/ProximaNova-Light/ProximaNova-Light.woff') format('woff'),
+    url('../../assets/fonts/ProximaNova-Light/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Md';
+    src: url('../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot');
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+    url('../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'),
+    url('../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html, body, p, a, div, span, td, table, tr, th, ul, li,
+ol, h1, h2, h3, h4, h5, h6, small, strong, input,
+select, textarea {
+    font-family: $base-font-family;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($link-color, 6%);
+    }
+}
+
+.container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+}
+
+.btn-success {
+    background-color: $success-color;
+    border-color: $success-color;
+
+    &:hover {
+        background-color: darken($success-color, 6%);
+        border-color: darken($success-color, 6%);
+    }
+}
+
+.page-header-section {
+    min-height: 835px;
+    position: relative;
+    background: url("../../assets/images/top-section-bg.png") no-repeat top center;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -104px;
+        height: 210px;
+        background-color: #fff;
+        -webkit-transform: skewY(-6.25deg);
+        -moz-transform: skewY(-6.25deg);
+        -ms-transform: skewY(-6.25deg);
+        -o-transform: skewY(-6.25deg);
+        transform: skewY(-6.25deg);
+    }
+
+    .navbar {
+        padding: 35px 0;
+        margin-bottom: 92px;
+    }
+
+    .navbar-brand {
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-item {
+            padding-left: 45px;
+            font-size: $base-font-size + 10;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.page-header-section-description {
+    h1 {
+        font-size: 88px;
+        color: #fff;
+        font-family: $bold-font-family;
+        margin-bottom: 18px;
+    }
+
+    p {
+        font-size: 38px;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+
+    .btn-success {
+        min-width: 450px;
+        border-radius: 4px;
+        font-family: $bold-font-family;
+        border-bottom: 3px solid darken($success-color, 6%);
+        font-size: 32px;
+        padding: 1.5rem 2rem;
+    }
+}
+
+.about-text-section {
+    margin: -44px 0 0 0;
+    position: relative;
+    padding-bottom: 130px;
+
+    h2 {
+        color: $text-color;
+        font-family: $bold-font-family;
+        font-size: 60px;
+        margin-bottom: calc(.5rem + 5px);
+    }
+
+    .sub-title-descript {
+        color: $text-color;
+        font-size: 32px;
+        margin-bottom: 70px;
+    }
+
+    &-description {
+        color: $text-color;
+        font-size: 24px;
+        font-family: $light-font-family;
+        margin-bottom: 62px;
+    }
+
+    &-img {
+        margin-bottom: 36px;
+    }
+
+    .btn-outline-success {
+        min-width: 450px;
+        border-radius: 4px;
+        font-family: $bold-font-family;
+        font-size: 32px;
+        padding: 1.5rem 2rem;
+        color: $muted-color;
+        border: 2px solid $success-color;
+
+        &:hover {
+            color: #fff;
+            background-color: $success-color;
+        }
+    }
+}
+
+.help-section {
+    background-color: $light-color;
+    padding: 90px 0 150px;
+
+    h2 {
+        font-size: 60px;
+        color: $text-color;
+        margin-bottom: 138px;
+    }
+
+    &-item {
+        .item-title {
+            font-size: 38px;
+            color: $text-color;
+            font-family: $medium-font-family;
+            margin-bottom: 12px;
+        }
+
+        .icon-wrapper {
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            color: $text-color;
+            font-family: $light-font-family;
+        }
+
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
+.cta-bottom-section {
+    padding: 84px 0 176px;
+
+    .btn-success {
+        font-size: 28px;
+        min-width: 460px;
+    }
+
+    &-img {
+        margin-bottom: 70px;
+    }
+
+    h2 {
+        margin-bottom: 35px;
+        font-size: 60px;
+        color: $text-color;
+        line-height: 54px;
+    }
+
+    p {
+        font-family: $light-font-family;
+        color: $text-color;
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+}
+
+.products-section {
+    background-color: $light-color;
+    padding: 82px 0 128px;
+
+    h2 {
+        font-size: 60px;
+        color: $text-color;
+        margin-bottom: 76px;
+    }
+}
+
+.product-list-item {
+    padding: 0 10px;
+}
+
+.footer-section {
+    background-color: #000;
+    padding: 124px 0;
+    color: #fff;
+
+    .foot-logo {
+        margin-bottom: 12px;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+    .copy-text, .privacy-text {
+        font-size: 16px;
+    }
+
+    .description-text-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .description-text {
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+
+    .footer-social-links {
+        margin-bottom: 24px;
+    }
+
+    .foot-links-title, .foot-nav-links a {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .foot-links-title {
+        margin-bottom: 28px;
+    }
+
+    .footer-section-links {
+        max-width: 790px;
+        flex: 0 0 790px;
+    }
+
+    .foot-contacts-title, .foot-contacts-info {
+        font-size: 19px;
+        color: #fff;
+    }
+
+    .foot-contacts-title {
+        margin-bottom: 22px;
+    }
+
+    .foot-contacts-info {
+        line-height: 24px;
+    }
+}
+
+.footer-social-links {
+
+    > a {
+        display: block;
+        width: 34px;
+        height: 34px;
+        text-decoration: none;
+        margin: 0 0 0 12px;
+        transition-duration: 0.25s;
+        background: url("../../assets/images/social-icons.png") no-repeat;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.fb {
+            background-position: -1px -2px;
+        }
+
+        &.tw {
+            background-position: -49px -2px;
+        }
+
+        &.lk {
+            background-position: -97px -2px;
+        }
+
+        &.vb {
+            background-position: -145px -2px;
+        }
+
+        &.tl {
+            background-position: -192px -2px;
+        }
+
+        &.gp {
+            background-position: -241px -2px;
+        }
+
+        &.ins {
+            width: 36px;
+            height: 36px;
+            background-position: -291px -1px;
+        }
+    }
+}

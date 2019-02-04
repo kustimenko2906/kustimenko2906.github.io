@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url("../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+    src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url("../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
+    src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../../assets/fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url("../../assets/fonts/ProximaNova-Light/ProximaNova-Light.eot");
+    src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../../assets/fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("../../assets/fonts/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Md';
+    src: url("../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+    src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("../../assets/fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+html, body, p, a, div, span, td, table, tr, th, ul, li,
+ol, h1, h2, h3, h4, h5, h6, small, strong, input,
+select, textarea {
+    font-family: "Proxima Nova Rg";
+}
+
+a {
+    color: #23527c;
+    text-decoration: none;
+}
+a:hover {
+    color: #1c4264;
+}
+
+.container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+}
+
+.btn-success {
+    background-color: #a9b533;
+    border-color: #a9b533;
+}
+.btn-success:hover {
+    background-color: #939d2c;
+    border-color: #939d2c;
+}
+
+.page-header-section {
+    min-height: 835px;
+    position: relative;
+    background: url("../../assets/images/top-section-bg.png") no-repeat top center;
+    overflow: hidden;
+}
+.page-header-section:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -104px;
+    height: 210px;
+    background-color: #fff;
+    -webkit-transform: skewY(-6.25deg);
+    -moz-transform: skewY(-6.25deg);
+    -ms-transform: skewY(-6.25deg);
+    -o-transform: skewY(-6.25deg);
+    transform: skewY(-6.25deg);
+}
+.page-header-section .navbar {
+    padding: 35px 0;
+    margin-bottom: 92px;
+}
+.page-header-section .navbar-brand img {
+    display: block;
+    max-width: 100%;
+}
+.page-header-section .navbar-nav .nav-link {
+    color: #fff;
+}
+.page-header-section .navbar-nav .nav-item {
+    padding-left: 45px;
+    font-size: 25px;
+}
+.page-header-section .navbar-nav .nav-item:hover {
+    text-decoration: underline;
+}
+.page-header-section .navbar-nav .nav-item:first-child {
+    padding-left: 0;
+}
+
+.page-header-section-description h1 {
+    font-size: 88px;
+    color: #fff;
+    font-family: "Proxima Nova Bold";
+    margin-bottom: 18px;
+}
+.page-header-section-description p {
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.page-header-section-description .btn-success {
+    min-width: 450px;
+    border-radius: 4px;
+    font-family: "Proxima Nova Bold";
+    border-bottom: 3px solid #939d2c;
+    font-size: 32px;
+    padding: 1.5rem 2rem;
+}
+
+.about-text-section {
+    margin: -44px 0 0 0;
+    position: relative;
+    padding-bottom: 130px;
+}
+.about-text-section h2 {
+    color: #2b2d38;
+    font-family: "Proxima Nova Bold";
+    font-size: 60px;
+    margin-bottom: calc(.5rem + 5px);
+}
+.about-text-section .sub-title-descript {
+    color: #2b2d38;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+.about-text-section-description {
+    color: #2b2d38;
+    font-size: 24px;
+    font-family: "Proxima Nova Light";
+    margin-bottom: 62px;
+}
+.about-text-section-img {
+    margin-bottom: 36px;
+}
+.about-text-section .btn-outline-success {
+    min-width: 450px;
+    border-radius: 4px;
+    font-family: "Proxima Nova Bold";
+    font-size: 32px;
+    padding: 1.5rem 2rem;
+    color: #595959;
+    border: 2px solid #a9b533;
+}
+.about-text-section .btn-outline-success:hover {
+    color: #fff;
+    background-color: #a9b533;
+}
+
+.help-section {
+    background-color: #f8f8fb;
+    padding: 90px 0 150px;
+}
+.help-section h2 {
+    font-size: 60px;
+    color: #2b2d38;
+    margin-bottom: 138px;
+}
+.help-section-item .item-title {
+    font-size: 38px;
+    color: #2b2d38;
+    font-family: "Proxima Nova Semibold";
+    margin-bottom: 12px;
+}
+.help-section-item .icon-wrapper {
+    margin-bottom: 40px;
+}
+.help-section-item p {
+    font-size: 24px;
+    color: #2b2d38;
+    font-family: "Proxima Nova Light";
+}
+.help-section-item a {
+    font-size: 24px;
+}
+
+.cta-bottom-section {
+    padding: 84px 0 176px;
+}
+.cta-bottom-section .btn-success {
+    font-size: 28px;
+    min-width: 460px;
+}
+.cta-bottom-section-img {
+    margin-bottom: 70px;
+}
+.cta-bottom-section h2 {
+    margin-bottom: 35px;
+    font-size: 60px;
+    color: #2b2d38;
+    line-height: 54px;
+}
+.cta-bottom-section p {
+    font-family: "Proxima Nova Light";
+    color: #2b2d38;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.products-section {
+    background-color: #f8f8fb;
+    padding: 82px 0 128px;
+}
+.products-section h2 {
+    font-size: 60px;
+    color: #2b2d38;
+    margin-bottom: 76px;
+}
+
+.product-list-item {
+    padding: 0 10px;
+}
+
+.footer-section {
+    background-color: #000;
+    padding: 124px 0;
+    color: #fff;
+}
+.footer-section .foot-logo {
+    margin-bottom: 12px;
+}
+.footer-section a {
+    color: #fff;
+}
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-section .copy-text, .footer-section .privacy-text {
+    font-size: 16px;
+}
+.footer-section .description-text-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.footer-section .description-text {
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+.footer-section .footer-social-links {
+    margin-bottom: 24px;
+}
+.footer-section .foot-links-title, .footer-section .foot-nav-links a {
+    font-size: 22px;
+    color: #fff;
+}
+.footer-section .foot-links-title {
+    margin-bottom: 28px;
+}
+.footer-section .footer-section-links {
+    max-width: 790px;
+    flex: 0 0 790px;
+}
+.footer-section .foot-contacts-title, .footer-section .foot-contacts-info {
+    font-size: 19px;
+    color: #fff;
+}
+.footer-section .foot-contacts-title {
+    margin-bottom: 22px;
+}
+.footer-section .foot-contacts-info {
+    line-height: 24px;
+}
+
+.footer-social-links > a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    text-decoration: none;
+    margin: 0 0 0 12px;
+    transition-duration: 0.25s;
+    background: url("../../assets/images/social-icons.png") no-repeat;
+}
+.footer-social-links > a:first-child {
+    margin: 0;
+}
+.footer-social-links > a:hover {
+    opacity: 0.8;
+}
+.footer-social-links > a.fb {
+    background-position: -1px -2px;
+}
+.footer-social-links > a.tw {
+    background-position: -49px -2px;
+}
+.footer-social-links > a.lk {
+    background-position: -97px -2px;
+}
+.footer-social-links > a.vb {
+    background-position: -145px -2px;
+}
+.footer-social-links > a.tl {
+    background-position: -192px -2px;
+}
+.footer-social-links > a.gp {
+    background-position: -241px -2px;
+}
+.footer-social-links > a.ins {
+    width: 36px;
+    height: 36px;
+    background-position: -291px -1px;
+}
+
+/*# sourceMappingURL=styles.css.map */
