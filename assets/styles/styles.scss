@@ -716,19 +716,21 @@ table {
     max-width: calc(100% - 90px);
     margin-left: auto;
     margin-right: auto;
+    padding-top: 13px;
 
     .steps-progress {
         height: 9px;
         background-color: #f1f0f5;
         border-top: 1px solid #dfdfe0;
         position: relative;
+        overflow: hidden;
 
         .steps-progress-bar {
             position: absolute;
             left: 0;
             top: 0;
             height: 9px;
-            background-image: linear-gradient(to left, rgba(255,0,0,0), #18a2dc 90%);
+            background-image: linear-gradient(to right, #18a2dc 75%, rgba(24,162,220,0));
         }
     }
 
@@ -790,4 +792,115 @@ table {
 
 .btn-link {
     color: #073873;
+}
+
+.default-link {
+    color: #073873;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.collapse-head-item {
+    border-bottom: 6px solid #50555c;
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+}
+
+.btn-collapse-toggle {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #50555c;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 26px;
+    overflow: hidden;
+    height: 26px;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:after {
+        content: '-';
+        line-height: 22px;
+        font-size: 40px;
+    }
+
+    &.collapsed {
+        &:after {
+            content: '+';
+            line-height: 27px;
+            font-size: 30px;
+        }
+    }
+}
+
+.add-name-link {
+    color: #073873;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    .badge {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        padding: 0;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+        background-color: #073873;
+    }
+}
+
+.table-bordered td, .table-bordered th {
+    border: 2px solid #737373;
+}
+
+.alert.alert-danger {
+    background-color: #f76b6b;
+}
+
+.light-link-styles {
+    text-decoration: underline;
+    color: #3b86ff;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.success-alert-block {
+
+    .badge {
+        padding: 0;
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        background-color: #50c978;
+        border: 2px solid #259a4c;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
 }
