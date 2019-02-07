@@ -64,7 +64,7 @@
     <div class="container">
         <div class="page-heading-steps">
             <div class="steps-progress">
-                <div class="steps-progress-bar" style="width: 90%"></div>
+                <div class="steps-progress-bar" style="width: 62.5%"></div>
             </div>
             <div class="steps-points">
                 <div class="steps-points-item active">
@@ -82,7 +82,7 @@
                     <span class="steps-points-name">Attach Document</span>
                 </div>
 
-                <div class="steps-points-item active">
+                <div class="steps-points-item">
                     <span class="dot"></span>
                     <span class="steps-points-name">Payment Information</span>
                 </div>
@@ -96,187 +96,160 @@
 
         <p class="text-muted text-center mb-0">Filing Case in</p>
         <h3 class="text-muted text-center font-weight-bold mb-1">Eastern District of New York</h3>
-        <p class="h5 text-muted text-center mb-5">
-            Honorable Dora L. Irizarry, Chief Judge     Douglas C. Palmer, Clerk of Court
+        <p class="h5 text-muted text-center font-weight-bold mb-5">
+            Honorable Dora L. Irizarry, Chief Judge &nbsp; &#124; &nbsp; Douglas C. Palmer, Clerk of Court
         </p>
-        <br>
 
         <div class="col-8 offset-2 mb-5">
+            <div class="form-group">
+                <p class="h5 font-weight-bold text-muted">Document Requirements</p>
+                <p class="h5 text-muted">
+                    For new cases you must attach one Case Initiation document. The Civil Case Cover Sheet is
+                    recommended but not required. Please click the Cancel Add button to proceed. For subsequent
+                    filings you must attach one lead document.
+                </p>
+                <p class="h5 font-weight-bold text-muted">Attaching Document Steps:</p>
+                <p class="h5 text-muted">
+                    1. Select a Category to Identify the document <br>
+                    2. Select document type. <br>
+                    3. Add meta data information for the Court.
+                </p>
+                <ol type="a">
+                    <li class="h5 text-muted">
+                        Title field is the name of the document that is transmitted to the Court and can be edited.
+                    </li>
+                    <li class="h5 text-muted">
+                        Depending upon the document type, you may be prompted to provide Additional information  that appears after Title.
+                    </li>
+                    <li class="h5 text-muted">
+                        Depending on which documents you are attaching, an email address may be required for filers.
+                    </li>
+                </ol>
+                <p class="text-muted h5">
+                    4. Locate the document by clicking on Browse. <br>
+                    5. Upload the document by clicking on Attach.
+                </p>
+            </div>
+
             <form class="mb-5">
                 <div class="form-group">
-                    <h4 class="text-muted font-weight-bold mb-0">Billing Address</h4>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Address *</label>
-
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">City *</label>
-                        <input type="text" class="form-control form-control-lg" id="inputCity">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">State *</label>
-                        <select class="form-control form-control-lg">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Zip *</label>
-                        <input type="text" class="form-control form-control-lg">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <h4 class="font-weight-bold text-muted mb-0">Payment Information</h4>
-                </div>
-
-                <div class="form-group">
                     <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">
-                        Payment Type *
+                        Document Type
                     </label>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3" checked>
                         <label class="form-check-label text-muted" for="exampleRadios3">
-                            Credit Card
+                            Main Document
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option4">
                         <label class="form-check-label text-muted" for="exampleRadios4">
-                            Checking Account
+                            Additional Document
                         </label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">First Name *</label>
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Category *</label>
+                    <select class="form-control form-control-lg">
+                        <option>Select role...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Document Type *</label>
+                    <select class="form-control form-control-lg">
+                        <option>Select role...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Title *</label>
 
                     <input type="text" class="form-control form-control-lg">
                 </div>
 
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Last Name *</label>
-
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Credit Card Number *</label>
-
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Security Code *</label>
-
-                    <div class="form-inline">
-                        <input type="text" class="form-control form-control-lg">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Expiration Date *</label>
+                <div class="form-group mb-5">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Attach File  *</label>
 
                     <div class="form-row">
-                        <div class="col-2">
-                            <select class="form-control form-control-lg">
-                                <option>Month</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                            </select>
+                        <div class="col-10">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input form-control-lg" id="validatedCustomFile" required>
+                                <label class="custom-file-label form-control-lg rounded-0" for="validatedCustomFile"></label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
                         </div>
+
                         <div class="col-2">
-                            <select class="form-control form-control-lg">
-                                <option>Year</option>
-                                <option>2019</option>
-                                <option>2018</option>
-                                <option>2017</option>
-                                <option>2016</option>
-                                <option>2015</option>
-                            </select>
+                            <button class="btn btn-lg btn-outline-dark w-100">Attach</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <h4 class="text-muted font-weight-bold mb-0">Fee Information</h4>
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Attached Document List</label>
+
+
+                    <div class="position-relative has-right-icon">
+                        <button class="btn-link btn position-absolute search-icon">&nbsp;</button>
+                        <input type="text" class="form-control form-control-lg" placeholder="Search document category and name">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <div class="alert alert-danger text-white rounded-0 border-0" role="alert">
-                        WARNING
-                    </div>
-                    <p class="text-muted">
-                        There may be fees associated to your filing. Please be sure to put in an amount not
-                        to exceed to cover any and all fees. If your filing fees exceed this amount, then your
-                        filing will be automatically rejected.
-                    </p>
-                    <p class="text-muted">
-                        Below are a few more commonly used fees: <br>
-                        - New Case $435 <br>
-                        - Motion $60
-                    </p>
-
-                    <p>
-                        If you are unsure of the amount you need to put, please view: <br>
-                        <a class="light-link-styles" href="#">Court Fee Schedule</a>
-                    </p>
-
-                    <table class="table-borderless table">
+                    <table class="table table-striped">
+                        <thead>
                         <tr>
-                            <td class="h5 text-muted pl-0 py-4">eFiling Portal Service Fees</td>
-                            <td class="text-right  h5 text-muted py-4">$9.95</td>
+                            <td class="border-top-0 text-nowrap pt-0">Attach Type</td>
+                            <td class="border-top-0 text-muted pt-0">Name</td>
+                            <td class="border-top-0 text-muted pt-0">Title</td>
+                            <td class="border-top-0 text-muted pt-0">Type</td>
+                            <td class="border-top-0 text-muted pt-0 text-nowrap">Size (kb)</td>
+                            <td class="border-top-0 text-muted pt-0"></td>
+                        </tr>
+                        </thead>
+                        <tbody class="table-bordered">
+                        <tr>
+                            <td class="py-2 align-middle">Lead Document</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">pdf</td>
+                            <td class="py-2 text-muted align-middle">65kb</td>
+                            <td class="py-2 text-muted text-nowrap align-middle">
+                                <a href="#" class="default-link px-1">Edit</a>
+                                <a href="#" class="default-link px-1">Delete</a>
+                                <a href="#" class="default-link px-1">View</a>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="h5 text-muted font-weight-bold pl-0">Total Filing Cost</td>
-                            <td class="text-right h5 text-muted font-weight-bold">$9.95</td>
+                            <td class="py-2 align-middle">Lead Document</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">pdf</td>
+                            <td class="py-2 text-muted align-middle">65kb</td>
+                            <td class="py-2 text-muted text-nowrap align-middle">
+                                <a href="#" class="default-link px-1">Edit</a>
+                                <a href="#" class="default-link px-1">Delete</a>
+                                <a href="#" class="default-link px-1">View</a>
+                            </td>
                         </tr>
+                        </tbody>
                     </table>
-
-                    <p class="text-muted">
-                        <strong>Note:</strong> The above filing fee is only an estimate and may be adjusted by the Court
-                        Clerk. The following <strong>"Do Not Exceed"</strong> value will set a maximum charge for your
-                        filing. However, if your adjusted filing fees exceed this value, then your filing will be
-                        automatically rejected.
-                    </p>
                 </div>
 
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Do Not Exceed *</label>
-
-                    <div class="form-inline">
-                        <input type="text" class="form-control form-control-lg">
-                    </div>
-                </div>
-                
                 <div class="form-group">
                     <div class="row">
                         <div class="col-6">
                             <button class="btn btn-lg btn-outline-dark">Save</button>
                             <button class="btn btn-lg btn-link">Cancel</button>
                         </div>
-
                         <div class="col-6 text-right">
-                            <button class="btn btn-lg btn-success" type="submit">Continue</button>
+                            <button class="btn btn-lg btn-light text-white px-4" type="submit">Continue</button>
                         </div>
                     </div>
-
                 </div>
             </form>
         </div>
@@ -350,10 +323,33 @@
     </footer>
 </div>
 
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content rounded-0">
+            <div class="modal-header align-items-center pb-0 border-bottom-0">
+                <h5 class="modal-title h4" id="myLargeModalLabel">Document View</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="h1 m-0" aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="mx-auto d-block img-fluid" src="assets/images/document-view.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="dist/scripts/jquery-3.3.1.min.js"></script>
 <script src="dist/scripts/popper.min.js"></script>
 <script src="dist/scripts/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('#myModal').modal('show');
+    });
+</script>
 </body>
 </html>

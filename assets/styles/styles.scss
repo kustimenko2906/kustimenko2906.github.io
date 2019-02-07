@@ -882,8 +882,11 @@ table {
     }
 }
 
-.success-alert-block {
+.btn-light {
+    background-color: #bcbcbc;
+}
 
+.success-alert-block {
     .badge {
         padding: 0;
         width: 52px;
@@ -902,5 +905,44 @@ table {
             top: 50%;
             transform: translate3d(-50%, -50%, 0);
         }
+    }
+}
+
+.custom-file-input {
+    &.form-control-lg {
+
+    }
+}
+
+.custom-file-label.form-control-lg {
+    height: calc(2.875rem + 2px);
+    padding: .5rem 1rem;
+    border-color: #707070;
+
+    &:after {
+        height: 2.875rem;
+        padding: .5rem 1rem;
+        border-color: #707070;
+        background-color: transparent;
+    }
+}
+
+.custom-file-input.form-control-lg {
+    height: calc(2.875rem + 2px);
+    padding: .5rem 1rem;
+}
+
+.has-right-icon {
+    .form-control {
+        padding-left: 52px;
+    }
+
+    .search-icon {
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("../../assets/images/search-icon.png") no-repeat center / 20px;
+        z-index: 10;
+        text-decoration: none;
     }
 }

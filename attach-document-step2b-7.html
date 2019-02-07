@@ -64,7 +64,7 @@
     <div class="container">
         <div class="page-heading-steps">
             <div class="steps-progress">
-                <div class="steps-progress-bar" style="width: 12.5%"></div>
+                <div class="steps-progress-bar" style="width: 62.5%"></div>
             </div>
             <div class="steps-points">
                 <div class="steps-points-item active">
@@ -72,12 +72,12 @@
                     <span class="steps-points-name">Court Information</span>
                 </div>
 
-                <div class="steps-points-item">
+                <div class="steps-points-item active">
                     <span class="dot"></span>
                     <span class="steps-points-name">Parties Information</span>
                 </div>
 
-                <div class="steps-points-item">
+                <div class="steps-points-item active">
                     <span class="dot"></span>
                     <span class="steps-points-name">Attach Document</span>
                 </div>
@@ -93,104 +93,168 @@
                 </div>
             </div>
         </div>
-        <div class="col-8 offset-2">
-            <p class="text-muted text-center mb-0">Filing Case in</p>
-            <h3 class="text-muted text-center font-weight-bold mb-5">Eastern District of New York</h3>
+
+        <p class="text-muted text-center mb-0">Filing Case in</p>
+        <h3 class="text-muted text-center font-weight-bold mb-1">Eastern District of New York</h3>
+        <p class="h5 text-muted text-center font-weight-bold mb-5">
+            Honorable Dora L. Irizarry, Chief Judge &nbsp; &#124; &nbsp; Douglas C. Palmer, Clerk of Court
+        </p>
+
+        <div class="col-8 offset-2 mb-5">
+            <div class="form-group">
+                <p class="h5 font-weight-bold text-muted">Document Requirements</p>
+                <p class="h5 text-muted">
+                    For new cases you must attach one Case Initiation document. The Civil Case Cover Sheet is
+                    recommended but not required. Please click the Cancel Add button to proceed. For subsequent
+                    filings you must attach one lead document.
+                </p>
+                <p class="h5 font-weight-bold text-muted">Attaching Document Steps:</p>
+                <p class="h5 text-muted">
+                    1. Select a Category to Identify the document <br>
+                    2. Select document type. <br>
+                    3. Add meta data information for the Court.
+                </p>
+                <ol type="a">
+                    <li class="h5 text-muted">
+                        Title field is the name of the document that is transmitted to the Court and can be edited.
+                    </li>
+                    <li class="h5 text-muted">
+                        Depending upon the document type, you may be prompted to provide Additional information  that appears after Title.
+                    </li>
+                    <li class="h5 text-muted">
+                        Depending on which documents you are attaching, an email address may be required for filers.
+                    </li>
+                </ol>
+                <p class="text-muted h5">
+                    4. Locate the document by clicking on Browse. <br>
+                    5. Upload the document by clicking on Attach.
+                </p>
+            </div>
+
             <form class="mb-5">
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Case Type</label>
-                    <select class="form-control form-control-lg">
-                        <option>Civil</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Court Location *</label>
-                    <select class="form-control form-control-lg">
-                        <option>Central Islip 100 Federal Plaza Central Islip, NY 11722</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Available Events</label>
-                    <select class="form-control form-control-lg">
-                        <option>Complaint</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">
-                        Are you an attorney representing a litigant? *
-                    </label>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label text-muted" for="exampleRadios1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label text-muted" for="exampleRadios2">
-                            No
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">
-                        Is this a "Complex Litigation" case type? *
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">
+                        Document Type
                     </label>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3" checked>
                         <label class="form-check-label text-muted" for="exampleRadios3">
-                            Yes
+                            Main Document
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option4">
                         <label class="form-check-label text-muted" for="exampleRadios4">
-                            No
+                            Additional Document
                         </label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Case Title</label>
-                    <input type="text" class="form-control form-control-lg" value="">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Category *</label>
+                    <select class="form-control form-control-lg">
+                        <option>Select role...</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Case Number</label>
-                    <input type="text" class="form-control form-control-lg" value="">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Document Type *</label>
+                    <select class="form-control form-control-lg">
+                        <option>Select role...</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Client/Matter Information</label>
-                    <input type="text" class="form-control form-control-lg" value="">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Title *</label>
+
+                    <input type="text" class="form-control form-control-lg">
                 </div>
 
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold">Message to the Clerk</label>
-                    <textarea type="text" class="form-control form-control-lg" rows="6"></textarea>
-                </div>
+                <div class="form-group mb-5">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Attach File  *</label>
 
-                <div class="form-group">
                     <div class="form-row">
+                        <div class="col-10">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input form-control-lg" id="validatedCustomFile" required>
+                                <label class="custom-file-label form-control-lg rounded-0" for="validatedCustomFile"></label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <button class="btn btn-lg btn-outline-dark w-100">Attach</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label col-form-label-lg text-muted font-weight-bold pt-0">Attached Document List</label>
+
+
+                    <div class="position-relative has-right-icon">
+                        <button class="btn-link btn position-absolute search-icon">&nbsp;</button>
+                        <input type="text" class="form-control form-control-lg" placeholder="Search document category and name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <td class="border-top-0 text-nowrap pt-0">Attach Type</td>
+                            <td class="border-top-0 text-muted pt-0">Name</td>
+                            <td class="border-top-0 text-muted pt-0">Title</td>
+                            <td class="border-top-0 text-muted pt-0">Type</td>
+                            <td class="border-top-0 text-muted pt-0 text-nowrap">Size (kb)</td>
+                            <td class="border-top-0 text-muted pt-0"></td>
+                        </tr>
+                        </thead>
+                        <tbody class="table-bordered">
+                        <tr>
+                            <td class="py-2 align-middle">Lead Document</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">pdf</td>
+                            <td class="py-2 text-muted align-middle">65kb</td>
+                            <td class="py-2 text-muted text-nowrap align-middle">
+                                <a href="#" class="default-link px-1">Edit</a>
+                                <a href="#" class="default-link px-1">Delete</a>
+                                <a href="#" class="default-link px-1">View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 align-middle">Lead Document</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">Petition for Writ of Mandate</td>
+                            <td class="py-2 text-muted align-middle">pdf</td>
+                            <td class="py-2 text-muted align-middle">65kb</td>
+                            <td class="py-2 text-muted text-nowrap align-middle">
+                                <a href="#" class="default-link px-1">Edit</a>
+                                <a href="#" class="default-link px-1">Delete</a>
+                                <a href="#" class="default-link px-1">View</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
                         <div class="col-6">
-                            <button class="btn btn-lg btn-outline-dark mr-3">Save</button>
+                            <button class="btn btn-lg btn-outline-dark">Save</button>
                             <button class="btn btn-lg btn-link">Cancel</button>
                         </div>
                         <div class="col-6 text-right">
-                            <button class="btn btn-lg btn-success">Continue</button>
+                            <button class="btn btn-lg btn-light text-white px-4" type="submit">Continue</button>
                         </div>
                     </div>
                 </div>
             </form>
-            <br>
-            <br>
         </div>
+        <br>
+        <br>
     </div>
 </div>
 
