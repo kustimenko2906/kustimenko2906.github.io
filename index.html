@@ -58,7 +58,7 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-link text-muted btn-host-event">Host an event</button>
+                <button type="button" class="btn btn-link text-muted btn-host-event" data-toggle="modal" data-target="#hostModal">Host an event</button>
                 <a href="#" class="btn btn-link">login</a>
             </form>
         </div>
@@ -72,7 +72,10 @@
                     Unique job opportunities are hidden in your community. <br>
                     Joobilix helps you ﬁnd them, EASY.
                 </h1>
-                <button type="button" class="btn btn-success btn-lg text-white font-weight-bold btn-rounded">Host an event</button>
+                <button type="button" class="btn btn-success btn-lg text-white font-weight-bold btn-rounded"
+                        data-toggle="modal" data-target="#hostModal">
+                    Host an event
+                </button>
             </div>
         </div>
     </div>
@@ -178,7 +181,7 @@
             When is your next <br> recruitment event?
         </h2>
         <p class="text-center text-white">Make sure you get the best out of it!</p>
-        <button type="button" class="btn btn-lg btn-white btn-rounded">Host an event</button>
+        <button type="button" class="btn btn-lg btn-white btn-rounded" data-toggle="modal" data-target="#hostModal">Host an event</button>
     </div>
 </section>
 
@@ -220,7 +223,7 @@
                 </p>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-5 text-center text-lg-right">
-                <button type="button" class="btn btn-info btn-lg btn-rounded">Join Joobilix</button>
+                <button type="button" class="btn btn-info btn-lg btn-rounded" data-toggle="modal" data-target="#joinModal">Join Joobilix</button>
             </div>
         </div>
     </div>
@@ -260,6 +263,84 @@
     </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade modal-host-form" id="hostModal" tabindex="-1" role="dialog" aria-labelledby="hostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 flex-column align-items-center">
+                <img src="assets/images/logo-icon.svg" class="d-block img-fluid mx-auto mb-3" alt="">
+                <img src="assets/images/logo-text.svg" class="d-block img-fluid mx-auto mb-3" alt="">
+                <p class="modal-header-text mb-0 text-center">host an event on Joobilix</p>
+            </div>
+            <div class="modal-body">
+                <form class="mx-auto" action="/">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">First Name*</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Type...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last name*</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Type...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail5">Email*</label>
+                            <input type="text" class="form-control" id="inputEmail5" placeholder="Type...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword5">Company name</label>
+                            <input type="text" class="form-control" id="inputPassword5" placeholder="Type...">
+                        </div>
+                    </div>
+                    <div class="form-group text-center pt-5">
+                        <button type="submit" class="btn btn-rounded btn-success font-weight-bold">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-host-form" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 flex-column align-items-center">
+                <img src="assets/images/logo-icon.svg" class="d-block img-fluid mx-auto mb-3" alt="">
+                <img src="assets/images/logo-text.svg" class="d-block img-fluid mx-auto mb-3" alt="">
+                <p class="modal-header-text mb-0 text-center">I want to hear about recruitment <br> events on Joobilix</p>
+            </div>
+            <div class="modal-body">
+                <form class="mx-auto" action="/">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail6">First Name*</label>
+                            <input type="text" class="form-control" id="inputEmail6" placeholder="Type...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword6">Last name*</label>
+                            <input type="text" class="form-control" id="inputPassword6" placeholder="Type...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail7">Email*</label>
+                            <input type="text" class="form-control" id="inputEmail7" placeholder="Type...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword7">Company name</label>
+                            <input type="text" class="form-control" id="inputPassword7" placeholder="Type...">
+                        </div>
+                    </div>
+                    <div class="form-group text-center pt-3">
+                        <button type="submit" class="btn btn-rounded btn-success font-weight-bold mt-1">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
