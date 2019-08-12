@@ -53,15 +53,32 @@ function initLogoSlider() {
 $(document).ready(function () {
     menuFixed();
 
+    $('#fullpage').fullpage({
+        controlArrows: true,
+        verticalCentered: false,
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: false,
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        afterResize: function(){
+
+        },
+    });
+
+    $('#moveSectionDown').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+    });
+
     $(window).scroll(function () {
         menuFixed();
     });
 
-    $('.js-testimonials-carousel').slick({
+    $('.js-top-section-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: false,
         pauseOnHover: false,
@@ -79,11 +96,11 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: ($($.attr(this, 'href')).offset().top) - 60
-        }, 500);
-    });
+    // $(document).on('click', 'a[href^="#"]', function (event) {
+    //     event.preventDefault();
+    //
+    //     $('html, body').animate({
+    //         scrollTop: ($($.attr(this, 'href')).offset().top) - 60
+    //     }, 500);
+    // });
 });

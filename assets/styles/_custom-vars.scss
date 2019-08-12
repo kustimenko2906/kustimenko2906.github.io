@@ -1,10 +1,14 @@
-$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-base: $font-family-sans-serif !default;
 
-$base-font-size: 20px;
+$font-size-base: 0.875rem;
+$sub-font-family: 'Roboto Slab', sans-serif;
+
 
 //theme color vars
-$green:   #28cac3 !default;
-$cyan:    #2cb0fe !default;
-$text-muted: #5f677e;
-$color-dark: #363a47;
+//$green:   #28cac3 !default;
+$cyan:    #00C6D7 !default;
+//$text-muted: #5f677e;
+$color-dark: #303030;
+$color-bg: #EEEEEE;
+
