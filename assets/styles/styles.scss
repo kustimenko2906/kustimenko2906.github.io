@@ -165,13 +165,363 @@
         padding: 0 100px;
     }
 
-    img {
-        max-height: calc(100vh - 160px);
-    }
-
-
     p {
         line-height: 22px;
         max-width: 490px;
+    }
+
+    .block-invest-logo {
+        left: 0;
+        top: 0;
+    }
+}
+
+.jqvmap-pin {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    margin-left: -11.3%;
+    margin-top: -5%;
+    max-width: 100px;
+
+    strong {
+        font-size: 12px;
+        display: block;
+    }
+
+    &#jqvmap1_26_pin {
+        margin-top: -6.5%;
+    }
+
+    &#jqvmap1_21_pin {
+        margin-left: -12%;
+        margin-top: -4.3%;
+    }
+
+    &#jqvmap1_43_pin {
+        margin-left: -12.9%;
+    }
+}
+
+.region-view-row {
+    .region-view-col {
+        &.map-col {
+            max-width: 694px;
+            flex: 0 0 694px;
+        }
+
+        &.info-col {
+            margin-left: 86px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-tabs {
+            flex-direction: column;
+            max-width: 270px;
+            flex: 0 0 270px;
+            margin-right: 46px;
+            border-bottom: none;
+
+            .nav-link {
+                border: none;
+                border-left: 4px solid transparent;
+                line-height: 22px;
+                font-size: 18px;
+                color: $color-dark;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                padding: 0 0 0 19px;
+
+                &:hover {
+                    color: $cyan;
+                }
+
+                &.active {
+                    color: $cyan;
+                    background-color: transparent;
+                    border-left-color: $cyan;
+                    font-weight: bold;
+                }
+
+            }
+
+            .nav-item.show .nav-link {
+                color: $cyan;
+                background-color: transparent;
+                border-left-color: $cyan;
+            }
+
+            .nav-item {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .region-map-block {
+        height: 627px;
+        max-height: calc(100vh - 160px);
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        padding: 120px 40px 40px 140px;
+
+        .region-name {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: $sub-font-family;
+            line-height: 47px;
+            margin-bottom: 60px;
+
+            small {
+                font-size: 36px;
+                font-weight: 300;
+            }
+        }
+
+        .region-characteristics {
+            width: auto;
+            margin-bottom: 72px;
+
+            td {
+                padding: 0;
+                font-size: 32px;
+                font-family: $sub-font-family;
+                padding-left: 27px;
+                padding-top: 12px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            tr:first-child {
+                td {
+                    padding-top: 0;
+                }
+            }
+
+            small {
+                font-size: 16px;
+                display: block;
+                font-family: $font-family-base;
+                margin-bottom: -10px;
+            }
+        }
+    }
+}
+
+.section-region-view {
+    .content-inner-holder {
+        padding: 90px 100px 0;
+    }
+
+    .block-invest-logo {
+        left: 0;
+        top: 0;
+    }
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(100%, 0px);
+}
+
+.modal.show {
+    display: flex !important;
+    .modal-dialog {
+        transform: none;
+    }
+}
+
+.modal-dialog {
+    max-width: 960px;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    margin-left: auto;
+
+    .close {
+        position: absolute;
+        left: 34px;
+        top: 23px;
+        color: #fff;
+        z-index: 12;
+        opacity: 1;
+        font-size: 38px;
+        font-weight: 300;
+    }
+
+    .modal-body {
+        padding: 0 80px;
+    }
+
+    .card {
+        margin-top: -100px;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        position: relative;
+        z-index: 15;
+
+        .card-body {
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            padding: 40px 50px;
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+        .card-title {
+            font-size: 40px;
+            font-family: $sub-font-family;
+            margin-bottom: 36px;
+            font-weight: bold;
+        }
+    }
+
+    .modal-content {
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        outline: 0;
+        max-height: 100vh;
+        overflow-y: auto;
+        padding-top: 58%;
+        position: relative;
+        padding-bottom: 28px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 58%;
+            background: url("../../assets/images/modal-bg.png") no-repeat top center / cover;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.btn {
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.region-card-info {
+    position: relative;
+    padding-right: 26px;
+    display: inline-block;
+
+    .card-units {
+        position: absolute;
+        transform: rotate(90deg);
+        color: $cyan;
+        font-size: 18px;
+        right: -28px;
+        top: 82px;
+    }
+
+    &-number {
+        color: $cyan;
+        font-weight: 300;
+        font-size: 180px;
+        line-height: 134px;
+        margin-left: -6px;
+    }
+
+    small {
+        font-size: 18px;
+        color: $cyan;
+        line-height: 24px;
+        display: block;
+        margin-bottom: 16px;
+    }
+}
+
+.section-region-slider {
+    position: absolute;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+
+    .slick-list {
+        margin: 0 -5px;
+    }
+
+    .card {
+        margin: 0 5px;
+        border: none;
+        border-radius: 0;
+        background: linear-gradient(117.76deg, #FFFFFF 0%, #EEEEEE 100%);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+        height: 200px;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        justify-content: space-between;
+    }
+    .slick-slide.slick-active.slick-current {
+        .card {
+            background: #FFE300;
+        }
+    }
+
+    .reg-export-unit {
+        font-size: 60px;
+        position: relative;
+        line-height: 46px;
+
+        &:before {
+            content: '$';
+            position: absolute;
+            left: -12px;
+            top: -12px;
+            font-size: 22px;
+        }
+
+        small {
+            position: absolute;
+            font-size: 16px;
+            font-weight: 300;
+            transform: rotate(270deg);
+            right: -12px;
+            letter-spacing: -0.02em;
+            bottom: 100%;
+            margin-bottom: 30px;
+            line-height: 14px;
+        }
+    }
+
+    .table {
+        margin: 0;
+
+        td {
+            padding: 0;
+            vertical-align: middle;
+        }
+    }
+
+    .card-reg-name {
+        font-family: $sub-font-family;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+
+        strong {
+            font-weight: bold;
+            font-size: 28px;
+        }
     }
 }

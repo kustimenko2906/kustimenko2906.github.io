@@ -9,8 +9,9 @@
     <link rel="shortcut icon" type="image/png" href="https://kustimenko2906.github.io/favicon.png"/>
 
     <!-- Font include -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300, 400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <!-- Theme styles -->
+    <link rel="stylesheet" href="dist/css/jqvmap.css">
     <link rel="stylesheet" href="dist/css/styles.css">
     <title>Чемпіонат України по інвестиціям</title>
 </head>
@@ -48,7 +49,7 @@
     </div>
 </nav>
 <div id="fullpage">
-    <div class="section active align-top" id="section0">
+    <div class="section align-top" id="section0">
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder bg-white">
                 <div class="row">
@@ -85,7 +86,10 @@
     </div>
     <div class="section section-map" id="section1">
         <div class="container-fluid page-section-holder">
-            <div class="content-inner-holder d-flex align-items-center">
+            <div class="content-inner-holder d-flex align-items-center position-relative">
+                <div class="block-invest-logo position-absolute">
+                    <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
+                </div>
                 <div class="row align-items-center w-100 mx-0">
                     <div class="col-lg-4">
                         <p>
@@ -98,13 +102,323 @@
                         </p>
                     </div>
                     <div class="col-lg-8">
-                        <img class="d-block img-fluid mx-auto" src="assets/images/map-exmpl.svg" alt="">
+                        <div id="vmap" style="width: 100%; height: 648px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-region-view align-top position-relative" id="section2">
+        <div class="container-fluid page-section-holder">
+            <div class="content-inner-holder position-relative">
+                <div class="block-invest-logo position-absolute">
+                    <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
+                </div>
+                <div class="region-view-row d-flex flex-column flex-lg-row">
+                    <div class="region-view-col map-col">
+                        <div class="region-map-block" style="background: url('assets/images/regions/zhytomyr.png')">
+                            <div class="region-name">
+                                Житомирська <br>
+                                <small>область</small>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-borderless region-characteristics">
+                                    <tr>
+                                        <td>
+                                            <small>Площа, тис. кв. км.:</small>
+                                            20.2
+                                        </td>
+                                        <td>
+                                            <small>Населення, млн. чол.:</small>
+                                            1048
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <small>&#9679; Обласний центр</small>
+                                            Житомир &ndash;
+                                        </td>
+                                        <td>
+                                            <small>Населення, млн. чол.: </small>
+                                            1,4
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button class="btn btn-info" type="button" data-toggle="modal" data-target="#regionInfoModal">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="region-view-col info-col">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="feature-tab-1" data-toggle="tab" href="#feature-panel-1" role="tab"
+                                   aria-controls="home" aria-selected="true">
+                                    Приток капитальных инвестиций
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-2" data-toggle="tab" href="#feature-panel-2" role="tab"
+                                   aria-controls="profile" aria-selected="false">Експорт за год</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-3" data-toggle="tab" href="#feature-panel-3" role="tab"
+                                   aria-controls="contact" aria-selected="false">Средняя зарплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-4" data-toggle="tab" href="#feature-panel-4" role="tab"
+                                   aria-controls="contact" aria-selected="false">
+                                    Присутствие крупных мировых компаний
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-5" data-toggle="tab" href="#feature-panel-5" role="tab"
+                                   aria-controls="contact" aria-selected="false">
+                                    Вновь открытые в 2017-18 году крупные предприятия
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-6" data-toggle="tab" href="#feature-panel-6" role="tab"
+                                   aria-controls="contact" aria-selected="false">
+                                    Бюджет развития в расчете на душу населения
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-7" data-toggle="tab" href="#feature-panel-7" role="tab"
+                                   aria-controls="contact" aria-selected="false">
+                                    Рост экономики региона в 2018 году
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="feature-tab-8" data-toggle="tab" href="#feature-panel-8" role="tab"
+                                   aria-controls="contact" aria-selected="false">Логистика</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="feature-panel-1" role="tabpanel" aria-labelledby="feature-tab-1">
+                               <div class="feature-region-info">
+                                   <div class="animate-icons-wrap">
+                                       <img class="d-block mb-5" src="assets/images/animate-icons/money.svg" alt="">
+                                   </div>
+                                   <div class="region-card-info">
+                                       <div class="card-units">тыс. грн</div>
+                                       <small>
+                                           на душу населения <br>
+                                           за последний год
+                                       </small>
+                                       <div class="region-card-info-number">
+                                           8,4
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="tab-pane fade" id="feature-panel-2" role="tabpanel" aria-labelledby="feature-tab-2">2</div>
+                            <div class="tab-pane fade" id="feature-panel-3" role="tabpanel" aria-labelledby="feature-tab-3">3</div>
+                            <div class="tab-pane fade" id="feature-panel-4" role="tabpanel" aria-labelledby="feature-tab-4">4</div>
+                            <div class="tab-pane fade" id="feature-panel-5" role="tabpanel" aria-labelledby="feature-tab-5">5</div>
+                            <div class="tab-pane fade" id="feature-panel-6" role="tabpanel" aria-labelledby="feature-tab-6">6</div>
+                            <div class="tab-pane fade" id="feature-panel-7" role="tabpanel" aria-labelledby="feature-tab-7">7</div>
+                            <div class="tab-pane fade" id="feature-panel-8" role="tabpanel" aria-labelledby="feature-tab-8">8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-region-slider js-section-region-slider">
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Івано-Франківська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Запорізька</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Кіровоградська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Харківська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Чернігівська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Тернопільська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        900
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade right" id="regionInfoModal" tabindex="-1" role="dialog" aria-labelledby="regionInfoModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Про область</h5>
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                        Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                        шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается
+                        при простой дубликации "Здесь ваш текст.. <br><br>
+
+                        Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы
+                        HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым
+                        словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего
+                        настоящего рождения. <br><br>
+
+                        За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились
+                        по ошибке, некоторые - намеренно (например, юмористические варианты).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
@@ -116,8 +430,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+        charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
 <script src="assets/scripts/libs/slick.min.js"></script>
 <script src="assets/scripts/libs/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/jquery.vmap.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/jquery.vmap.ukraine.js" charset="utf-8"></script>
 <script src="assets/scripts/theme-scripts.js"></script>
 </body>
 </html>
