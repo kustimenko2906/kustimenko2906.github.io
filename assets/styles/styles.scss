@@ -705,10 +705,23 @@
     -ms-animation: fadeIn ease 1.5s;
 }
 
+.jqvmap-zoomin, .jqvmap-zoomout {
+    border-radius: 0;
+    padding: 3px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+}
+
+.jqvmap-zoomout {
+    top: 34px;
+}
+
 .section-last {
     .block-invest-logo {
-        left: 0;
-        top: 0;
+        left: 30px;
+        top: 28px;
         z-index: 1;
     }
 

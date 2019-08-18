@@ -1,54 +1,42 @@
 var widthW = $(window).width(), heightW = $(window).height();
 
-function menuFixed() {
-    var z = $('.js-navbar-fixed'),
-        c = 'has-scroll';
-
-    if (($(window).scrollTop() > 0) && ($(window).width() >= 992)) {
-        z.addClass(c);
-    }
-    else {
-        z.removeClass(c);
-    }
-}
-
-function initLogoSlider() {
-    if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
-        $('.js-logo-list-slider').slick({
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            dots: false,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    } else {
-        if ($('.js-logo-list-slider').hasClass('slick-initialized')){
-            if($(window).width() != widthW && $(window).height() != heightW){
-                $('.js-logo-list-slider').slick('unslick');
-            }
-        }
-    }
-}
+// function initLogoSlider() {
+//     if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
+//         $('.js-logo-list-slider').slick({
+//             infinite: true,
+//             slidesToShow: 5,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 3000,
+//             pauseOnHover: false,
+//             pauseOnFocus: false,
+//             dots: false,
+//             arrows: false,
+//             responsive: [
+//                 {
+//                     breakpoint: 768,
+//                     settings: {
+//                         slidesToShow: 3,
+//                         slidesToScroll: 1
+//                     }
+//                 },
+//                 {
+//                     breakpoint: 480,
+//                     settings: {
+//                         slidesToShow: 2,
+//                         slidesToScroll: 1
+//                     }
+//                 }
+//             ]
+//         });
+//     } else {
+//         if ($('.js-logo-list-slider').hasClass('slick-initialized')){
+//             if($(window).width() != widthW && $(window).height() != heightW){
+//                 $('.js-logo-list-slider').slick('unslick');
+//             }
+//         }
+//     }
+// }
 
 function removeClass() {
     var cl =  $('.bg-panel').attr("class").split(" ");
@@ -91,9 +79,9 @@ function animateSvg(id) {
     } else {
         new Vivus(id,   {
             type: "scenario-sync",
-            duration: 10,
+            duration: 20,
             start: "inViewport",
-            dashGap: 10,
+            dashGap: 20,
             forceRender: false
         });
     }
@@ -103,6 +91,14 @@ function reinitSlider(e) {
     setTimeout(function(){
         $(e).slick('setPosition');
     }, 1000);
+}
+
+function regionLoad(id) {
+    $('#region-loaded').load("ajax/"+id+".html", function(responseTxt, statusTxt, xhr){
+        if(statusTxt == "success") {
+            console.log("External content loaded successfully!");
+        }
+    });
 }
 
 $(document).ready(function () {
@@ -235,7 +231,7 @@ $(document).ready(function () {
         selectedColor: '#00C6D7',
         borderWidth: 3,
         borderOpacity: 1,
-        selectedRegions: '18',
+        // selectedRegions: '18',
         enableZoom: false,
         showTooltip: false,
         pins: {
@@ -265,18 +261,22 @@ $(document).ready(function () {
             "74": "\u003cstrong\u003eЧернігівська\u003c/strong\u003e область",
             "77": "\u003cstrong\u003eЧернівецька\u003c/strong\u003e область",
         },
-        pinMode: 'content'
+        pinMode: 'content',
+        onRegionClick: function(element, code, region) {
+            // regionLoad(code.toUpperCase())
+        }
     });
 
     $('#fullpage').fullpage({
         controlArrows: true,
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
         menu: '#menu',
+        lockAnchors: false,
         verticalCentered: false,
         navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: false,
-        normalScrollElements: '.modal-dialog .modal-content',
+        normalScrollElements: '.modal-dialog .modal-content, #vmap',
         navigationTooltips: ['firstSlide', 'secondSlide'],
         onLeave: function(origin, destination, direction){
             if(origin == 2 && direction =='down'){
@@ -293,10 +293,6 @@ $(document).ready(function () {
         $.fn.fullpage.moveSectionDown();
     });
 
-    $(window).scroll(function () {
-        menuFixed();
-    });
-
     $('.js-top-section-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -308,22 +304,4 @@ $(document).ready(function () {
         pauseOnFocus: false,
         infinite: true
     });
-
-    if ($('.js-logo-list-slider').length) {
-        initLogoSlider();
-    }
-
-    $(window).bind('resize', function(){
-        if ($('.js-logo-list-slider').length) {
-            initLogoSlider();
-        }
-    });
-
-    // $(document).on('click', 'a[href^="#"]', function (event) {
-    //     event.preventDefault();
-    //
-    //     $('html, body').animate({
-    //         scrollTop: ($($.attr(this, 'href')).offset().top) - 60
-    //     }, 500);
-    // });
 });
