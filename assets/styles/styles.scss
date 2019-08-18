@@ -585,6 +585,12 @@
             font-size: 22px;
         }
 
+        &.ua {
+            &:before {
+                content: '\20B4';
+            }
+        }
+
         small {
             position: absolute;
             font-size: 16px;

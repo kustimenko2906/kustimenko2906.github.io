@@ -130,6 +130,18 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+    $('.js-adv-info-slider-3').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1
+    });
+
     $('.js-adv-info-slider').slick({
         dots: false,
         arrows: false,
