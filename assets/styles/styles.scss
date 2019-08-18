@@ -26,8 +26,18 @@
     }
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: $color-dark;
+.navbar-light .navbar-nav {
+    .nav-link {
+        color: $color-dark;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .nav-item.active, .nav-item:hover {
+        .nav-link {
+            color: $cyan;
+        }
+    }
 }
 
 .page-section-holder {

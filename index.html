@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="https://kustimenko2906.github.io/favicon.png"/>
 
     <!-- Font include -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300, 400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300, 400, 500, 700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <!-- Theme styles -->
     <link rel="stylesheet" href="dist/css/jqvmap.css">
     <link rel="stylesheet" href="dist/css/styles.css">
@@ -28,18 +28,18 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Главная</a>
+        <ul id="menu" class="navbar-nav ml-auto">
+            <li data-menuanchor="firstPage" class="nav-item active">
+                <a class="nav-link" href="#firstPage">Главная</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Карта</a>
+            <li data-menuanchor="secondPage" class="nav-item">
+                <a class="nav-link" href="#secondPage">Карта</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Области</a>
+            <li data-menuanchor="3rdPage" class="nav-item">
+                <a class="nav-link" href="#3rdPage">Области</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Рейтинги</a>
+            <li data-menuanchor="4thpage" class="nav-item">
+                <a class="nav-link" href="#4thpage">Рейтинги</a>
             </li>
             <li class="nav-item pl-4 d-flex flex-row">
                 <a class="nav-link" href="#">UA</a>
@@ -49,7 +49,7 @@
     </div>
 </nav>
 <div id="fullpage">
-    <div class="section align-top" id="section0">
+    <div class="section align-top active" id="section0">
         <div class="container-fluid page-section-holder ">
             <div class="content-inner-holder bg-white position-relative">
                 <div class="top-section-slider js-top-section-slider">
@@ -531,7 +531,7 @@
         </div>
     </div>
 
-    <div class="section section-last active" id="section3">
+    <div class="section section-last" id="section3">
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder position-relative">
                 <div class="block-invest-logo position-absolute">

@@ -7923,7 +7923,11 @@ html.fp-enabled,
     background-color: #fff !important; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #303030; }
+  color: #303030;
+  font-size: 14px;
+  font-weight: 500; }
+.navbar-light .navbar-nav .nav-item.active .nav-link, .navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #00C6D7; }
 
 .page-section-holder {
   position: relative;

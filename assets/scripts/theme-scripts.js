@@ -270,6 +270,8 @@ $(document).ready(function () {
 
     $('#fullpage').fullpage({
         controlArrows: true,
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+        menu: '#menu',
         verticalCentered: false,
         navigation: true,
         navigationPosition: 'right',
