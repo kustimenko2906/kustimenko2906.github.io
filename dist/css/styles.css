@@ -8215,10 +8215,22 @@ html.fp-enabled,
   border-radius: 0;
   font-weight: bold; }
 
+.animate-icons-wrap.road-icon #road-icon path:nth-child(2) {
+  animation: slideUp ease 1.5s; }
+.animate-icons-wrap.factory-icon {
+  animation: fadeIn ease 2s; }
+.animate-icons-wrap.build-icon {
+  animation: fadeIn ease 2s; }
+
 .region-card-info {
   position: relative;
   padding-right: 26px;
   display: inline-block; }
+  .region-card-info.info-small .card-units {
+    top: 22px; }
+  .region-card-info.info-small .region-card-info-number {
+    font-size: 130px;
+    line-height: 94px; }
   .region-card-info .card-units {
     position: absolute;
     transform: rotate(90deg);
@@ -8296,6 +8308,11 @@ html.fp-enabled,
       font-weight: bold;
       font-size: 28px; }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0); } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }

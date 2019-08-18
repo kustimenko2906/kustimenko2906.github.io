@@ -60,6 +60,51 @@ function removeClass() {
     $('.bg-panel').removeClass().addClass(newcl.join(" "));
 }
 
+function addAnimateClass(id) {
+    $('#'+id).closest('.animate-icons-wrap').addClass(id);
+}
+
+function startCounter(){
+    $('.js-counter').each(function (index) {
+        var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(parseFloat(now).toFixed(size));
+            }
+        });
+    });
+}
+
+function animateSvg(id) {
+    if(id === 'arrow-icon') {
+        new Vivus(id,   {
+            type: "scenario-sync",
+            duration: 30,
+            start: "inViewport",
+            dashGap: 30,
+            forceRender: false
+        });
+    } else {
+        new Vivus(id,   {
+            type: "scenario-sync",
+            duration: 10,
+            start: "inViewport",
+            dashGap: 10,
+            forceRender: false
+        });
+    }
+}
+
+function reinitSlider(e) {
+    setTimeout(function(){
+        $(e).slick('setPosition');
+    }, 1000);
+}
+
 $(document).ready(function () {
     $('.js-bg-tabs a').on('click', function (e) {
         $('.bg-panel').removeClass('fade-in');
@@ -71,13 +116,6 @@ $(document).ready(function () {
         setTimeout(function(){
             $('.bg-panel').addClass('fade-in');
         }, 10);
-
-        $('.js-adv-info-slider-2').get(0).slick.setPosition();
-        $('.js-adv-info-slider').get(0).slick.setPosition();
-    });
-
-    $('.js-bg-tabs a').on('shown.bs.tab', function (e) {
-        alert('asd');
     });
 
     $('.js-adv-info-slider-2').slick({
@@ -166,8 +204,13 @@ $(document).ready(function () {
         showActiveTooltip: false,
         normalScrollElements: '.modal-dialog .modal-content',
         navigationTooltips: ['firstSlide', 'secondSlide'],
-        afterResize: function(){
-
+        onLeave: function(origin, destination, direction){
+            if(origin == 2 && direction =='down'){
+                setTimeout(function(){
+                    animateSvg('money-icon');
+                    startCounter();
+                }, 200);
+            }
         },
     });
 

@@ -481,10 +481,39 @@
     font-weight: bold;
 }
 
+.animate-icons-wrap {
+    &.road-icon {
+        #road-icon {
+            path:nth-child(2) {
+                animation: slideUp ease 1.5s;
+            }
+        }
+    }
+
+    &.factory-icon {
+        animation: fadeIn ease 2s;
+    }
+
+    &.build-icon {
+        animation: fadeIn ease 2s;
+    }
+}
+
 .region-card-info {
     position: relative;
     padding-right: 26px;
     display: inline-block;
+
+    &.info-small {
+        .card-units {
+            top: 22px;
+        }
+
+        .region-card-info-number {
+            font-size: 130px;
+            line-height: 94px;
+        }
+    }
 
     .card-units {
         position: absolute;
@@ -589,6 +618,15 @@
             font-weight: bold;
             font-size: 28px;
         }
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
