@@ -8285,6 +8285,8 @@ html.fp-enabled,
       font-size: 22px; }
     .section-region-slider .reg-export-unit.ua:before {
       content: '\20B4'; }
+    .section-region-slider .reg-export-unit.no-unit:before {
+      display: none; }
     .section-region-slider .reg-export-unit small {
       position: absolute;
       font-size: 16px;
@@ -8359,8 +8361,18 @@ html.fp-enabled,
   height: auto; }
   .section-last .section-region-slider .card {
     margin: 5px 0; }
+    .section-last .section-region-slider .card .region-descr-text {
+      font-size: 18px;
+      line-height: 27px; }
   .section-last .section-region-slider .card-body {
     height: 170px; }
+  .section-last .section-region-slider.three-slides .card-body {
+    height: 236px; }
+  .section-last .section-region-slider.variable-width {
+    max-height: calc(100vh - 240px);
+    overflow: hidden; }
+    .section-last .section-region-slider.variable-width .card-body {
+      height: auto; }
   .section-last .section-region-slider .slick-list {
     padding: 5px 20px; }
 .section-last .bg-panel {

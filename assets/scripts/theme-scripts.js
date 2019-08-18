@@ -142,6 +142,66 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+    $('.js-adv-info-slider-4').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1
+    });
+
+    $('.js-adv-info-slider-5').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1
+    });
+
+    $('.js-adv-info-slider-6').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1
+    });
+
+    $('.js-adv-info-slider-7').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1
+    });
+
+    $('.js-adv-info-slider-8').slick({
+        dots: false,
+        arrows: false,
+        vertical: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToScroll: 1,
+    });
+
     $('.js-adv-info-slider').slick({
         dots: false,
         arrows: false,

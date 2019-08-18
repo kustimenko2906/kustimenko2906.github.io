@@ -591,6 +591,12 @@
             }
         }
 
+        &.no-unit {
+            &:before {
+                display: none;
+            }
+        }
+
         small {
             position: absolute;
             font-size: 16px;
@@ -705,10 +711,30 @@
 
         .card {
             margin: 5px 0;
+
+            .region-descr-text {
+                font-size: 18px;
+                line-height: 27px;
+            }
         }
 
         .card-body {
             height: 170px;
+        }
+
+        &.three-slides {
+            .card-body {
+                height: 236px;
+            }
+        }
+
+        &.variable-width {
+            max-height: calc(100vh - 240px);
+            overflow: hidden;
+
+            .card-body {
+                height: auto;
+            }
         }
 
         .slick-list {
