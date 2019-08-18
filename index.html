@@ -17,12 +17,18 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src="assets/images/logo-dtek.png" alt="">
-    </a>
-    <a class="navbar-brand" href="#">
-        <img src="assets/images/logo-korr.png" alt="">
-    </a>
+    <div class="d-flex align-items-center">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+            <img src="assets/images/logo-default-sm.png" alt="">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo-dtek.png" alt="">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo-korr.png" alt="">
+        </a>
+    </div>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,7 +55,7 @@
     </div>
 </nav>
 <div id="fullpage">
-    <div class="section align-top active" id="section0">
+    <div class="section section-start align-top active" id="section0">
         <div class="container-fluid page-section-holder ">
             <div class="content-inner-holder bg-white position-relative">
                 <div class="top-section-slider js-top-section-slider">
@@ -58,7 +64,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 position-relative col-top-info">
-                        <div class="block-invest-logo">
+                        <div class="block-invest-logo d-none d-lg-block">
                             <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
                         </div>
                         <div class="top-section-info position-relative">
@@ -84,11 +90,11 @@
     <div class="section section-map" id="section1">
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder d-flex align-items-center position-relative">
-                <div class="block-invest-logo position-absolute">
+                <div class="block-invest-logo position-absolute d-none d-lg-block">
                     <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
                 </div>
-                <div class="row align-items-center w-100 mx-0">
-                    <div class="col-lg-4">
+                <div class="row align-items-center w-100 mx-0 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-3 col-xl-4">
                         <p>
                             Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
                             заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
@@ -98,7 +104,7 @@
                             редакторы HTML используют Lorem Ipsum
                         </p>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-9 col-xl-8">
                         <div id="vmap" style="width: 100%; height: 648px;"></div>
                     </div>
                 </div>
@@ -109,7 +115,7 @@
     <div class="section section-region-view align-top position-relative" id="section2">
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder position-relative">
-                <div class="block-invest-logo position-absolute">
+                <div class="block-invest-logo position-absolute d-none d-lg-block">
                     <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
                 </div>
 
@@ -145,7 +151,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <button class="btn btn-info" type="button" data-toggle="modal" data-target="#regionInfoModal">Узнать больше</button>
+                            <button class="btn btn-info d-none d-lg-inline-block" type="button" data-toggle="modal" data-target="#regionInfoModal">Узнать больше</button>
                         </div>
                     </div>
                     <div class="region-view-col info-col">
@@ -536,7 +542,7 @@
     <div class="section section-last" id="section3">
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder position-relative">
-                <div class="block-invest-logo position-absolute">
+                <div class="block-invest-logo position-absolute d-none d-lg-block">
                     <img src="assets/images/logo-default-w.png" alt="" class="img-fluid d-block">
                 </div>
                 <div class="container-fluid">
@@ -1404,7 +1410,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

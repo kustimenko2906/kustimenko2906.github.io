@@ -24,6 +24,15 @@
     &.bg-light {
         background-color: #fff !important;
     }
+
+
+    @media (max-width: 1640px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 0 20px;
+    }
 }
 
 .navbar-light .navbar-nav {
@@ -43,6 +52,28 @@
 .page-section-holder {
     position: relative;
     padding: 80px 80px 0;
+
+    @media (max-width: 1640px) {
+        padding: 80px 40px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding: 0;
+    }
+}
+
+.section-start {
+    @media (max-width: 992px) {
+        .page-section-holder {
+            padding-top: 80px;
+        }
+
+        .content-inner-holder {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
 }
 
 .align-top {
@@ -161,6 +192,10 @@
 #fp-nav {
     right: 37px;
 
+    @media (max-width: 1640px) {
+        right: 18px;
+    }
+
     ul li {
         display: block;
         width: 6px;
@@ -198,16 +233,32 @@
 .section-map {
     .content-inner-holder {
         padding: 0 100px;
+        
+        @media (max-width: 1640px) {
+            padding: 0 40px;
+        }
     }
 
     p {
         line-height: 22px;
         max-width: 490px;
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
     }
 
     .block-invest-logo {
         left: 0;
         top: 0;
+    }
+
+    @media (max-width: 992px) {
+        .content-inner-holder {
+            padding-top: 140px;
+            padding-bottom: 100px;
+        }
+
     }
 }
 
@@ -235,6 +286,13 @@
 
     &#jqvmap1_43_pin {
         margin-left: -12.9%;
+    }
+
+    @media (max-width: 1640px) {
+        line-height: 12px;
+        strong {
+            font-size: 10px;
+        }
     }
 }
 
@@ -268,6 +326,11 @@
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
                 padding: 0 0 0 19px;
+
+                @media (max-width: 1640px) {
+                    line-height: 19px;
+                    font-size: 15px;
+                }
 
                 &:hover {
                     color: $cyan;
@@ -352,7 +415,6 @@
 }
 
 @media (max-width: 1640px) {
-
     .region-view-row {
         .region-view-col {
             &.map-col {
@@ -361,7 +423,7 @@
             }
 
             &.info-col {
-                margin-left: 40px;
+                margin-left: 20px;
             }
         }
 
@@ -392,9 +454,27 @@
     }
 }
 
+@media (max-width: 992px) {
+    .region-view-row {
+        .region-view-col {
+            &.info-col {
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
 .section-region-view {
     .content-inner-holder {
         padding: 90px 100px 0;
+    }
+
+    @media (max-width: 1640px) {
+        .content-inner-holder {
+            padding: 90px 40px 0;
+        }
     }
 
     .block-invest-logo {
@@ -705,6 +785,12 @@
     -ms-animation: fadeIn ease 1.5s;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    border: none;
+    color: #000;
+}
+
 .jqvmap-zoomin, .jqvmap-zoomout {
     border-radius: 0;
     padding: 3px;
@@ -731,6 +817,10 @@
         bottom: auto;
         width: 380px;
         height: auto;
+        
+        @media (max-width: 992px) {
+            width: 100%;
+        }
 
         .card {
             margin: 5px 0;
@@ -898,5 +988,39 @@
                 margin-top: 0;
             }
         }
+    }
+}
+
+@media (max-width: 1640px) {
+    .region-card-info-number {
+        font-size: 110px;
+        line-height: 80px;
+    }
+
+    .region-card-info small {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .region-card-info .card-units {
+        font-size: 15px;
+        top: 72px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-region-view .content-inner-holder {
+        padding: 0 0 320px 0;
+    }
+
+    .region-view-row .region-map-block {
+        padding: 100px 60px 0;
+        height: auto;
+    }
+
+    .region-view-row .region-view-col.map-col {
+        max-width: 768px;
+        flex: 0 0 100%;
+        margin: 0 auto 80px auto;
     }
 }

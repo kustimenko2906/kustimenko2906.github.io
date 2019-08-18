@@ -101,6 +101,13 @@ function regionLoad(id) {
     });
 }
 
+$(window).on('load resize', function (e) {
+    if($('body').width() < 992) {
+        e.preventDefault();
+        $.fn.fullpage.destroy('all');
+    }
+});
+
 $(document).ready(function () {
     $('.js-bg-tabs a').on('click', function (e) {
         $('.bg-panel').removeClass('fade-in');
@@ -123,7 +130,28 @@ $(document).ready(function () {
         slidesToShow: 4,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-3').slick({
@@ -135,7 +163,28 @@ $(document).ready(function () {
         slidesToShow: 4,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-4').slick({
@@ -147,7 +196,28 @@ $(document).ready(function () {
         slidesToShow: 3,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-5').slick({
@@ -159,7 +229,28 @@ $(document).ready(function () {
         slidesToShow: 3,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-6').slick({
@@ -171,7 +262,28 @@ $(document).ready(function () {
         slidesToShow: 4,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-7').slick({
@@ -183,7 +295,28 @@ $(document).ready(function () {
         slidesToShow: 4,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider-8').slick({
@@ -196,6 +329,27 @@ $(document).ready(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     $('.js-adv-info-slider').slick({
@@ -207,7 +361,28 @@ $(document).ready(function () {
         slidesToShow: 4,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    vertical: false
+                }
+            }
+        ]
     });
 
     // js-section-region-slider
@@ -219,7 +394,27 @@ $(document).ready(function () {
         slidesToShow: 5,
         pauseOnHover: false,
         pauseOnFocus: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1640,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
 
     $('#vmap').vectorMap({

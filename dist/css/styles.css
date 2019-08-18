@@ -7921,6 +7921,12 @@ html.fp-enabled,
   min-height: 80px; }
   .navbar.bg-light {
     background-color: #fff !important; }
+  @media (max-width: 1640px) {
+    .navbar {
+      padding: 0 40px; } }
+  @media (max-width: 992px) {
+    .navbar {
+      padding: 0 20px; } }
 
 .navbar-light .navbar-nav .nav-link {
   color: #303030;
@@ -7932,6 +7938,20 @@ html.fp-enabled,
 .page-section-holder {
   position: relative;
   padding: 80px 80px 0; }
+  @media (max-width: 1640px) {
+    .page-section-holder {
+      padding: 80px 40px 0; } }
+  @media (max-width: 992px) {
+    .page-section-holder {
+      padding: 0; } }
+
+@media (max-width: 992px) {
+  .section-start .page-section-holder {
+    padding-top: 80px; }
+  .section-start .content-inner-holder {
+    justify-content: center;
+    align-items: center;
+    display: flex; } }
 
 .align-top .fp-tableCell {
   vertical-align: top; }
@@ -7998,6 +8018,9 @@ html.fp-enabled,
 
 #fp-nav {
   right: 37px; }
+  @media (max-width: 1640px) {
+    #fp-nav {
+      right: 18px; } }
   #fp-nav ul li {
     display: block;
     width: 6px;
@@ -8027,12 +8050,22 @@ html.fp-enabled,
 
 .section-map .content-inner-holder {
   padding: 0 100px; }
+  @media (max-width: 1640px) {
+    .section-map .content-inner-holder {
+      padding: 0 40px; } }
 .section-map p {
   line-height: 22px;
   max-width: 490px; }
+  @media (max-width: 992px) {
+    .section-map p {
+      max-width: 100%; } }
 .section-map .block-invest-logo {
   left: 0;
   top: 0; }
+@media (max-width: 992px) {
+  .section-map .content-inner-holder {
+    padding-top: 140px;
+    padding-bottom: 100px; } }
 
 .jqvmap-pin {
   font-size: 10px;
@@ -8051,6 +8084,11 @@ html.fp-enabled,
     margin-top: -4.3%; }
   .jqvmap-pin#jqvmap1_43_pin {
     margin-left: -12.9%; }
+  @media (max-width: 1640px) {
+    .jqvmap-pin {
+      line-height: 12px; }
+      .jqvmap-pin strong {
+        font-size: 10px; } }
 
 .region-view-row .region-view-col.map-col {
   max-width: 694px;
@@ -8075,6 +8113,10 @@ html.fp-enabled,
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     padding: 0 0 0 19px; }
+    @media (max-width: 1640px) {
+      .region-view-row .region-view-col .nav-tabs .nav-link {
+        line-height: 19px;
+        font-size: 15px; } }
     .region-view-row .region-view-col .nav-tabs .nav-link:hover {
       color: #00C6D7; }
     .region-view-row .region-view-col .nav-tabs .nav-link.active {
@@ -8130,7 +8172,7 @@ html.fp-enabled,
     max-width: 45%;
     flex: 0 0 45%; }
   .region-view-row .region-view-col.info-col {
-    margin-left: 40px; }
+    margin-left: 20px; }
   .region-view-row .region-map-block {
     padding: 120px 40px 40px 60px; }
     .region-view-row .region-map-block .region-name {
@@ -8144,8 +8186,16 @@ html.fp-enabled,
         font-size: 24px; }
       .region-view-row .region-map-block .region-characteristics small {
         font-size: 14px; } }
+@media (max-width: 992px) {
+  .region-view-row .region-view-col.info-col {
+    margin-left: 0;
+    display: flex;
+    justify-content: center; } }
 .section-region-view .content-inner-holder {
   padding: 90px 100px 0; }
+@media (max-width: 1640px) {
+  .section-region-view .content-inner-holder {
+    padding: 90px 40px 0; } }
 .section-region-view .block-invest-logo {
   left: 0;
   top: 0; }
@@ -8353,6 +8403,11 @@ html.fp-enabled,
   -o-animation: fadeIn ease 1.5s;
   -ms-animation: fadeIn ease 1.5s; }
 
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  border: none;
+  color: #000; }
+
 .jqvmap-zoomin, .jqvmap-zoomout {
   border-radius: 0;
   padding: 3px;
@@ -8374,6 +8429,9 @@ html.fp-enabled,
   bottom: auto;
   width: 380px;
   height: auto; }
+  @media (max-width: 992px) {
+    .section-last .section-region-slider {
+      width: 100%; } }
   .section-last .section-region-slider .card {
     margin: 5px 0; }
     .section-last .section-region-slider .card .region-descr-text {
@@ -8468,5 +8526,30 @@ html.fp-enabled,
     margin-top: 28px; }
     .section-last .nav-tabs .nav-item:first-child {
       margin-top: 0; }
+
+@media (max-width: 1640px) {
+  .region-card-info-number {
+    font-size: 110px;
+    line-height: 80px; }
+
+  .region-card-info small {
+    font-size: 15px;
+    line-height: 19px; }
+
+  .region-card-info .card-units {
+    font-size: 15px;
+    top: 72px; } }
+@media (max-width: 992px) {
+  .section-region-view .content-inner-holder {
+    padding: 0 0 320px 0; }
+
+  .region-view-row .region-map-block {
+    padding: 100px 60px 0;
+    height: auto; }
+
+  .region-view-row .region-view-col.map-col {
+    max-width: 768px;
+    flex: 0 0 100%;
+    margin: 0 auto 80px auto; } }
 
 /*# sourceMappingURL=styles.css.map */
