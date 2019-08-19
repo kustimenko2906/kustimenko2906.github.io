@@ -8586,5 +8586,39 @@ html.fp-enabled,
       right: 15px; } }
   .fl-nav-arrow:hover {
     opacity: 0.5; }
+  @media (max-width: 992px) {
+    .fl-nav-arrow {
+      display: none !important; } }
+
+.section-nav-label {
+  position: absolute;
+  z-index: 10000;
+  transition-duration: 0.3s;
+  left: -100px;
+  transform: translate(0, -50%) rotate(-90deg);
+  top: 50%;
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  width: 18px;
+  white-space: nowrap;
+  padding-left: 56px; }
+  .section-nav-label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    height: 2px;
+    width: 40px;
+    background-color: #303030; }
+
+.fp-section.active.fp-completely .section-nav-label {
+  left: 10px; }
+  @media (max-width: 1640px) {
+    .fp-section.active.fp-completely .section-nav-label {
+      left: -9px; } }
 
 /*# sourceMappingURL=styles.css.map */

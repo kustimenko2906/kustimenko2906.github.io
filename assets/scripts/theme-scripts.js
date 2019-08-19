@@ -440,7 +440,7 @@ function fpInint() {
         navigation: true,
         navigationPosition: 'right',
         showActiveTooltip: false,
-        normalScrollElements: '.modal-dialog .modal-content, #vmap',
+        normalScrollElements: '.modal-dialog .modal-content',
         navigationTooltips: ['firstSlide', 'secondSlide'],
         onLeave: function(origin, destination, direction){
             var params = {
