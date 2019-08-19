@@ -85,6 +85,10 @@
 .content-inner-holder {
     background-color: $color-bg;
     min-height: calc(100vh - 160px);
+
+    @media (max-width: 1640px) {
+        min-height: calc(100vh - 120px);
+    }
 }
 
 .block-invest-logo {
@@ -92,29 +96,6 @@
 }
 
 .top-section-info {
-    //padding-left: 178px;
-
-    //&:after {
-    //    content: '';
-    //    position: absolute;
-    //    left: 0;
-    //    top: 45px;
-    //    width: 122px;
-    //    height: 1px;
-    //    background-color: $color-dark;
-    //}
-    //
-    //&:before {
-    //    content: '';
-    //    position: absolute;
-    //    left: 122px;
-    //    top: 42px;
-    //    border-radius: 100%;
-    //    width: 7px;
-    //    height: 7px;
-    //    border: 1px solid $color-dark;
-    //}
-
     h1 {
         font-size: 70px;
         max-width: 710px;
@@ -143,6 +124,16 @@
 
     .slick-slide {
         height: calc(100vh - 160px);
+    }
+
+    @media (max-width: 1640px) {
+        img {
+            max-height: calc(100vh - 120px);
+        }
+
+        .slick-slide {
+            height: calc(100vh - 120px);
+        }
     }
 }
 
@@ -368,6 +359,10 @@
         background-repeat: no-repeat !important;
         background-size: contain !important;
         padding: 120px 40px 40px 140px;
+
+        @media (max-width: 1640px) {
+            max-height: calc(100vh - 120px);
+        }
 
         .region-name {
             font-size: 60px;
@@ -862,6 +857,10 @@
         padding-bottom: 60px;
         color: #fff;
         position: relative;
+
+        @media (max-width: 1640px) {
+            max-height: calc(100vh - 120px);
+        }
 
         &:after {
             content: '';

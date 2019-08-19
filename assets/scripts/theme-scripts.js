@@ -418,13 +418,35 @@ $(document).ready(function () {
         normalScrollElements: '.modal-dialog .modal-content, #vmap',
         navigationTooltips: ['firstSlide', 'secondSlide'],
         onLeave: function(origin, destination, direction){
-            if(origin == 2 && direction =='down'){
+            var params = {
+                origin: origin,
+                destination:destination,
+                direction: direction
+            };
+            console.log(params);
+            if(params.destination.isLast){
+                alert('pidrilo');
+            }
+            if(params.origin == 2 && params.direction =='down'){
                 setTimeout(function(){
                     animateSvg('money-icon');
                     startCounter();
                 }, 200);
             }
         },
+        afterLoad: function(origin){
+            var loadedSection = this;
+
+            //использование индекса
+            if(origin.index == 2){
+                alert("Section 3 ended loading");
+            }
+
+            //использование ссылки с привязкой
+            if(origin.anchor == 'secondSlide'){
+                alert("Section 2 ended loading");
+            }
+        }
     });
 
     $('#moveSectionDown').click(function(e){

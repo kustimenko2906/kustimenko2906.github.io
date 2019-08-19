@@ -7959,6 +7959,9 @@ html.fp-enabled,
 .content-inner-holder {
   background-color: #EEEEEE;
   min-height: calc(100vh - 160px); }
+  @media (max-width: 1640px) {
+    .content-inner-holder {
+      min-height: calc(100vh - 120px); } }
 
 .block-invest-logo {
   margin-bottom: 35px; }
@@ -7984,6 +7987,11 @@ html.fp-enabled,
     max-height: calc(100vh - 160px); }
   .top-section-slider .slick-slide {
     height: calc(100vh - 160px); }
+  @media (max-width: 1640px) {
+    .top-section-slider img {
+      max-height: calc(100vh - 120px); }
+    .top-section-slider .slick-slide {
+      height: calc(100vh - 120px); } }
 
 .col-top-info {
   padding-bottom: 85px; }
@@ -8139,6 +8147,9 @@ html.fp-enabled,
   background-repeat: no-repeat !important;
   background-size: contain !important;
   padding: 120px 40px 40px 140px; }
+  @media (max-width: 1640px) {
+    .region-view-row .region-map-block {
+      max-height: calc(100vh - 120px); } }
   .region-view-row .region-map-block .region-name {
     font-size: 60px;
     font-weight: bold;
@@ -8455,6 +8466,9 @@ html.fp-enabled,
   padding-bottom: 60px;
   color: #fff;
   position: relative; }
+  @media (max-width: 1640px) {
+    .section-last .bg-panel {
+      max-height: calc(100vh - 120px); } }
   .section-last .bg-panel:after {
     content: '';
     position: absolute;
