@@ -8565,5 +8565,26 @@ html.fp-enabled,
     max-width: 768px;
     flex: 0 0 100%;
     margin: 0 auto 80px auto; } }
+#fp-nav {
+  z-index: 100000; }
+
+.fl-nav-arrow {
+  z-index: 100000;
+  position: fixed;
+  right: 34px;
+  top: 50%;
+  padding: 0 5px;
+  height: 32.5px; }
+  .fl-nav-arrow.naw-arrow-top {
+    background: url("../../assets/images/arrow-up.svg") no-repeat center;
+    margin-top: -105px; }
+  .fl-nav-arrow.naw-arrow-bottom {
+    background: url("../../assets/images/arrow-down.svg") no-repeat center;
+    margin-top: 72px; }
+  @media (max-width: 1640px) {
+    .fl-nav-arrow {
+      right: 15px; } }
+  .fl-nav-arrow:hover {
+    opacity: 0.5; }
 
 /*# sourceMappingURL=styles.css.map */

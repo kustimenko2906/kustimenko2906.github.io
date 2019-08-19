@@ -105,6 +105,10 @@ $(window).on('load resize', function (e) {
     if($('body').width() < 992) {
         e.preventDefault();
         $.fn.fullpage.destroy('all');
+    } else {
+        if(!$('html').hasClass('fp-enabled')) {
+            fpInint();
+        }
     }
 });
 
@@ -406,48 +410,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#fullpage').fullpage({
-        controlArrows: true,
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-        menu: '#menu',
-        lockAnchors: false,
-        verticalCentered: false,
-        navigation: true,
-        navigationPosition: 'right',
-        showActiveTooltip: false,
-        normalScrollElements: '.modal-dialog .modal-content, #vmap',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
-        onLeave: function(origin, destination, direction){
-            var params = {
-                origin: origin,
-                destination:destination,
-                direction: direction
-            };
-            console.log(params);
-            if(params.destination.isLast){
-                alert('pidrilo');
-            }
-            if(params.origin == 2 && params.direction =='down'){
-                setTimeout(function(){
-                    animateSvg('money-icon');
-                    startCounter();
-                }, 200);
-            }
-        },
-        afterLoad: function(origin){
-            var loadedSection = this;
-
-            //использование индекса
-            if(origin.index == 2){
-                alert("Section 3 ended loading");
-            }
-
-            //использование ссылки с привязкой
-            if(origin.anchor == 'secondSlide'){
-                alert("Section 2 ended loading");
-            }
-        }
-    });
+    fpInint();
 
     $('#moveSectionDown').click(function(e){
         e.preventDefault();
@@ -466,3 +429,45 @@ $(document).ready(function () {
         infinite: true
     });
 });
+
+function fpInint() {
+    $('#fullpage').fullpage({
+        controlArrows: true,
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+        menu: '#menu',
+        lockAnchors: false,
+        verticalCentered: false,
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: false,
+        normalScrollElements: '.modal-dialog .modal-content, #vmap',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        onLeave: function(origin, destination, direction){
+            var params = {
+                origin: origin,
+                destination:destination,
+                direction: direction
+            };
+
+            if(params.origin === 2 && params.direction ==='down'){
+                setTimeout(function(){
+                    animateSvg('money-icon');
+                    startCounter();
+                }, 200);
+            }
+            if (params.origin !== 0 && params.direction ==='down') {
+                $('.fl-nav-arrow.naw-arrow-top').show();
+            }
+        },
+        afterLoad: function(origin){
+            console.log(origin);
+            if(origin === 'firstPage') {
+                $('.fl-nav-arrow.naw-arrow-top').hide();
+            } else if (origin === '4thpage') {
+                $('.fl-nav-arrow.naw-arrow-bottom').hide();
+            } else if (origin !== '4thpage') {
+                $('.fl-nav-arrow.naw-arrow-bottom').show();
+            }
+        }
+    });
+}
