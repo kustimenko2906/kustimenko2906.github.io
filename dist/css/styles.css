@@ -8621,4 +8621,10 @@ html.fp-enabled,
     .fp-section.active.fp-completely .section-nav-label {
       left: -9px; } }
 
+.animate-icons-wrap #car-icon g {
+  opacity: 0;
+  transition: opacity 3s; }
+  .animate-icons-wrap #car-icon g.fade-show {
+    opacity: 1; }
+
 /*# sourceMappingURL=styles.css.map */

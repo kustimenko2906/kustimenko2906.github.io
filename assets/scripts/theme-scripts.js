@@ -50,6 +50,15 @@ function removeClass() {
 
 function addAnimateClass(id) {
     $('#'+id).closest('.animate-icons-wrap').addClass(id);
+
+    if(id === 'car-icon') {
+        $("#car-icon g").delay(500).each(function(i) {
+            $(this).delay(200 * i).queue(function() {
+                $(this).addClass("fade-show");
+                $(this).dequeue();
+            })
+        })
+    }
 }
 
 function startCounter(){
@@ -75,6 +84,17 @@ function animateSvg(id) {
             start: "inViewport",
             dashGap: 50,
             forceRender: false
+        });
+    }  else if (id === 'car-icon') {
+        new Vivus(id,   {
+            type: "scenario-sync",
+            duration: 20,
+            start: "inViewport",
+            dashGap: 20,
+            forceRender: true
+        }, function doDone(obj) {
+            console.log(obj);
+            obj.el.classList.add('fill-1', 'fill-2', 'fill-3', 'fill-4', 'fill-5', 'fill-6', 'fill-7', 'clear-stroke');
         });
     } else {
         new Vivus(id,   {
@@ -113,6 +133,11 @@ $(window).on('load resize', function (e) {
 });
 
 $(document).ready(function () {
+    $('.js-feature-tabs a:not(.export-feature)').on('click', function (e) {
+        $("#car-icon g").removeClass("fade-show");
+        $("#car-icon g").removeAttr("class");
+    });
+
     $('.js-bg-tabs a').on('click', function (e) {
         $('.bg-panel').removeClass('fade-in');
         var getBg = $(this).data("bg");
