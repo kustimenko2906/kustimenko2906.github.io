@@ -407,6 +407,7 @@ $(document).ready(function () {
         pinMode: 'content',
         onRegionClick: function(element, code, region) {
             // regionLoad(code.toUpperCase())
+            $.fn.fullpage.moveSectionDown();
         }
     });
 
