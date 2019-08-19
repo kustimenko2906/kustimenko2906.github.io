@@ -487,7 +487,7 @@ function fpInint() {
             if(params.origin === 2 && params.direction ==='down'){
                 setTimeout(function(){
                     // animateSvg('money-icon');
-                    startCounter();
+
                 }, 200);
             }
             if (params.origin !== 0 && params.direction ==='down') {
@@ -495,7 +495,6 @@ function fpInint() {
             }
         },
         afterLoad: function(origin){
-            console.log(origin);
             if(origin === 'firstPage') {
                 $('.fl-nav-arrow.naw-arrow-top').hide();
             } else if (origin === '4thpage') {
@@ -506,6 +505,7 @@ function fpInint() {
 
             if (origin === '3rdPage') {
                 addAnimateClass('money-icon');
+                startCounter();
             } else {
                 $("#money-icon path").removeClass("fade-show");
                 $("#money-icon path").removeAttr("class");

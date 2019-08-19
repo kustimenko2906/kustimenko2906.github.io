@@ -38,6 +38,11 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="close">&times;</span>
+        </button>
+        <div class="text-center d-block d-lg-none menu-label">Меню</div>
         <ul id="menu" class="navbar-nav ml-auto">
             <li data-menuanchor="firstPage" class="nav-item active">
                 <a class="nav-link" href="#firstPage">Главная</a>
@@ -51,13 +56,15 @@
             <li data-menuanchor="4thpage" class="nav-item">
                 <a class="nav-link" href="#4thpage">Рейтинги</a>
             </li>
-            <li class="nav-item pl-4 d-flex flex-row">
-                <a class="nav-link" href="#">UA</a>
+            <li class="nav-item pl-0 lang-switch pl-lg-4 d-flex flex-row">
+                <a class="nav-link current-lang" href="#">UA</a>
                 <a class="nav-link" href="#">RU</a>
             </li>
         </ul>
+        <p class="menu-divider d-block d-lg-none">&nbsp;</p>
     </div>
 </nav>
+
 <div id="fullpage">
     <div class="section section-start align-top active" id="section0">
         <div class="container-fluid page-section-holder ">
@@ -334,6 +341,7 @@
                                     </div>
                                     <div class="region-card-info">
                                         <div class="card-units">млн, долл.</div>
+                                        <small>&nbsp;<br></small>
                                         <div class="region-card-info-number js-counter">720</div>
                                     </div>
                                 </div>
@@ -398,6 +406,7 @@
                                     </div>
                                     <div class="region-card-info">
                                         <div class="card-units">грн</div>
+                                        <small>&nbsp;<br></small>
                                         <div class="region-card-info-number js-counter">953</div>
                                     </div>
                                 </div>
@@ -613,7 +622,7 @@
                     <img src="assets/images/logo-default-w.png" alt="" class="img-fluid d-block">
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row d-none d-lg-block">
                         <div class="col-lg-8 bg-panel d-flex flex-column justify-content-end bkg-1">
                             <div class="bg-panel-inner">
                                 <nav>
