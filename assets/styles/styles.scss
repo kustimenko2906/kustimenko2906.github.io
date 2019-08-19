@@ -720,10 +720,10 @@
 
 @keyframes slideUp {
     0% {
-        transform: translateY(-100%);
+        transform: translate(75px, -50px);
     }
     100% {
-        transform: translateY(0);
+        transform: translate(75px, 0);
     }
 }
 

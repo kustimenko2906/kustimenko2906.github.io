@@ -71,9 +71,9 @@ function animateSvg(id) {
     if(id === 'arrow-icon') {
         new Vivus(id,   {
             type: "scenario-sync",
-            duration: 30,
+            duration: 50,
             start: "inViewport",
-            dashGap: 30,
+            dashGap: 50,
             forceRender: false
         });
     } else {
