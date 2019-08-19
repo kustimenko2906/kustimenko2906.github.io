@@ -1115,9 +1115,19 @@
 }
 
 .animate-icons-wrap {
-
     #car-icon {
         g {
+            opacity: 0;
+            transition: opacity 3s;
+
+            &.fade-show {
+                opacity: 1;
+            }
+        }
+    }
+
+    #money-icon {
+        path {
             opacity: 0;
             transition: opacity 3s;
 

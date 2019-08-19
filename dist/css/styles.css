@@ -8634,5 +8634,10 @@ html.fp-enabled,
   transition: opacity 3s; }
   .animate-icons-wrap #car-icon g.fade-show {
     opacity: 1; }
+.animate-icons-wrap #money-icon path {
+  opacity: 0;
+  transition: opacity 3s; }
+  .animate-icons-wrap #money-icon path.fade-show {
+    opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
