@@ -7965,6 +7965,9 @@ html.fp-enabled,
 
 .block-invest-logo {
   margin-bottom: 35px; }
+  @media (max-width: 1640px) {
+    .block-invest-logo img {
+      max-width: 160px; } }
 
 .top-section-info h1 {
   font-size: 70px;
@@ -8434,6 +8437,11 @@ html.fp-enabled,
   left: 30px;
   top: 28px;
   z-index: 1; }
+  @media (max-width: 1640px) {
+    .section-last .block-invest-logo img {
+      max-width: 120px;
+      left: 20px;
+      top: 17px; } }
 .section-last .section-region-slider {
   position: static;
   left: auto;
