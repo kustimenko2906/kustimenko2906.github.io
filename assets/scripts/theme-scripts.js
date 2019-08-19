@@ -68,7 +68,7 @@ function startCounter(){
 }
 
 function animateSvg(id) {
-    if(id === 'arrow-icon') {
+    if(id === 'arrow-icon' || id === 'man-icon') {
         new Vivus(id,   {
             type: "scenario-sync",
             duration: 50,
