@@ -129,11 +129,7 @@ function regionLoad(id) {
     });
 }
 
-$(window).on('resize', function (e) {
-    checkFullPage();
-});
-
-function checkFullPage() {
+$(window).on('load resize', function (e) {
     if($(window).width() < 992) {
         e.preventDefault();
         $.fn.fullpage.destroy('all');
@@ -142,11 +138,9 @@ function checkFullPage() {
             fpInint();
         }
     }
-}
+});
 
 $(document).ready(function () {
-    checkFullPage();
-
     $('.js-feature-tabs a:not(.export-feature), .js-feature-tabs a:not(.money-feature)').on('click', function (e) {
         $("#car-icon g").removeClass("fade-show");
         $("#car-icon g").removeAttr("class");
