@@ -139,6 +139,14 @@ $(window).on('load resize', function (e) {
     }
 });
 
+function mapZoom() {
+    if($('body').width() < 992) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 $(document).ready(function () {
     $('.js-feature-tabs a:not(.export-feature), .js-feature-tabs a:not(.money-feature)').on('click', function (e) {
         $("#car-icon g").removeClass("fade-show");
@@ -399,6 +407,8 @@ $(document).ready(function () {
         ]
     });
 
+    console.log (mapZoom());
+
     $('#vmap').vectorMap({
         map: 'ukraine_ua',
         backgroundColor: 'transparent',
@@ -409,7 +419,7 @@ $(document).ready(function () {
         borderWidth: 3,
         borderOpacity: 1,
         // selectedRegions: '18',
-        enableZoom: false,
+        enableZoom: mapZoom(),
         showTooltip: false,
         pins: {
             "05": "\u003cstrong\u003eВінницька\u003c/strong\u003e область",
