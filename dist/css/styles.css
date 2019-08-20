@@ -8203,9 +8203,13 @@ html.fp-enabled,
         font-size: 14px; } }
 @media (max-width: 992px) {
   .region-view-row .region-view-col.info-col {
-    margin-left: 0;
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto; }
+    .region-view-row .region-view-col.info-col .tab-content {
+      flex-grow: 1; } }
 .section-region-view .content-inner-holder {
   padding: 90px 100px 0; }
 @media (max-width: 1640px) {
@@ -8633,17 +8637,17 @@ html.fp-enabled,
     .fp-section.active.fp-completely .section-nav-label {
       left: -9px; } }
 
-.animate-icons-wrap #car-icon g {
-  opacity: 0;
-  transition: opacity 3s; }
-  .animate-icons-wrap #car-icon g.fade-show {
-    opacity: 1; }
-.animate-icons-wrap #money-icon path {
-  opacity: 0;
-  transition: opacity 3s; }
-  .animate-icons-wrap #money-icon path.fade-show {
-    opacity: 1; }
-
+@media (min-width: 992px) {
+  .animate-icons-wrap #car-icon g {
+    opacity: 0;
+    transition: opacity 3s; }
+    .animate-icons-wrap #car-icon g.fade-show {
+      opacity: 1; }
+  .animate-icons-wrap #money-icon path {
+    opacity: 0;
+    transition: opacity 3s; }
+    .animate-icons-wrap #money-icon path.fade-show {
+      opacity: 1; } }
 .navbar-toggler:focus {
   outline: none !important; }
 
@@ -8678,12 +8682,50 @@ html.fp-enabled,
       font-size: 14px;
       line-height: 20px; } }
 @media (max-width: 992px) {
+  .rating-mob-accordion {
+    padding: 0 45px; }
+    .rating-mob-accordion .collapse.show {
+      border-bottom: 1px solid #C4C4C4;
+      margin-bottom: 20px; }
+    .rating-mob-accordion .card-header {
+      text-align: left; }
+      .rating-mob-accordion .card-header .btn-link {
+        font-family: "Roboto Slab", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: normal;
+        color: #00C6D7;
+        text-align: left;
+        position: relative;
+        padding-right: 40px !important;
+        display: block;
+        width: 100%; }
+        .rating-mob-accordion .card-header .btn-link:after {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 15px;
+          right: 0;
+          top: 13px;
+          background: url("../../assets/images/arrow-ac-up.png") no-repeat center; }
+        .rating-mob-accordion .card-header .btn-link.collapsed {
+          color: #303030; }
+          .rating-mob-accordion .card-header .btn-link.collapsed:after {
+            background: url("../../assets/images/arrow-ac-down.png") no-repeat center; }
+
   .section-mob-title {
     font-weight: bold;
     font-size: 80px;
     line-height: 106px;
     color: rgba(51, 51, 51, 0.1);
     font-family: "Roboto Slab", sans-serif; }
+
+  .section-start .content-inner-holder {
+    min-height: calc(100vh - 80px); }
+  .section-start .top-section-slider .slick-slide {
+    height: calc(100vh - 80px);
+    background-size: cover !important; }
 
   .section-map {
     padding-top: 100px;
@@ -8776,6 +8818,25 @@ html.fp-enabled,
         float: none;
         text-shadow: none; } }
 @media (max-width: 560px) {
+  .section-start .content-inner-holder {
+    min-height: 1px;
+    padding-top: 80px;
+    padding-bottom: 40px; }
+  .section-start .top-section-slider .slick-slide {
+    height: 580px;
+    background-size: cover !important; }
+
+  .section-mob-title {
+    font-size: 32px;
+    line-height: normal; }
+
+  .top-section-info {
+    padding: 0 20px; }
+    .top-section-info h1 {
+      font-size: 32px; }
+    .top-section-info p {
+      font-size: 14px; }
+
   .navbar-brand {
     margin-right: 12px; }
     .navbar-brand:first-child img {

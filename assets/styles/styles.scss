@@ -460,9 +460,15 @@
     .region-view-row {
         .region-view-col {
             &.info-col {
-                margin-left: 0;
                 display: flex;
                 justify-content: center;
+                width: 100%;
+                max-width: 580px;
+                margin: 0 auto;
+
+                .tab-content {
+                    flex-grow: 1;
+                }
             }
         }
     }
@@ -1119,25 +1125,27 @@
     }
 }
 
-.animate-icons-wrap {
-    #car-icon {
-        g {
-            opacity: 0;
-            transition: opacity 3s;
+@media (min-width: 992px) {
+    .animate-icons-wrap {
+        #car-icon {
+            g {
+                opacity: 0;
+                transition: opacity 3s;
 
-            &.fade-show {
-                opacity: 1;
+                &.fade-show {
+                    opacity: 1;
+                }
             }
         }
-    }
 
-    #money-icon {
-        path {
-            opacity: 0;
-            transition: opacity 3s;
+        #money-icon {
+            path {
+                opacity: 0;
+                transition: opacity 3s;
 
-            &.fade-show {
-                opacity: 1;
+                &.fade-show {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -1201,12 +1209,69 @@
 }
 
 @media (max-width: 992px) {
+
+    .rating-mob-accordion {
+        padding: 0 45px;
+
+        .collapse.show {
+            border-bottom: 1px solid #C4C4C4;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            text-align: left;
+
+            .btn-link {
+                font-family: $sub-font-family;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: normal;
+                color: #00C6D7;
+                text-align: left;
+                position: relative;
+                padding-right: 40px !important;
+                display: block;
+                width: 100%;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 24px;
+                    height: 15px;
+                    right: 0;
+                    top: 13px;
+                    background: url("../../assets/images/arrow-ac-up.png") no-repeat center;
+                }
+
+                &.collapsed {
+                    color: #303030;
+
+                    &:after {
+                        background: url("../../assets/images/arrow-ac-down.png") no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+
     .section-mob-title {
         font-weight: bold;
         font-size: 80px;
         line-height: 106px;
         color: rgba(#333, 0.1);
         font-family: $sub-font-family;
+    }
+
+    .section-start {
+        .content-inner-holder {
+            min-height: calc(100vh - 80px);
+        }
+
+        .top-section-slider .slick-slide {
+            height: calc(100vh - 80px);
+            background-size: cover !important;
+        }
     }
 
     .section-map {
@@ -1344,6 +1409,36 @@
 }
 
 @media (max-width: 560px) {
+
+    .section-start {
+        .content-inner-holder {
+            min-height: 1px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        .top-section-slider .slick-slide {
+            height: 580px;
+            background-size: cover !important;
+        }
+    }
+
+    .section-mob-title {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .top-section-info {
+        padding: 0 20px;
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
     .navbar-brand {
         margin-right: 12px;
         &:first-child {
