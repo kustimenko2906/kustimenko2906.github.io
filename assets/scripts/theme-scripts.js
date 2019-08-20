@@ -1,4 +1,12 @@
-var widthW = $(window).width(), heightW = $(window).height();
+var widthW = $(window).width(),
+    heightW = $(window).height();
+
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
 // function initLogoSlider() {
 //     if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
@@ -129,7 +137,7 @@ function regionLoad(id) {
 }
 
 $(window).on('load resize', function (e) {
-    if($('body').width() < 992) {
+    if($(window).width() < 992) {
         e.preventDefault();
         $.fn.fullpage.destroy('all');
     } else {
