@@ -1,50 +1,43 @@
 var widthW = $(window).width(),
     heightW = $(window).height();
 
-var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    x = w.innerWidth || e.clientWidth || g.clientWidth,
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-
-// function initLogoSlider() {
-//     if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
-//         $('.js-logo-list-slider').slick({
-//             infinite: true,
-//             slidesToShow: 5,
-//             slidesToScroll: 1,
-//             autoplay: true,
-//             autoplaySpeed: 3000,
-//             pauseOnHover: false,
-//             pauseOnFocus: false,
-//             dots: false,
-//             arrows: false,
-//             responsive: [
-//                 {
-//                     breakpoint: 768,
-//                     settings: {
-//                         slidesToShow: 3,
-//                         slidesToScroll: 1
-//                     }
-//                 },
-//                 {
-//                     breakpoint: 480,
-//                     settings: {
-//                         slidesToShow: 2,
-//                         slidesToScroll: 1
-//                     }
-//                 }
-//             ]
-//         });
-//     } else {
-//         if ($('.js-logo-list-slider').hasClass('slick-initialized')){
-//             if($(window).width() != widthW && $(window).height() != heightW){
-//                 $('.js-logo-list-slider').slick('unslick');
-//             }
-//         }
-//     }
-// }
+function initLogoSlider() {
+    if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
+        $('.js-logo-list-slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    } else {
+        if ($('.js-logo-list-slider').hasClass('slick-initialized')){
+            if($(window).width() != widthW && $(window).height() != heightW){
+                $('.js-logo-list-slider').slick('unslick');
+            }
+        }
+    }
+}
 
 function removeClass() {
     var cl =  $('.bg-panel').attr("class").split(" ");
@@ -136,8 +129,11 @@ function regionLoad(id) {
     });
 }
 
-$(window).on('load resize', function (e) {
-    alert($(window).width());
+$(window).on('resize', function (e) {
+    checkFullPage();
+});
+
+function checkFullPage() {
     if($(window).width() < 992) {
         e.preventDefault();
         $.fn.fullpage.destroy('all');
@@ -146,17 +142,11 @@ $(window).on('load resize', function (e) {
             fpInint();
         }
     }
-});
-
-function mapZoom() {
-    if($('body').width() < 992) {
-        return true;
-    } else {
-        return false;
-    }
 }
 
 $(document).ready(function () {
+    checkFullPage();
+
     $('.js-feature-tabs a:not(.export-feature), .js-feature-tabs a:not(.money-feature)').on('click', function (e) {
         $("#car-icon g").removeClass("fade-show");
         $("#car-icon g").removeAttr("class");
@@ -422,8 +412,6 @@ $(document).ready(function () {
         ]
     });
 
-    console.log (mapZoom());
-
     $('#vmap').vectorMap({
         map: 'ukraine_ua',
         backgroundColor: 'transparent',
@@ -434,7 +422,7 @@ $(document).ready(function () {
         borderWidth: 3,
         borderOpacity: 1,
         // selectedRegions: '18',
-        enableZoom: mapZoom(),
+        enableZoom: false,
         showTooltip: false,
         pins: {
             "05": "\u003cstrong\u003eВінницька\u003c/strong\u003e область",
@@ -469,8 +457,6 @@ $(document).ready(function () {
             $.fn.fullpage.moveSectionDown();
         }
     });
-
-    fpInint();
 
     $('#moveSectionDown').click(function(e){
         e.preventDefault();
