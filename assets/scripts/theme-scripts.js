@@ -137,6 +137,7 @@ function regionLoad(id) {
 }
 
 $(window).on('load resize', function (e) {
+    alert($(window).width());
     if($(window).width() < 992) {
         e.preventDefault();
         $.fn.fullpage.destroy('all');
