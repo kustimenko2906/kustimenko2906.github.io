@@ -299,6 +299,11 @@
         margin-left: -12.9%;
     }
 
+    &#jqvmap1_32_pin {
+        margin-top: -2%;
+        margin-left: -12.2%;
+    }
+
     @media (max-width: 1640px) {
         line-height: 12px;
         strong {
@@ -385,11 +390,12 @@
         }
 
         .region-name {
-            font-size: 60px;
+            font-size: 54px;
             font-weight: bold;
             font-family: $sub-font-family;
             line-height: 47px;
             margin-bottom: 60px;
+            letter-spacing: -0.02em;
 
             small {
                 font-size: 36px;

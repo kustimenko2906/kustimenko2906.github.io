@@ -118,13 +118,15 @@ function animateSvg(id) {
 function reinitSlider(e) {
     setTimeout(function(){
         $(e).slick('setPosition');
-    }, 1000);
+    }, 300);
 }
 
 function regionLoad(id) {
     $('#region-loaded').load("ajax/"+id+".html", function(responseTxt, statusTxt, xhr){
         if(statusTxt == "success") {
             console.log("External content loaded successfully!");
+        } else {
+            alert('No data of this region');
         }
     });
 }
@@ -428,6 +430,7 @@ $(document).ready(function () {
             "21": "\u003cstrong\u003eЗакарпатська\u003c/strong\u003e область",
             "23": "\u003cstrong\u003eЗапорізька\u003c/strong\u003e область",
             "26": "\u003cstrong\u003eІвано-Франківська\u003c/strong\u003e область",
+            "30": "\u003cstrong\u003eКиїв\u003c/strong\u003e",
             "32": "\u003cstrong\u003eКиївська\u003c/strong\u003e область",
             "35": "\u003cstrong\u003eКіровоградська\u003c/strong\u003e область",
             "43": "\u003cstrong\u003eАРК\u003c/strong\u003e",
@@ -447,7 +450,7 @@ $(document).ready(function () {
         },
         pinMode: 'content',
         onRegionClick: function(element, code, region) {
-            // regionLoad(code.toUpperCase())
+            regionLoad(code.toUpperCase());
             $.fn.fullpage.moveSectionDown();
         }
     });
