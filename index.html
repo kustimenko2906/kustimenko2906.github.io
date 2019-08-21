@@ -45,19 +45,23 @@
         <div class="text-center d-block d-lg-none menu-label">Меню</div>
         <ul id="menu" class="navbar-nav ml-auto">
             <li data-menuanchor="firstPage" class="nav-item active">
-                <a class="nav-link" href="#firstPage">Головна</a>
+                <a class="nav-link d-none d-lg-block" href="#firstPage">Головна</a>
+                <a class="nav-link d-block d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent" href="#section0" onclick="scrollToMain()">Головна</a>
             </li>
             <li data-menuanchor="secondPage" class="nav-item">
-                <a class="nav-link" href="#secondPage">Карта</a>
+                <a class="nav-link d-none d-lg-block" href="#secondPage">Карта</a>
+                <a class="nav-link d-block d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent" href="#section1" onclick="scrollToInfoReg()">Список областей</a>
             </li>
             <li data-menuanchor="3rdPage" class="nav-item">
-                <a class="nav-link" href="#3rdPage">Області</a>
+                <a class="nav-link d-none d-lg-block" href="#3rdPage">Області</a>
+                <a class="nav-link d-block d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent" href="#section2" onclick="scrollToMap()">Області</a>
             </li>
             <li data-menuanchor="4thpage" class="nav-item">
-                <a class="nav-link" href="#4thpage">Рейтинг</a>
+                <a class="nav-link d-none d-lg-block" href="#4thpage">Рейтинг</a>
+                <a class="nav-link d-block d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent" href="#section3" onclick="scrollToRating()">Рейтинг</a>
             </li>
             <li class="nav-item pl-0 lang-switch pl-lg-4 flex-row d-none">
-                <a class="nav-link current-lang" href="#">UA</a>
+                <a class="nav-link current-lang" data-toggle="collapse" href="#">UA</a>
                 <a class="nav-link" href="#">RU</a>
             </li>
         </ul>
@@ -99,7 +103,7 @@
 
     <div class="section section-map" id="section1">
         <div class="section-nav-label d-none d-lg-block">Карта</div>
-        <div class="section-mob-title d-block d-lg-none">Карта Украины</div>
+        <div class="section-mob-title d-block d-lg-none">Список областей</div>
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder d-flex align-items-center position-relative">
                 <div class="block-invest-logo position-absolute d-none d-lg-block">
@@ -382,7 +386,7 @@
             </div>
         </div>
 
-        <div class="section-region-slider js-section-region-slider">
+        <div class="section-region-slider js-section-region-slider d-none d-md-block">
             <div>
                 <div class="card selected-slide" onclick="regionLoad('30')">
                     <div class="card-body d-flex flex-column">

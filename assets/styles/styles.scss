@@ -540,6 +540,10 @@
             }
         }
     }
+
+    .regions-slide-arrows {
+        display: none !important;
+    }
 }
 
 .modal {
@@ -1274,6 +1278,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .section-region-view .content-inner-holder {
+        padding: 0 0 0 0;
+    }
+}
+
 #fp-nav {
     z-index: 100000;
 }
@@ -1727,10 +1737,6 @@
 
     .rating-mob-accordion {
         padding: 0;
-    }
-
-    .section-region-view .content-inner-holder {
-        padding-bottom: 220px;
     }
 
     .section-mob-title {

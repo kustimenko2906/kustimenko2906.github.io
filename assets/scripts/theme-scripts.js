@@ -89,6 +89,24 @@ function scrollToMap() {
     }, 2000);
 }
 
+function scrollToRating() {
+    $('html, body').animate({
+        scrollTop: $("#section3").offset().top
+    }, 2000);
+}
+
+function scrollToMain() {
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 2000);
+}
+
+function scrollToInfoReg() {
+    $('html, body').animate({
+        scrollTop: $("#section1").offset().top
+    }, 2000);
+}
+
 function regionLoad(id) {
     $('#region-loaded').load("ajax/"+id+".html", function(responseTxt, statusTxt, xhr){
         if(statusTxt == "success") {
