@@ -8224,6 +8224,15 @@ html.fp-enabled,
     margin: 0 auto; }
     .region-view-row .region-view-col.info-col .tab-content {
       flex-grow: 1; } }
+.section-region-view .regions-slide-arrows {
+  margin-left: 140px;
+  position: relative;
+  z-index: 100;
+  bottom: -90px; }
+  .section-region-view .regions-slide-arrows .btn {
+    margin-right: 36px; }
+    .section-region-view .regions-slide-arrows .btn:hover {
+      opacity: 0.5; }
 .section-region-view .content-inner-holder {
   padding: 90px 100px 0; }
 @media (max-width: 1640px) {

@@ -349,12 +349,14 @@ $(document).ready(function () {
     // js-section-region-slider
     $('.js-section-region-slider').slick({
         dots: false,
-        arrows: false,
+        // arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 5,
         pauseOnHover: false,
         pauseOnFocus: false,
+        prevArrow: $('.js-section-region-slider-arrows .left'),
+        nextArrow: $('.js-section-region-slider-arrows .right'),
         slidesToScroll: 1,
         responsive: [
             {

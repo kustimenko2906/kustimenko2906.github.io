@@ -503,6 +503,20 @@
 }
 
 .section-region-view {
+    .regions-slide-arrows {
+        margin-left: 140px;
+        position: relative;
+        z-index: 100;
+        bottom: -90px;
+
+        .btn {
+            margin-right: 36px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
     .content-inner-holder {
         padding: 90px 100px 0;
     }
