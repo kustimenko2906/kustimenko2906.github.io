@@ -47,6 +47,7 @@
             color: $cyan;
         }
     }
+
 }
 
 .page-section-holder {
@@ -131,6 +132,8 @@
 
     .slick-slide {
         height: calc(100vh - 160px);
+        background-size: cover !important;
+        background-position: center !important;
     }
 
     @media (max-width: 1640px) {
@@ -281,6 +284,8 @@
     margin-top: -5%;
     max-width: 100px;
 
+
+
     strong {
         font-size: 12px;
         display: block;
@@ -299,10 +304,10 @@
         margin-left: -12.9%;
     }
 
-    &#jqvmap1_32_pin {
-        margin-top: -2%;
-        margin-left: -12.2%;
-    }
+    //&#jqvmap1_32_pin {
+    //    margin-top: -2%;
+    //    margin-left: -12.2%;
+    //}
 
     @media (max-width: 1640px) {
         line-height: 12px;
@@ -450,7 +455,10 @@
 
         .region-map-block {
             padding: 60px 40px 40px 60px;
+            background-position: 40px 50px !important;
+            background-size: auto calc(100% - 60px) !important;
             height: auto;
+            min-height: 450px;
 
             .region-name {
                 font-size: 38px;
@@ -509,6 +517,10 @@
         left: 0;
         top: 0;
     }
+}
+
+.modal {
+    z-index: 105000;
 }
 
 .modal.fade .modal-dialog {
@@ -948,6 +960,50 @@
 
 .jqvmap-zoomout {
     top: 34px;
+}
+
+#vmap {
+    .vmap-capital {
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        background: url("../../assets/images/regions/kyiv-1.svg") no-repeat center / contain;
+        top: 26%;
+        left: 51.2%;
+        z-index: 10;
+        cursor: pointer;
+
+        @media (max-width: 1680px) {
+            margin-top: 10px;
+            margin-left: -4px;
+        }
+        
+        @media (max-width: 1520px) {
+            margin-top: 10px;
+            margin-left: -4px;
+        }
+
+        @media (max-width: 1460px) {
+            margin-top: 10px;
+            margin-left: -4px;
+        }
+
+        &.selected, &:hover {
+            background: url("../../assets/images/regions/kyiv-b-1.svg") no-repeat center / contain;
+        }
+
+        .jqvmap-label {
+            padding: 3px 10px;
+            right: 100%;
+            margin-top: -10px;
+        }
+
+        &:hover {
+            .jqvmap-label {
+                display: block;
+            }
+        }
+    }
 }
 
 .section-last {

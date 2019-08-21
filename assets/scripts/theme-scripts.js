@@ -1,44 +1,6 @@
 var widthW = $(window).width(),
     heightW = $(window).height();
 
-function initLogoSlider() {
-    if((($('body').width()) < 992) && (!$('.js-logo-list-slider').hasClass('slick-initialized'))){
-        $('.js-logo-list-slider').slick({
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            dots: false,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    } else {
-        if ($('.js-logo-list-slider').hasClass('slick-initialized')){
-            if($(window).width() != widthW && $(window).height() != heightW){
-                $('.js-logo-list-slider').slick('unslick');
-            }
-        }
-    }
-}
-
 function removeClass() {
     var cl =  $('.bg-panel').attr("class").split(" ");
     var newcl =[];
@@ -149,6 +111,14 @@ $(window).on('load resize', function (e) {
 });
 
 $(document).ready(function () {
+    regionLoad('30');
+
+    $('body').on('click', '.vmap-capital', function (e) {
+        $('.vmap-capital').addClass('selected');
+        regionLoad('30');
+        $.fn.fullpage.moveSectionDown();
+    });
+
     $('.js-feature-tabs a:not(.export-feature), .js-feature-tabs a:not(.money-feature)').on('click', function (e) {
         $("#car-icon g").removeClass("fade-show");
         $("#car-icon g").removeAttr("class");
@@ -425,38 +395,39 @@ $(document).ready(function () {
         borderOpacity: 1,
         // selectedRegions: '18',
         enableZoom: false,
-        showTooltip: false,
+        showTooltip: true,
         pins: {
-            "05": "\u003cstrong\u003eВінницька\u003c/strong\u003e область",
-            "07": "\u003cstrong\u003eВолинська\u003c/strong\u003e область",
-            "09": "\u003cstrong\u003eЛуганська\u003c/strong\u003e область",
-            "12": "\u003cstrong\u003eДніпропетровська\u003c/strong\u003e область",
-            "14": "\u003cstrong\u003eДонецька\u003c/strong\u003e область",
-            "18": "\u003cstrong\u003eЖитомирська\u003c/strong\u003e область",
-            "21": "\u003cstrong\u003eЗакарпатська\u003c/strong\u003e область",
-            "23": "\u003cstrong\u003eЗапорізька\u003c/strong\u003e область",
-            "26": "\u003cstrong\u003eІвано-Франківська\u003c/strong\u003e область",
-            "30": "\u003cstrong\u003eКиїв\u003c/strong\u003e",
-            "32": "\u003cstrong\u003eКиївська\u003c/strong\u003e область",
-            "35": "\u003cstrong\u003eКіровоградська\u003c/strong\u003e область",
-            "43": "\u003cstrong\u003eАРК\u003c/strong\u003e",
-            "46": "\u003cstrong\u003eЛьвівська\u003c/strong\u003e область",
-            "48": "\u003cstrong\u003eМиколаївська\u003c/strong\u003e область",
-            "51": "\u003cstrong\u003eОдеська\u003c/strong\u003e область",
-            "53": "\u003cstrong\u003eПолтавська\u003c/strong\u003e область",
-            "56": "\u003cstrong\u003eРівненська\u003c/strong\u003e область",
-            "59": "\u003cstrong\u003eСумська\u003c/strong\u003e область",
-            "61": "\u003cstrong\u003eТернопільська\u003c/strong\u003e область",
-            "63": "\u003cstrong\u003eХарківська\u003c/strong\u003e область",
-            "65": "\u003cstrong\u003eХерсонська\u003c/strong\u003e область",
-            "68": "\u003cstrong\u003eХмельницька\u003c/strong\u003e область",
-            "71": "\u003cstrong\u003eЧеркаська\u003c/strong\u003e область",
-            "74": "\u003cstrong\u003eЧернігівська\u003c/strong\u003e область",
-            "77": "\u003cstrong\u003eЧернівецька\u003c/strong\u003e область",
+        //     "05": "\u003cstrong\u003eВінницька\u003c/strong\u003e область",
+        //     "07": "\u003cstrong\u003eВолинська\u003c/strong\u003e область",
+        //     "09": "\u003cstrong\u003eЛуганська\u003c/strong\u003e область",
+        //     "12": "\u003cstrong\u003eДніпропетровська\u003c/strong\u003e область",
+        //     "14": "\u003cstrong\u003eДонецька\u003c/strong\u003e область",
+        //     "18": "\u003cstrong\u003eЖитомирська\u003c/strong\u003e область",
+        //     "21": "\u003cstrong\u003eЗакарпатська\u003c/strong\u003e область",
+        //     "23": "\u003cstrong\u003eЗапорізька\u003c/strong\u003e область",
+        //     "26": "\u003cstrong\u003eІвано-Франківська\u003c/strong\u003e область",
+        //     "32": "\u003cstrong class='vmap-capital selected'\u003eКиїв\u003c/strong\u003e",
+        //     "32": "\u003cstrong\u003eКиївська\u003c/strong\u003e область",
+        //     "35": "\u003cstrong\u003eКіровоградська\u003c/strong\u003e область",
+        //     "43": "\u003cstrong\u003eАРК\u003c/strong\u003e",
+        //     "46": "\u003cstrong\u003eЛьвівська\u003c/strong\u003e область",
+        //     "48": "\u003cstrong\u003eМиколаївська\u003c/strong\u003e область",
+        //     "51": "\u003cstrong\u003eОдеська\u003c/strong\u003e область",
+        //     "53": "\u003cstrong\u003eПолтавська\u003c/strong\u003e область",
+        //     "56": "\u003cstrong\u003eРівненська\u003c/strong\u003e область",
+        //     "59": "\u003cstrong\u003eСумська\u003c/strong\u003e область",
+        //     "61": "\u003cstrong\u003eТернопільська\u003c/strong\u003e область",
+        //     "63": "\u003cstrong\u003eХарківська\u003c/strong\u003e область",
+        //     "65": "\u003cstrong\u003eХерсонська\u003c/strong\u003e область",
+        //     "68": "\u003cstrong\u003eХмельницька\u003c/strong\u003e область",
+        //     "71": "\u003cstrong\u003eЧеркаська\u003c/strong\u003e область",
+        //     "74": "\u003cstrong\u003eЧернігівська\u003c/strong\u003e область",
+        //     "77": "\u003cstrong\u003eЧернівецька\u003c/strong\u003e область",
         },
         pinMode: 'content',
         onRegionClick: function(element, code, region) {
             regionLoad(code.toUpperCase());
+            $('.vmap-capital').removeClass('selected');
             $.fn.fullpage.moveSectionDown();
         }
     });

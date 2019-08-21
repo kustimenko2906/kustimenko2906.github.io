@@ -7990,7 +7990,9 @@ html.fp-enabled,
   .top-section-slider img {
     max-height: calc(100vh - 160px); }
   .top-section-slider .slick-slide {
-    height: calc(100vh - 160px); }
+    height: calc(100vh - 160px);
+    background-size: cover !important;
+    background-position: center !important; }
   @media (max-width: 1640px) {
     .top-section-slider img {
       max-height: calc(100vh - 120px); }
@@ -8103,9 +8105,6 @@ html.fp-enabled,
     margin-top: -4.3%; }
   .jqvmap-pin#jqvmap1_43_pin {
     margin-left: -12.9%; }
-  .jqvmap-pin#jqvmap1_32_pin {
-    margin-top: -2%;
-    margin-left: -12.2%; }
   @media (max-width: 1640px) {
     .jqvmap-pin {
       line-height: 12px; }
@@ -8201,7 +8200,10 @@ html.fp-enabled,
     margin-left: 20px; }
   .region-view-row .region-map-block {
     padding: 60px 40px 40px 60px;
-    height: auto; }
+    background-position: 40px 50px !important;
+    background-size: auto calc(100% - 60px) !important;
+    height: auto;
+    min-height: 450px; }
     .region-view-row .region-map-block .region-name {
       font-size: 38px;
       margin-bottom: 32px; }
@@ -8230,6 +8232,9 @@ html.fp-enabled,
 .section-region-view .block-invest-logo {
   left: 0;
   top: 0; }
+
+.modal {
+  z-index: 105000; }
 
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -8520,6 +8525,36 @@ html.fp-enabled,
 
 .jqvmap-zoomout {
   top: 34px; }
+
+#vmap .vmap-capital {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background: url("../../assets/images/regions/kyiv-1.svg") no-repeat center/contain;
+  top: 26%;
+  left: 51.2%;
+  z-index: 10;
+  cursor: pointer; }
+  @media (max-width: 1680px) {
+    #vmap .vmap-capital {
+      margin-top: 10px;
+      margin-left: -4px; } }
+  @media (max-width: 1520px) {
+    #vmap .vmap-capital {
+      margin-top: 10px;
+      margin-left: -4px; } }
+  @media (max-width: 1460px) {
+    #vmap .vmap-capital {
+      margin-top: 10px;
+      margin-left: -4px; } }
+  #vmap .vmap-capital.selected, #vmap .vmap-capital:hover {
+    background: url("../../assets/images/regions/kyiv-b-1.svg") no-repeat center/contain; }
+  #vmap .vmap-capital .jqvmap-label {
+    padding: 3px 10px;
+    right: 100%;
+    margin-top: -10px; }
+  #vmap .vmap-capital:hover .jqvmap-label {
+    display: block; }
 
 .section-last .block-invest-logo {
   left: 30px;
