@@ -119,6 +119,17 @@ $(document).ready(function () {
         $.fn.fullpage.moveSectionDown();
     });
 
+    $('body').on('click', '.js-section-region-slider .card', function (e) {
+        $('.js-section-region-slider .card').removeClass('selected-slide');
+        $(this).addClass('selected-slide');
+        setTimeout(function(){
+            addAnimateClass('money-icon');
+            startCounter();
+        }, 100);
+
+        // $('.js-section-region-slider').slick('slickGoTo', parseInt($(this).closest('.slick-slide').index()));
+    });
+
     $('.js-feature-tabs a:not(.export-feature), .js-feature-tabs a:not(.money-feature)').on('click', function (e) {
         $("#car-icon g").removeClass("fade-show");
         $("#car-icon g").removeAttr("class");
@@ -355,8 +366,8 @@ $(document).ready(function () {
         slidesToShow: 5,
         pauseOnHover: false,
         pauseOnFocus: false,
-        prevArrow: $('.js-section-region-slider-arrows .left'),
-        nextArrow: $('.js-section-region-slider-arrows .right'),
+        nextArrow: $('.js-section-region-slider-arrows .left'),
+        prevArrow: $('.js-section-region-slider-arrows .right'),
         slidesToScroll: 1,
         responsive: [
             {

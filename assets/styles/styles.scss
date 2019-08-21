@@ -317,6 +317,38 @@
     }
 }
 
+.section-region-view {
+    .regions-slide-arrows {
+        margin-left: 140px;
+        position: relative;
+        z-index: 100;
+        bottom: -90px;
+
+        .btn {
+            margin-right: 36px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .content-inner-holder {
+        padding: 90px 100px 0;
+    }
+
+    @media (max-width: 1640px) {
+        .content-inner-holder {
+            padding: 40px 40px 0;
+        }
+    }
+
+    .block-invest-logo {
+        left: 0;
+        top: 0;
+    }
+}
+
 .region-view-row {
     .region-view-col {
         &.map-col {
@@ -410,7 +442,7 @@
 
         .region-characteristics {
             width: auto;
-            margin-bottom: 72px;
+            margin-bottom: 40px;
 
             td {
                 padding: 0;
@@ -441,6 +473,14 @@
 }
 
 @media (max-width: 1640px) {
+
+    .section-region-view {
+        .regions-slide-arrows {
+            margin-left: 60px;
+            bottom: -50px;
+        }
+    }
+
     .region-view-row {
         .region-view-col {
             &.map-col {
@@ -499,37 +539,6 @@
                 }
             }
         }
-    }
-}
-
-.section-region-view {
-    .regions-slide-arrows {
-        margin-left: 140px;
-        position: relative;
-        z-index: 100;
-        bottom: -90px;
-
-        .btn {
-            margin-right: 36px;
-
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    }
-    .content-inner-holder {
-        padding: 90px 100px 0;
-    }
-
-    @media (max-width: 1640px) {
-        .content-inner-holder {
-            padding: 40px 40px 0;
-        }
-    }
-
-    .block-invest-logo {
-        left: 0;
-        top: 0;
     }
 }
 
@@ -781,6 +790,7 @@
         border-radius: 0;
         background: linear-gradient(117.76deg, #FFFFFF 0%, #EEEEEE 100%);
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
     .card-body {
         height: 200px;
@@ -788,23 +798,34 @@
         padding: 20px 30px;
         justify-content: space-between;
     }
-    .slick-slide.slick-active.slick-current {
-        .card {
+
+    .slick-slide {
+        &:focus {
+            outline: none !important;
+        }
+
+        &:hover {
+            .card {
+                background: #FFE300;
+            }
+        }
+
+        .card.selected-slide {
             background: #FFE300;
         }
     }
 
     .reg-export-unit {
-        font-size: 60px;
+        font-size: 30px;
         position: relative;
-        line-height: 46px;
+        line-height: normal;
 
         &:before {
             content: '$';
             position: absolute;
             left: -12px;
-            top: -12px;
-            font-size: 22px;
+            top: 4px;
+            font-size: 16px;
         }
 
         &.ua {
@@ -870,7 +891,7 @@
                 content: '$';
                 position: absolute;
                 left: -12px;
-                top: -12px;
+                top: 4px;
                 font-size: 18px;
             }
 

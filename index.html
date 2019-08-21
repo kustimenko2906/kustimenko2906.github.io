@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-sm-12 position-relative col-top-info">
                         <div class="block-invest-logo d-none d-lg-block">
-                            <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
+                            <a href="http://dtek.com/"><img src="assets/images/logo-default.png" alt="" class="img-fluid d-block"></a>
                         </div>
                         <div class="top-section-info position-relative">
                             <h1 class="font-weight-bold text-white text-center mx-auto">
@@ -103,7 +103,7 @@
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder d-flex align-items-center position-relative">
                 <div class="block-invest-logo position-absolute d-none d-lg-block">
-                    <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
+                    <a href="http://dtek.com/"><img src="assets/images/logo-default.png" alt="" class="img-fluid d-block"></a>
                 </div>
                 <div class="row align-items-center w-100 mx-0 flex-column-reverse flex-xl-row d-none d-lg-flex">
                     <div class="col-xl-4">
@@ -367,7 +367,7 @@
             <div class="content-inner-holder position-relative">
                 <div class="section-mob-title d-block d-lg-none">Області</div>
                 <div class="block-invest-logo position-absolute d-none d-lg-block">
-                    <img src="assets/images/logo-default.png" alt="" class="img-fluid d-block">
+                    <a href="http://dtek.com/"><img src="assets/images/logo-default.png" alt="" class="img-fluid d-block"></a>
                 </div>
                 <div class="regions-slide-arrows js-section-region-slider-arrows">
                     <button class="btn btn-sm btn-link left px-0">
@@ -384,10 +384,63 @@
 
         <div class="section-region-slider js-section-region-slider">
             <div>
-                <div class="card">
+                <div class="card selected-slide" onclick="regionLoad('30')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
-                            <strong>Івано-Франківська</strong><br>
+                            <strong>Київ</strong><br>
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 848 кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 2953 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        10248,2
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('05')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Вiнницька</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 26,5 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1560 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1429,3
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('07')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Волинська</strong><br>
                             область
                         </div>
                         <table class="table table-borderless">
@@ -401,7 +454,7 @@
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        720
                                     </div>
                                 </td>
                             </tr>
@@ -411,7 +464,142 @@
             </div>
 
             <div>
-                <div class="card">
+                <div class="card" onclick="regionLoad('09')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Луганська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 26,7 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 2196 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        202,9
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('12')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Дніпропетровська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 31,9 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 3207 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        7722,6
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('14')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Донецька</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 26,5 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 4210 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        4845,4
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('18')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Житомирська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1048 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        661,9
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('21')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Закарпатська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 12,8 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1257 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1659
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('23')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
                             <strong>Запорізька</strong><br>
@@ -420,15 +608,15 @@
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <strong>Площа:</strong> 27,2 тис. кв. км
                                     <div class="font-weight-bold">
-                                        Населення: 1048 тис. чол.
+                                        Населення: 1722 тис. чол.
                                     </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        3377,2
                                     </div>
                                 </td>
                             </tr>
@@ -438,7 +626,61 @@
             </div>
 
             <div>
-                <div class="card">
+                <div class="card" onclick="regionLoad('26')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Івано-Франківська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 13,9 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1371 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        871,4
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('32')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Київська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 28,1 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1762 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1856,3
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('35')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
                             <strong>Кіровоградська</strong><br>
@@ -447,15 +689,15 @@
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <strong>Площа:</strong> 24,6 тис. кв. км
                                     <div class="font-weight-bold">
-                                        Населення: 1048 тис. чол.
+                                        Населення: 946 тис. чол.
                                     </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        521,8
                                     </div>
                                 </td>
                             </tr>
@@ -465,24 +707,24 @@
             </div>
 
             <div>
-                <div class="card">
+                <div class="card" onclick="regionLoad('46')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
-                            <strong>Харківська</strong><br>
+                            <strong>Львівська</strong><br>
                             область
                         </div>
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <strong>Площа:</strong> 21,8 тис. кв. км
                                     <div class="font-weight-bold">
-                                        Населення: 1048 тис. чол.
+                                        Населення: 2522 тис. чол.
                                     </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        1895,6
                                     </div>
                                 </td>
                             </tr>
@@ -492,24 +734,24 @@
             </div>
 
             <div>
-                <div class="card">
+                <div class="card" onclick="regionLoad('48')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
-                            <strong>Чернігівська</strong><br>
+                            <strong>Миколаївська</strong><br>
                             область
                         </div>
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <strong>Площа:</strong> 24,6 тис. кв. км
                                     <div class="font-weight-bold">
-                                        Населення: 1048 тис. чол.
+                                        Населення: 1131 тис. чол.
                                     </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        2112,6
                                     </div>
                                 </td>
                             </tr>
@@ -519,7 +761,115 @@
             </div>
 
             <div>
-                <div class="card">
+                <div class="card" onclick="regionLoad('51')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Одеська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 33,3 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 2381 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1668,3
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('53')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Полтавська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 28,8 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1402 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1905,9
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('56')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Рівненська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,1 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1157 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        410,9
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('59')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Сумська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 23,8 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1078 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        802,1
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('61')">
                     <div class="card-body d-flex flex-column">
                         <div class="card-reg-name">
                             <strong>Тернопільська</strong><br>
@@ -528,15 +878,177 @@
                         <table class="table table-borderless">
                             <tr>
                                 <td>
-                                    <strong>Площа:</strong> 20,2 тис. кв. км
+                                    <strong>Площа:</strong> 13,8 тис. кв. км
                                     <div class="font-weight-bold">
-                                        Населення: 1048 тис. чол.
+                                        Населення: 1052 тис. чол.
                                     </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="d-inline-block reg-export-unit text-left">
                                         <small>експорт <br> млн</small>
-                                        900
+                                        452,5
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('63')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Харківська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 31,4 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 2656 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        1279
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('65')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Херсонська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 28,5 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1040 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        269,9
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('68')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Хмельницька</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,7 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1 261 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        638,2
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('71')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Черкаська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 20,9 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1206 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        785,6
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('77')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Чернівецька</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 8,1 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 904 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        200,1
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="regionLoad('74')">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-reg-name">
+                            <strong>Чернігівська</strong><br>
+                            область
+                        </div>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <strong>Площа:</strong> 31,9 тис. кв. км
+                                    <div class="font-weight-bold">
+                                        Населення: 1007 тис. чол.
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="d-inline-block reg-export-unit text-left">
+                                        <small>експорт <br> млн</small>
+                                        755
                                     </div>
                                 </td>
                             </tr>
@@ -552,7 +1064,9 @@
         <div class="container-fluid page-section-holder">
             <div class="content-inner-holder position-relative">
                 <div class="block-invest-logo position-absolute d-none d-lg-block">
-                    <img src="assets/images/logo-default-w.png" alt="" class="img-fluid d-block">
+                    <a href="http://dtek.com/">
+                        <img src="assets/images/logo-default-w.png" alt="" class="img-fluid d-block">
+                    </a>
                 </div>
                 <div class="section-mob-title d-block d-lg-none">Рейтинг</div>
                 <div class="container-fluid">
@@ -1082,21 +1596,21 @@
                                 <nav>
                                     <div class="nav nav-tabs js-bg-tabs" id="nav-tab" role="tablist">
                                         <a class="nav-item nav-link active" id="nav-advantages-tab-1" data-bg="bkg-1" data-toggle="tab" href="#nav-home-1"
-                                           role="tab" aria-controls="nav-home" aria-selected="true" onclick="reinitSlider('.js-adv-info-slider')">Приток капитальных инвестиций</a>
+                                           role="tab" aria-controls="nav-home" aria-selected="true" onclick="reinitSlider('.js-adv-info-slider')">Приплив капітальних інвестицій</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-2" data-bg="bkg-2" data-toggle="tab" href="#nav-home-2"
-                                           role="tab" aria-controls="nav-profile" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-2')">Экспорт за год</a>
+                                           role="tab" aria-controls="nav-profile" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-2')">Експорт за рік</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-3" data-bg="bkg-3" data-toggle="tab" href="#nav-home-3"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-3')">Средняя зарплата</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-3')">Середня зарплата в області за січень-травень 2019 року</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-4" data-bg="bkg-4" data-toggle="tab" href="#nav-home-4"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-4')">Присутствие крупных мировых компаний</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-4')">Присутність великих світових компаній</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-5" data-bg="bkg-5" data-toggle="tab" href="#nav-home-5"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-5')">Вновь открытые в 2017-18 году крупные предприятия</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-5')">Відкриті за 2017-19 роки великі підприємства</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-6" data-bg="bkg-6" data-toggle="tab" href="#nav-home-6"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-6')">ВРП на душу населення в регионе</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-6')">ВРП на душу населення в регіоні</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-7" data-bg="bkg-7" data-toggle="tab" href="#nav-home-7"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-7')">Рост экономики региона в 2018 году</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-7')">Зростання економіки регіону за 2018 рік</a>
                                         <a class="nav-item nav-link" id="nav-advantages-tab-8" data-bg="bkg-8" data-toggle="tab" href="#nav-home-8"
-                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-8')">Логистика</a>
+                                           role="tab" aria-controls="nav-contact" aria-selected="false" onclick="reinitSlider('.js-adv-info-slider-8')">Логістика</a>
                                     </div>
                                 </nav>
                             </div>
