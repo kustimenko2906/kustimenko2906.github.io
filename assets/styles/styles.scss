@@ -1061,11 +1061,33 @@
     }
 
     .section-region-slider {
-        position: static;
+        position: relative;
         left: auto;
         bottom: auto;
-        width: 380px;
+        width: 425px;
         height: auto;
+        padding-right: 45px;
+
+        .slick-arrow {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: none;
+            outline: none;
+            font-size: 0;
+            color: transparent;
+            width: 12px;
+            height: 34px;
+
+            &.slick-prev {
+                background: transparent url("../../assets/images/arrow-y-down.svg") no-repeat center;
+            }
+
+            &.slick-next {
+                bottom: 74px;
+                background: transparent url("../../assets/images/arrow-y-up.svg") no-repeat center;
+            }
+        }
         
         @media (max-width: 992px) {
             width: 100%;

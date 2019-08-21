@@ -351,7 +351,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,

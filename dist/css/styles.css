@@ -8587,11 +8587,27 @@ html.fp-enabled,
       left: 20px;
       top: 17px; } }
 .section-last .section-region-slider {
-  position: static;
+  position: relative;
   left: auto;
   bottom: auto;
-  width: 380px;
-  height: auto; }
+  width: 425px;
+  height: auto;
+  padding-right: 45px; }
+  .section-last .section-region-slider .slick-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    outline: none;
+    font-size: 0;
+    color: transparent;
+    width: 12px;
+    height: 34px; }
+    .section-last .section-region-slider .slick-arrow.slick-prev {
+      background: transparent url("../../assets/images/arrow-y-down.svg") no-repeat center; }
+    .section-last .section-region-slider .slick-arrow.slick-next {
+      bottom: 74px;
+      background: transparent url("../../assets/images/arrow-y-up.svg") no-repeat center; }
   @media (max-width: 992px) {
     .section-last .section-region-slider {
       width: 100%; } }
