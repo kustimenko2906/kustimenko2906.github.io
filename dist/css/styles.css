@@ -8295,6 +8295,51 @@ html.fp-enabled,
       left: 0;
       top: 0; }
 
+@media (max-width: 1640px) {
+  .modal-dialog .card {
+    margin-top: -100px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 15; }
+    .modal-dialog .card .card-body {
+      padding: 30px 40px;
+      font-size: 14px;
+      line-height: normal; }
+  .modal-dialog .modal-content {
+    padding-top: 250px; }
+    .modal-dialog .modal-content:after {
+      height: 250px; } }
+@media (max-width: 1200px) {
+  .modal-dialog {
+    max-width: 560px; }
+    .modal-dialog .modal-body {
+      padding: 0 20px; }
+    .modal-dialog .card {
+      margin-top: -60px; }
+      .modal-dialog .card .card-title {
+        font-size: 28px;
+        font-family: "Roboto Slab", sans-serif;
+        margin-bottom: 20px;
+        font-weight: bold; } }
+@media (max-width: 992px) {
+  .modal-dialog {
+    max-width: 90%; }
+    .modal-dialog .modal-body {
+      padding: 0 20px; }
+    .modal-dialog .card {
+      margin-top: 0; }
+      .modal-dialog .card .card-title {
+        font-size: 28px;
+        font-family: "Roboto Slab", sans-serif;
+        margin-bottom: 20px;
+        font-weight: bold; }
+    .modal-dialog .modal-content {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .modal-dialog .modal-content:after {
+        display: none; } }
 .btn {
   font-size: 14px;
   border-radius: 0;
@@ -8766,7 +8811,8 @@ html.fp-enabled,
     padding-top: 100px;
     background-color: #EEEEEE; }
     .section-map .section-mob-title {
-      margin-left: 60px; }
+      margin-left: 60px;
+      margin-bottom: 40px; }
     .section-map .content-inner-holder {
       padding-left: 0;
       padding-right: 0; }
@@ -8967,5 +9013,11 @@ html.fp-enabled,
       right: 20px;
       top: 18px;
       position: absolute; } }
+.map-reg-list {
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .map-reg-list .h5 {
+    font-size: 14px; }
 
 /*# sourceMappingURL=styles.css.map */

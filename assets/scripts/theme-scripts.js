@@ -121,6 +121,12 @@ function reinitSlider(e) {
     }, 300);
 }
 
+function scrollToMap() {
+    $('html, body').animate({
+        scrollTop: $("#region-loaded").offset().top
+    }, 2000);
+}
+
 function regionLoad(id) {
     $('#region-loaded').load("ajax/"+id+".html", function(responseTxt, statusTxt, xhr){
         if(statusTxt == "success") {
