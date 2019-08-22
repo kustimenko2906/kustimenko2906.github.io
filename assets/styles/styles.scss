@@ -751,6 +751,17 @@
         }
     }
 
+    &.info-small.vrp-info {
+        .card-units {
+            top: 50px;
+        }
+
+        .region-card-info-number {
+            font-size: 90px;
+            line-height: 94px;
+        }
+    }
+
     .card-units {
         position: absolute;
         transform: rotate(90deg);
@@ -801,7 +812,10 @@
         height: 200px;
         box-sizing: border-box;
         padding: 20px 30px;
-        justify-content: space-between;
+
+        .region-descr-text {
+            padding-top: 10px;
+        }
     }
 
     .slick-slide {
@@ -1114,7 +1128,7 @@
 
         &.three-slides {
             .card-body {
-                height: 236px;
+                height: 200px;
             }
         }
 

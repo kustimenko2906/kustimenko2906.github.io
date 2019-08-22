@@ -8383,6 +8383,11 @@ html.fp-enabled,
   .region-card-info.info-small .region-card-info-number {
     font-size: 130px;
     line-height: 94px; }
+  .region-card-info.info-small.vrp-info .card-units {
+    top: 50px; }
+  .region-card-info.info-small.vrp-info .region-card-info-number {
+    font-size: 90px;
+    line-height: 94px; }
   .region-card-info .card-units {
     position: absolute;
     transform: rotate(90deg);
@@ -8422,8 +8427,9 @@ html.fp-enabled,
   .section-region-slider .card-body {
     height: 200px;
     box-sizing: border-box;
-    padding: 20px 30px;
-    justify-content: space-between; }
+    padding: 20px 30px; }
+    .section-region-slider .card-body .region-descr-text {
+      padding-top: 10px; }
   .section-region-slider .slick-slide:focus {
     outline: none !important; }
   .section-region-slider .slick-slide:hover .card {
@@ -8624,7 +8630,7 @@ html.fp-enabled,
   .section-last .section-region-slider .card-body {
     height: 170px; }
   .section-last .section-region-slider.three-slides .card-body {
-    height: 236px; }
+    height: 200px; }
   .section-last .section-region-slider.variable-width {
     overflow: hidden; }
     .section-last .section-region-slider.variable-width .card-body {
