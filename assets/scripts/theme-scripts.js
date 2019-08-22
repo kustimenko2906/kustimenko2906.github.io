@@ -195,7 +195,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-3').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
@@ -221,7 +221,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-4').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
@@ -247,7 +247,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-5').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
@@ -273,7 +273,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-6').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
@@ -299,7 +299,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-7').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
@@ -325,7 +325,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-8').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
