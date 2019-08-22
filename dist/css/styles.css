@@ -8625,7 +8625,6 @@ html.fp-enabled,
   .section-last .section-region-slider.three-slides .card-body {
     height: 236px; }
   .section-last .section-region-slider.variable-width {
-    max-height: calc(100vh - 240px);
     overflow: hidden; }
     .section-last .section-region-slider.variable-width .card-body {
       height: auto; }
@@ -8832,14 +8831,14 @@ html.fp-enabled,
     line-height: 20px; }
 
   .section-last .section-region-slider {
-    position: static;
+    position: relative;
     left: auto;
     bottom: auto;
     width: 300px;
     height: auto; }
-    .section-last .section-region-slider .card .region-descr-text {
-      font-size: 14px;
-      line-height: 20px; } }
+  .section-last .section-region-slider .card .region-descr-text {
+    max-height: 120px;
+    overflow-y: auto; } }
 @media (max-width: 992px) {
   .rating-mob-accordion {
     padding: 0 45px; }

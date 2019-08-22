@@ -329,7 +329,7 @@ $(document).ready(function () {
         vertical: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 3,
         pauseOnHover: false,
         pauseOnFocus: false,
         slidesToScroll: 1,

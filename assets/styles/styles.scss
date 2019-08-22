@@ -1118,7 +1118,7 @@
         }
 
         &.variable-width {
-            max-height: calc(100vh - 240px);
+            //max-height: calc(100vh - 240px);
             overflow: hidden;
 
             .card-body {
@@ -1456,16 +1456,16 @@
 
     .section-last {
         .section-region-slider {
-            position: static;
+            position: relative;
             left: auto;
             bottom: auto;
             width: 300px;
             height: auto;
+        }
 
-            .card .region-descr-text {
-                font-size: 14px;
-                line-height: 20px;
-            }
+        .section-region-slider .card .region-descr-text {
+            max-height: 120px;
+            overflow-y: auto;
         }
     }
 }
