@@ -8112,6 +8112,7 @@ html.fp-enabled,
         font-size: 10px; } }
 
 .section-region-view .regions-slide-arrows {
+  display: inline-block;
   margin-left: 140px;
   position: relative;
   z-index: 100;

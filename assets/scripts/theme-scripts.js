@@ -384,8 +384,8 @@ $(document).ready(function () {
         slidesToShow: 5,
         pauseOnHover: false,
         pauseOnFocus: false,
-        nextArrow: $('.js-section-region-slider-arrows .left'),
-        prevArrow: $('.js-section-region-slider-arrows .right'),
+        prevArrow: $('.js-section-region-slider-arrows .left'),
+        nextArrow: $('.js-section-region-slider-arrows .right'),
         slidesToScroll: 1,
         responsive: [
             {
