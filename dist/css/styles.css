@@ -8593,6 +8593,10 @@ html.fp-enabled,
   width: 425px;
   height: auto;
   padding-right: 45px; }
+  @media (max-width: 1640px) {
+    .section-last .section-region-slider {
+      width: 380px;
+      padding-right: 25px; } }
   .section-last .section-region-slider .slick-arrow {
     position: absolute;
     right: 0;

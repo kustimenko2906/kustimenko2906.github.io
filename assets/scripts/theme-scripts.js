@@ -169,7 +169,7 @@ $(document).ready(function () {
 
     $('.js-adv-info-slider-2').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         vertical: true,
         infinite: true,
         speed: 300,
