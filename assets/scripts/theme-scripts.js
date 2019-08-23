@@ -15,15 +15,15 @@ function addAnimateClass(id) {
     $('#'+id).closest('.animate-icons-wrap').addClass(id);
 
     if(id === 'car-icon') {
-        $("#car-icon g").delay(500).each(function(i) {
-            $(this).delay(200 * i).queue(function() {
+        $("#car-icon g").delay(300).each(function(i) {
+            $(this).delay(100 * i).queue(function() {
                 $(this).addClass("fade-show");
                 $(this).dequeue();
             })
         })
     } else if(id === 'money-icon') {
-        $("#money-icon path").delay(500).each(function(i) {
-            $(this).delay(200 * i).queue(function() {
+        $("#money-icon path").delay(300).each(function(i) {
+            $(this).delay(100 * i).queue(function() {
                 $(this).addClass("fade-show");
                 $(this).dequeue();
             })
@@ -50,17 +50,17 @@ function animateSvg(id) {
     if(id === 'arrow-icon' || id === 'man-icon') {
         new Vivus(id,   {
             type: "scenario-sync",
-            duration: 50,
+            duration: 30,
             start: "inViewport",
-            dashGap: 50,
+            dashGap: 30,
             forceRender: false
         });
     }  else if (id === 'car-icon') {
         new Vivus(id,   {
             type: "scenario-sync",
-            duration: 20,
+            duration: 15,
             start: "inViewport",
-            dashGap: 20,
+            dashGap: 15,
             forceRender: true
         }, function doDone(obj) {
             console.log(obj);
@@ -80,7 +80,7 @@ function animateSvg(id) {
 function reinitSlider(e) {
     setTimeout(function(){
         $(e).slick('setPosition');
-    }, 300);
+    }, 200);
 }
 
 function scrollToMap() {
@@ -233,7 +233,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1640,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
             },
             {
@@ -259,7 +259,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1640,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
             },
             {

@@ -26,7 +26,7 @@
     }
 
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         padding: 0 40px;
     }
 
@@ -54,7 +54,7 @@
     position: relative;
     padding: 80px 80px 0;
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         padding: 80px 40px 0;
     }
 
@@ -88,7 +88,7 @@
     background-color: $color-bg;
     min-height: calc(100vh - 160px);
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         min-height: calc(100vh - 120px);
     }
 }
@@ -96,7 +96,7 @@
 .block-invest-logo {
     margin-bottom: 35px;
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         img {
             max-width: 160px;
         }
@@ -136,7 +136,7 @@
         background-position: center !important;
     }
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         img {
             max-height: calc(100vh - 120px);
         }
@@ -193,7 +193,7 @@
 #fp-nav {
     right: 37px;
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         right: 18px;
     }
 
@@ -235,7 +235,7 @@
     .content-inner-holder {
         padding: 0 100px;
         
-        @media (max-width: 1640px) {
+        @media (max-width: 1800px) {
             padding: 0 40px;
         }
     }
@@ -309,7 +309,7 @@
     //    margin-left: -12.2%;
     //}
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         line-height: 12px;
         strong {
             font-size: 10px;
@@ -334,11 +334,16 @@
         }
     }
 
+    .section-region-slider .card-body {
+        justify-content: space-between;
+        
+    }
+
     .content-inner-holder {
         padding: 90px 100px 0;
     }
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         .content-inner-holder {
             padding: 40px 40px 0;
         }
@@ -381,7 +386,7 @@
                 border-top-right-radius: 0;
                 padding: 0 0 0 19px;
 
-                @media (max-width: 1640px) {
+                @media (max-width: 1800px) {
                     line-height: 19px;
                     font-size: 15px;
                 }
@@ -423,7 +428,7 @@
         background-size: contain !important;
         padding: 120px 40px 40px 140px;
 
-        @media (max-width: 1640px) {
+        @media (max-width: 1800px) {
             max-height: calc(100vh - 120px);
         }
 
@@ -473,7 +478,7 @@
     }
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1800px) {
 
     .section-region-view {
         .regions-slide-arrows {
@@ -617,9 +622,35 @@
         outline: 0;
         max-height: 100vh;
         overflow-y: auto;
-        padding-top: 58%;
+        padding-top: 550px;
         position: relative;
         padding-bottom: 28px;
+
+        .card-body-inner {
+            max-height: calc(100vh - 680px);
+            overflow-y: auto;
+
+            &::-webkit-scrollbar-track
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar
+            {
+                width: 9px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb
+            {
+                border-radius: 8px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+                background-color: $cyan;
+            }
+
+        }
 
         &:after {
             content: '';
@@ -633,7 +664,7 @@
     }
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1800px) {
     .modal-dialog {
         .card {
             margin-top: -100px;
@@ -655,6 +686,10 @@
 
             &:after {
                 height: 250px;
+            }
+
+            .card-body-inner {
+                max-height: calc(100vh - 400px);
             }
         }
     }
@@ -704,6 +739,10 @@
             padding-top: 20px;
             padding-bottom: 20px;
 
+            .card-body-inner {
+                max-height: calc(100vh - 80px);
+            }
+
             &:after {
                 display: none;
             }
@@ -721,7 +760,7 @@
     &.road-icon {
         #road-icon {
             path:nth-child(2) {
-                animation: slideUp ease 1.5s;
+                animation: slideUp ease 1s;
             }
         }
     }
@@ -805,7 +844,6 @@
         border: none;
         border-radius: 0;
         background: linear-gradient(117.76deg, #FFFFFF 0%, #EEEEEE 100%);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
         cursor: pointer;
     }
     .card-body {
@@ -894,7 +932,7 @@
         }
     }
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         height: 140px;
 
         .card-body {
@@ -990,11 +1028,7 @@
 }
 
 .fade-in {
-    animation: fadeIn ease 1.5s;
-    -webkit-animation: fadeIn ease 1.5s;
-    -moz-animation: fadeIn ease 1.5s;
-    -o-animation: fadeIn ease 1.5s;
-    -ms-animation: fadeIn ease 1.5s;
+    animation: fadeIn ease 0.8s;
 }
 
 .navbar-light .navbar-toggler {
@@ -1066,7 +1100,7 @@
         top: 28px;
         z-index: 1;
 
-        @media (max-width: 1640px) {
+        @media (max-width: 1800px) {
             img {
                 max-width: 120px;
                 left: 20px;
@@ -1083,7 +1117,7 @@
         height: auto;
         padding-right: 45px;
 
-        @media (max-width: 1640px) {
+        @media (max-width: 1800px) {
             width: 380px;
             padding-right: 25px;
         }
@@ -1091,7 +1125,7 @@
         .slick-arrow {
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 5px;
             border: none;
             outline: none;
             font-size: 0;
@@ -1104,7 +1138,7 @@
             }
 
             &.slick-next {
-                bottom: 74px;
+                bottom: 79px;
                 background: transparent url("../../assets/images/arrow-y-up.svg") no-repeat center;
             }
         }
@@ -1154,7 +1188,7 @@
         color: #fff;
         position: relative;
 
-        @media (max-width: 1640px) {
+        @media (max-width: 1800px) {
             max-height: calc(100vh - 120px);
         }
 
@@ -1286,7 +1320,7 @@
     }
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1800px) {
     .region-card-info-number {
         font-size: 100px;
         line-height: 70px;
@@ -1348,7 +1382,7 @@
         margin-top: 72px;
     }
 
-    @media (max-width: 1640px) {
+    @media (max-width: 1800px) {
         right: 15px;
     }
 
@@ -1394,7 +1428,7 @@
         .section-nav-label {
             left: 10px;
 
-            @media (max-width: 1640px) {
+            @media (max-width: 1800px) {
                 left: -9px;
             }
         }
@@ -1407,7 +1441,7 @@
         #car-icon {
             g {
                 opacity: 0;
-                transition: opacity 3s;
+                transition: opacity 1.5s;
 
                 &.fade-show {
                     opacity: 1;
@@ -1418,7 +1452,7 @@
         #money-icon {
             path {
                 opacity: 0;
-                transition: opacity 3s;
+                transition: opacity 1.5s;
 
                 &.fade-show {
                     opacity: 1;
