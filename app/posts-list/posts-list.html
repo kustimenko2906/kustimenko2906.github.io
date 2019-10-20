@@ -1,0 +1,50 @@
+<div class="py-5 text-center">
+    <h1>List of posts</h1>
+    <p class="lead">
+        Simple AngularJs application for displaying posts, also you can add post or delete. <br>
+    </p>
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <h4 class="text-left">Add new post</h4>
+            <form novalidate>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Post title" ng-model="post.title"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" placeholder="User id" ng-model="post.userId"/>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Post body" ng-model="post.body" rows="3"></textarea>
+                </div>
+                <div class="form-group text-left">
+                    <button class="btn btn-primary" ng-click="$ctrl.addNewPost(post)">Add post</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-lg-6 text-left">
+            <h4>Remove post</h4>
+            <div class="form-group">
+                <input class="form-control" max="{{$ctrl.posts.length - 1}}" type="number" placeholder="Post id" ng-model="post.id"/>
+            </div>
+            <button class="btn btn-dark" ng-click="$ctrl.removePost(post.id)">Remove post</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 mb-4" ng-repeat="post in $ctrl.posts">
+        <div class="card post-item">
+            <div class="card-header d-flex align-items-center justify-content-between">
+                <h4 class="my-0 font-weight-normal">User id:</h4>
+                <span class="badge badge-dark">{{post.userId}}</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title text-truncate" title="{{post.title}}">{{post.title}}</h3>
+
+                <p class="mb-5">{{post.body}}</p>
+
+                <a class="btn btn-info" ng-href="#!/posts/{{post.id}}">More info</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-12 col-lg-8 offset-lg-2 pt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a ng-href="#!/posts/">Posts</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{$ctrl.postDetail.id}}</li>
+            </ol>
+        </nav>
+
+        <div class="jumbotron bg-white">
+            <h1 class="mb-5">{{$ctrl.postDetail.title}}</h1>
+            <p>{{$ctrl.postDetail.body}}</p>
+            <p class="text-right text-muted">
+                User id: <span class="badge badge-light">{{$ctrl.postDetail.userId}}</span>
+            </p>
+        </div>
+    </div>
+</div>
+
