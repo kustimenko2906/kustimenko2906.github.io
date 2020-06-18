@@ -16,7 +16,7 @@
   "homepage": "https://github.com/kustimenko2906/kustimenko2906.github.io#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.7",
-    "angular": "1.7.x",
+    "angular": "1.8.x",
     "angular-animate": "1.7.x",
     "angular-route": "^1.7.8",
     "angular-ui-bootstrap": "^2.5.6",
