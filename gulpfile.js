@@ -13,13 +13,13 @@ const gulp = require('gulp'),
  Styles
  */
 gulp.task('sass', function () {
-    return gulp.src('./src/assets/sass/**/*.scss')
+    return gulp.src('./assets/sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./public/dist/css'));
 });
 
 gulp.task('sass:dev', function () {
-    return gulp.src('./src/assets/sass/**/*.scss')
+    return gulp.src('./assets/sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(sourcemaps.write())
@@ -28,10 +28,9 @@ gulp.task('sass:dev', function () {
 
 gulp.task('watch', function () {
     gulp.watch([
-        './src/assets/sass/**/*.scss',
-        './src/scripts/**/*.js',
-        './src/html/**/*.html'
-    ], ['sass:dev', 'html:build', 'scripts:build']);
+        './assets/sass/**/*.scss',
+        './scripts/**/*.js'
+    ], ['sass:dev', 'scripts:build']);
 });
 
 /*
