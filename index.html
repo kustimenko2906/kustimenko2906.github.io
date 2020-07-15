@@ -29,7 +29,7 @@
     <div class="row w-100">
         <div class="col-lg-7 mb-sm-4 mb-0 section-start-info">
             <h1>
-                Automated <br class="hidden-xs">
+                11 Automated <br class="hidden-xs">
                 Messenger Marketing
             </h1>
             <p class="section-description">
@@ -438,6 +438,11 @@
 <script>
   var formItem = document.getElementsByTagName("body")[0];
   formItem.addEventListener("spFormShowEvent", function(e) {
+    console.info("Event is: ", e);
+    console.info("Custom data is: ", e.detail);
+  });
+
+  formItem.addEventListener("spFormCloseEvent", function(e) {
     console.info("Event is: ", e);
     console.info("Custom data is: ", e.detail);
   })
