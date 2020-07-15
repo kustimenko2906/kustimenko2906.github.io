@@ -40,7 +40,7 @@
             </p>
 
 
-            <script src="//web.webformscr.com/apps/fc3/build/loader.js" sp-form-id="91ce6cefb1a59c2c6239895e3e04b7647220969dbe2c9f123defff1b58c264bc"></script>
+            <script src="//login.sendpulse.local/apps/fc3/build/loader.js" sp-form-id="c2004dd0655c2da78a7227ea3724b7359c5d881be91ffc57494a3c34a5e2e0bf"></script>
 
         </div>
 
@@ -434,3 +434,11 @@
 
     <img class="visible-xs" src="/templates/modoza/contents_wizardy/assets/img/catalog_2020/banners/mob-banner.png" alt="">
 </div>
+
+<script>
+  var formItem = document.querySelector('.sp-form-outer');
+  formItem.addEventListener("spFormShowEvent", function(e) {
+    console.info("Event is: ", e);
+    console.info("Custom data is: ", e.detail);
+  })
+</script>
