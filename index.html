@@ -436,7 +436,7 @@
 </div>
 
 <script>
-  var formItem = document.querySelector('.sp-form-outer');
+  var formItem = document.getElementsByTagName("body")[0];
   formItem.addEventListener("spFormShowEvent", function(e) {
     console.info("Event is: ", e);
     console.info("Custom data is: ", e.detail);
