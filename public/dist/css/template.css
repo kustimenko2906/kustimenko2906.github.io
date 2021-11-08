@@ -6637,9 +6637,7 @@ body {
 .sp-form .sp-form-control {
   border-color: #D3E5E9 !important;
   border-radius: 10px !important;
-  height: 54px !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important; }
+  height: 54px !important; }
   .sp-form .sp-form-control:focus {
     outline: none;
     border-color: #B0C8CD !important; }
