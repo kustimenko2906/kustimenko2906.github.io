@@ -413,5 +413,12 @@
         © 13chats, 2019
     </p>
 </footer>
+    <script>
+         var prItem = document.getElementsByTagName("body")[0];
+  prItem.addEventListener("spPromptShowEvent", function(e) {
+    console.info("Event is: ", e);
+    console.info("Custom data is: ", e.detail);
+  });
+    </script>
 </body>
 </html>
