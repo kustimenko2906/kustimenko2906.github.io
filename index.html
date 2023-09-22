@@ -410,10 +410,17 @@
     </p>
 </footer>
     <script>
-         var prItem = document.getElementsByTagName("body")[0];
-  prItem.addEventListener("spPromptShowEvent", function(e) {
-    console.info("Event is: ", e);
-    console.info("Custom data is: ", e.detail);
+let promptItem = document.getElementsByTagName("body")[0];
+  promptItem.addEventListener("spPromptShowEvent", function(e) {
+    console.info("Event: ", e);
+  });
+
+  promptItem.addEventListener("spPromptCloseEvent", function(e) {
+    console.info("Event: ", e);
+  });
+
+  promptItem.addEventListener("spPromptSubmitEvent", function(e) {
+    console.info("Event: ", e);
   });
     </script>
 </body>
